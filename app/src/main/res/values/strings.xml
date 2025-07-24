@@ -1,23 +1,3 @@
 <resources>
-    <string name="app_name">Polar Alert</string>
-    <string name="connect">Connect</string>
-    <string name="disconnect">Disconnect</string>
-    <string name="start">Start</string>
-    <string name="stop">Stop</string>
-    <string name="hr_range_slider">hr range slider</string>
-    <string name="volume_slider">volume slider</string>
-    <string name="polar_alert">Polar Alert</string>
-    <string name="min">Min</string>
-    <string name="max">Max</string>
-    <string name="bpm_max">%1$d BPM</string>
-    <string name="volume">Volume %1$d%%</string>
-    <string name="bpm_run">%1$d BPM</string>
-    <string name="too_high">Too high!</string>
-    <string name="too_low">Too low!</string>
-    <string name="good">Good</string>
-    <string name="heart">heart</string>
-    <string name="vibrate">Vibrate %1$s</string>
-    <string name="connected">Connected</string>
-    <string name="disconnected">Disconnected</string>
-    <string name="reconnecting">Reconnecting…</string>
+    <string name="app_name">Heart Alert</string>
 </resources>
