@@ -6,7 +6,11 @@ plugins {
     id("com.google.dagger.hilt.android")
 }
 
-val commitCount: Int = "git rev-list --count HEAD".runCommand().trim().toInt() + 33
+val commitCount: Int = runCatching {
+    "git rev-list --count HEAD".runCommand().trim().toInt() + 33
+}.getOrElse {
+    100
+}
 
 android {
     namespace = "com.nikashitsa.polar_alert_android"
