@@ -56,6 +56,7 @@ import com.nikashitsa.polar_alert_android.ui.components.AppButton
 import com.nikashitsa.polar_alert_android.ui.theme.Colors
 import com.nikashitsa.polar_alert_android.ui.theme.Fonts
 import com.nikashitsa.polar_alert_android.ui.theme.HeartAlertTheme
+import kotlinx.coroutines.delay
 import java.util.Date
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -174,16 +175,14 @@ fun BpmView(
     when (val connectionState = deviceConnectionState) {
         is DeviceConnectionState.Disconnected -> {
             Text("Disconnected", style = Fonts.textLg)
-            LaunchedEffect(Unit) {
+            PlaySoundRepeatedly(playSound, SoundType.DISCONNECTED) {
                 prevConnectionState = DeviceConnectionState.Disconnected()
-                playSound(SoundType.DISCONNECTED)
             }
         }
         is DeviceConnectionState.Connecting -> {
             Text("Reconnecting...", style = Fonts.textLg)
-            LaunchedEffect(Unit) {
+            PlaySoundRepeatedly(playSound, SoundType.RECONNECTING) {
                 prevConnectionState = DeviceConnectionState.Disconnected()
-                playSound(SoundType.RECONNECTING)
             }
         }
         is DeviceConnectionState.Connected -> {
@@ -261,6 +260,17 @@ fun BpmView(
         }
     }
 
+}
+
+@Composable
+fun PlaySoundRepeatedly(playSound: (SoundType) -> Unit = {}, soundType: SoundType, onStart: () -> Unit = {}) {
+    LaunchedEffect(Unit) {
+        onStart()
+        while (true) {
+            playSound(soundType)
+            delay(5000)
+        }
+    }
 }
 
 @Composable
