@@ -72,6 +72,7 @@ fun TrackingScreen(
     val hrFeature = bluetooth.hrFeature.collectAsState()
     val hrMin by settings.hrMin.collectAsState()
     val hrMax by settings.hrMax.collectAsState()
+    val alertInterval by settings.alertInterval.collectAsState()
 
     BackHandler {
         bluetooth.hrStreamStop()
@@ -86,6 +87,7 @@ fun TrackingScreen(
         playSound = sound::play,
         hrMin = hrMin,
         hrMax = hrMax,
+        alertInterval = alertInterval,
         vibrate = vibration::vibrate,
         onBack = onBack,
     )
@@ -101,6 +103,7 @@ fun TrackingScreenContent(
     playSound: (SoundType) -> Unit = {},
     hrMin: Int = SettingsDefaults.HR_MIN,
     hrMax: Int = SettingsDefaults.HR_MAX,
+    alertInterval: Int = SettingsDefaults.ALERT_INTERVAL,
     vibrate: (VibrationType) -> Unit = {},
     initialBpm: Int = -1,
     onBack: () -> Unit = {}
@@ -128,6 +131,7 @@ fun TrackingScreenContent(
             playSound = playSound,
             hrMin = hrMin,
             hrMax = hrMax,
+            alertInterval = alertInterval,
             vibrate = vibrate,
             initialBpm = initialBpm,
         )
@@ -161,6 +165,7 @@ fun BpmView(
     playSound: (SoundType) -> Unit = {},
     hrMin: Int = SettingsDefaults.HR_MIN,
     hrMax: Int = SettingsDefaults.HR_MAX,
+    alertInterval: Int = SettingsDefaults.ALERT_INTERVAL,
     vibrate: (VibrationType) -> Unit = {},
     initialBpm: Int = -1,
 ) {
@@ -170,7 +175,7 @@ fun BpmView(
         stateSaver = DeviceConnectionState.Saver
     ) { mutableStateOf(DeviceConnectionState.Connected()) }
     var lastTriggerTime by rememberSaveable { mutableStateOf<Date?>(null) }
-    val throttleInterval = 690 // ms
+    val throttleInterval = alertInterval * 1000 - 310 // ms
 
     when (val connectionState = deviceConnectionState) {
         is DeviceConnectionState.Disconnected -> {

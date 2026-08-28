@@ -17,19 +17,21 @@ import com.nikashitsa.polar_alert_android.ui.theme.Colors
 @Composable
 fun DropdownMenuSelector(
     value: Int,
-    progression: IntProgression,
+    options: Iterable<Int>,
+    label: (Int) -> String = { "$it" },
+    itemLabel: (Int) -> String = { "$it" },
     setValue: (Int) -> Unit = {}
 ) {
     var expanded by remember { mutableStateOf(false) }
     Box {
         AppTextButton(onClick = { expanded = true }) {
-            Text(text = "$value BPM")
+            Text(text = label(value))
             Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = "Chevron")
         }
         DropdownMenu(expanded = expanded, containerColor = Colors.Gray, onDismissRequest = { expanded = false }) {
-            progression.forEach { i ->
+            options.forEach { i ->
                 DropdownMenuItem(
-                    text = { Text("$i") },
+                    text = { Text(itemLabel(i)) },
                     onClick = {
                         setValue(i)
                         expanded = false

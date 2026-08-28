@@ -22,18 +22,22 @@ class SettingsViewModel @Inject constructor(
     val hrMax: StateFlow<Int> = _hrMax
     private val _vibrate = MutableStateFlow<Boolean>(SettingsDefaults.VIBRATE)
     val vibrate: StateFlow<Boolean> = _vibrate
+    private val _alertInterval = MutableStateFlow<Int>(SettingsDefaults.ALERT_INTERVAL)
+    val alertInterval: StateFlow<Int> = _alertInterval
 
     init {
         observe(repository.volumeFlow, _volume)
         observe(repository.hrMinFlow, _hrMin)
         observe(repository.hrMaxFlow, _hrMax)
         observe(repository.vibrateFlow, _vibrate)
+        observe(repository.alertIntervalFlow, _alertInterval)
     }
 
     fun setVolume(value: Int) = update { repository.setVolume(value) }
     fun setHrMin(value: Int) = update { repository.setHrMin(value) }
     fun setHrMax(value: Int) = update { repository.setHrMax(value) }
     fun setVibrate(value: Boolean) = update { repository.setVibrate(value) }
+    fun setAlertInterval(value: Int) = update { repository.setAlertInterval(value) }
 
     private fun <T> observe(flow: Flow<T>, state: MutableStateFlow<T>) {
         viewModelScope.launch {

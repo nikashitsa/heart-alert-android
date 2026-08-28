@@ -30,6 +30,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.nikashitsa.polar_alert_android.lib.BatteryStatusFeature
 import com.nikashitsa.polar_alert_android.lib.BluetoothViewModel
 import com.nikashitsa.polar_alert_android.lib.SettingsDefaults
+import com.nikashitsa.polar_alert_android.lib.SettingsOptions
 import com.nikashitsa.polar_alert_android.lib.SettingsViewModel
 import com.nikashitsa.polar_alert_android.lib.SoundType
 import com.nikashitsa.polar_alert_android.lib.SoundViewModel
@@ -52,6 +53,7 @@ fun SettingsScreen(
     val vibrate by settings.vibrate.collectAsState()
     val hrMin by settings.hrMin.collectAsState()
     val hrMax by settings.hrMax.collectAsState()
+    val alertInterval by settings.alertInterval.collectAsState()
 
     BackHandler {
         onBack()
@@ -64,6 +66,8 @@ fun SettingsScreen(
         setVolume = settings::setVolume,
         vibrate = vibrate,
         setVibrate = settings::setVibrate,
+        alertInterval = alertInterval,
+        setAlertInterval = settings::setAlertInterval,
         hrMin = hrMin,
         setHrMin = settings::setHrMin,
         hrMax = hrMax,
@@ -82,6 +86,8 @@ fun SettingsScreenContent(
     setVolume: (Int) -> Unit = {},
     vibrate: Boolean = SettingsDefaults.VIBRATE,
     setVibrate: (Boolean) -> Unit = {},
+    alertInterval: Int = SettingsDefaults.ALERT_INTERVAL,
+    setAlertInterval: (Int) -> Unit = {},
     hrMin: Int = SettingsDefaults.HR_MIN,
     setHrMin: (Int) -> Unit = {},
     hrMax: Int = SettingsDefaults.HR_MAX,
@@ -108,14 +114,16 @@ fun SettingsScreenContent(
             SettingRow(label = "Min") {
                 DropdownMenuSelector(
                     hrMin,
-                    progression = 30..hrMax,
+                    label = { "$it BPM" },
+                    options = 30..hrMax,
                     setValue = { it -> setHrMin(it) }
                 )
             }
             SettingRow(label = "Max") {
                 DropdownMenuSelector(
                     hrMax,
-                    progression = hrMin..240,
+                    label = { "$it BPM" },
+                    options = hrMin..240,
                     setValue = { it -> setHrMax(it) }
                 )
             }
@@ -152,6 +160,14 @@ fun SettingsScreenContent(
                 AppSwitch(vibrate) {
                     setVibrate(it)
                 }
+            }
+            SettingRow(label = "Interval") {
+                DropdownMenuSelector(
+                    alertInterval,
+                    options = SettingsOptions.ALERT_INTERVAL,
+                    label = { "$it sec" },
+                    setValue = { it -> setAlertInterval(it) }
+                )
             }
         }
 
