@@ -17,8 +17,8 @@ import androidx.compose.ui.unit.dp
 
 object Colors {
     val White = Color(0xFFFEFFFF)
-    val Black = Color(0xFF000000)
-    val Gray = Color(0xFF141414)
+    val Black = Color(0xFF121212)
+    val Gray = Color(0xFF242424)
     val Red = Color(0xFFFF0000)
 
     val Transparent = Color.Transparent

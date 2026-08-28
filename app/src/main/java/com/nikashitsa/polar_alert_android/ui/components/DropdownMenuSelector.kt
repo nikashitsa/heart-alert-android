@@ -12,6 +12,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import com.nikashitsa.polar_alert_android.ui.theme.Colors
 
 @Composable
 fun DropdownMenuSelector(
@@ -25,7 +26,7 @@ fun DropdownMenuSelector(
             Text(text = "$value BPM")
             Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = "Chevron")
         }
-        DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
+        DropdownMenu(expanded = expanded, containerColor = Colors.Gray, onDismissRequest = { expanded = false }) {
             progression.forEach { i ->
                 DropdownMenuItem(
                     text = { Text("$i") },

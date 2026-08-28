@@ -88,7 +88,8 @@ fun DevicePickerContent(
     val scope = rememberCoroutineScope()
     ModalBottomSheet(
         onDismissRequest = onDismissRequest,
-        sheetState = sheetState
+        sheetState = sheetState,
+        containerColor = Colors.Gray
     ) {
         Column(
             modifier = Modifier
