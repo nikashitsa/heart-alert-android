@@ -108,7 +108,7 @@ fun SettingsScreenContent(
             SettingRow(label = "Min") {
                 DropdownMenuSelector(
                     hrMin,
-                    progression = 40..hrMax,
+                    progression = 30..hrMax,
                     setValue = { it -> setHrMin(it) }
                 )
             }
