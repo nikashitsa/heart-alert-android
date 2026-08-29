@@ -34,6 +34,7 @@ import com.nikashitsa.polar_alert_android.lib.SettingsOptions
 import com.nikashitsa.polar_alert_android.lib.SettingsViewModel
 import com.nikashitsa.polar_alert_android.lib.SoundType
 import com.nikashitsa.polar_alert_android.lib.SoundViewModel
+import com.nikashitsa.polar_alert_android.ui.components.Accordion
 import com.nikashitsa.polar_alert_android.ui.components.AppSlider
 import com.nikashitsa.polar_alert_android.ui.components.AppSwitch
 import com.nikashitsa.polar_alert_android.ui.components.DevicePicker
@@ -156,18 +157,20 @@ fun SettingsScreenContent(
                 )
             }
             Spacer(modifier = Modifier.height(4.dp))
-            SettingRow(label = "Vibration") {
-                AppSwitch(vibrate) {
-                    setVibrate(it)
+            Accordion(label = "Advanced") {
+                SettingRow(label = "Vibration") {
+                    AppSwitch(vibrate) {
+                        setVibrate(it)
+                    }
                 }
-            }
-            SettingRow(label = "Interval") {
-                DropdownMenuSelector(
-                    alertInterval,
-                    options = SettingsOptions.ALERT_INTERVAL,
-                    label = { "$it sec" },
-                    setValue = { it -> setAlertInterval(it) }
-                )
+                SettingRow(label = "Interval") {
+                    DropdownMenuSelector(
+                        alertInterval,
+                        options = SettingsOptions.ALERT_INTERVAL,
+                        label = { "$it sec" },
+                        setValue = { it -> setAlertInterval(it) }
+                    )
+                }
             }
         }
 
