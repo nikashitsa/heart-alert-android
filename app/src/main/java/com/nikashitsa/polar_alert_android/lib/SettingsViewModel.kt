@@ -24,6 +24,8 @@ class SettingsViewModel @Inject constructor(
     val vibrate: StateFlow<Boolean> = _vibrate
     private val _alertInterval = MutableStateFlow<Int>(SettingsDefaults.ALERT_INTERVAL)
     val alertInterval: StateFlow<Int> = _alertInterval
+    private val _outOfRangeFor = MutableStateFlow<Int>(SettingsDefaults.OUT_OF_RANGE_FOR)
+    val outOfRangeFor: StateFlow<Int> = _outOfRangeFor
 
     init {
         observe(repository.volumeFlow, _volume)
@@ -31,6 +33,7 @@ class SettingsViewModel @Inject constructor(
         observe(repository.hrMaxFlow, _hrMax)
         observe(repository.vibrateFlow, _vibrate)
         observe(repository.alertIntervalFlow, _alertInterval)
+        observe(repository.outOfRangeForFlow, _outOfRangeFor)
     }
 
     fun setVolume(value: Int) = update { repository.setVolume(value) }
@@ -38,6 +41,7 @@ class SettingsViewModel @Inject constructor(
     fun setHrMax(value: Int) = update { repository.setHrMax(value) }
     fun setVibrate(value: Boolean) = update { repository.setVibrate(value) }
     fun setAlertInterval(value: Int) = update { repository.setAlertInterval(value) }
+    fun setOutOfRangeFor(value: Int) = update { repository.setOutOfRangeFor(value) }
 
     private fun <T> observe(flow: Flow<T>, state: MutableStateFlow<T>) {
         viewModelScope.launch {

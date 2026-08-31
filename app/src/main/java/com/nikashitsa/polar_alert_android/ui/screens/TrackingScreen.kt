@@ -12,6 +12,7 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -20,6 +21,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -27,8 +30,10 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
+import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -57,7 +62,7 @@ import com.nikashitsa.polar_alert_android.ui.theme.Colors
 import com.nikashitsa.polar_alert_android.ui.theme.Fonts
 import com.nikashitsa.polar_alert_android.ui.theme.HeartAlertTheme
 import kotlinx.coroutines.delay
-import java.util.Date
+import kotlin.time.Duration.Companion.milliseconds
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -73,6 +78,7 @@ fun TrackingScreen(
     val hrMin by settings.hrMin.collectAsState()
     val hrMax by settings.hrMax.collectAsState()
     val alertInterval by settings.alertInterval.collectAsState()
+    val outOfRangeFor by settings.outOfRangeFor.collectAsState()
 
     BackHandler {
         bluetooth.hrStreamStop()
@@ -88,6 +94,7 @@ fun TrackingScreen(
         hrMin = hrMin,
         hrMax = hrMax,
         alertInterval = alertInterval,
+        outOfRangeFor = outOfRangeFor,
         vibrate = vibration::vibrate,
         onBack = onBack,
     )
@@ -104,6 +111,7 @@ fun TrackingScreenContent(
     hrMin: Int = SettingsDefaults.HR_MIN,
     hrMax: Int = SettingsDefaults.HR_MAX,
     alertInterval: Int = SettingsDefaults.ALERT_INTERVAL,
+    outOfRangeFor: Int = SettingsDefaults.OUT_OF_RANGE_FOR,
     vibrate: (VibrationType) -> Unit = {},
     initialBpm: Int = -1,
     onBack: () -> Unit = {}
@@ -120,7 +128,7 @@ fun TrackingScreenContent(
     ) {
 
         Column(modifier = Modifier.fillMaxWidth()) {
-            Text("Target $hrMin-$hrMax BPM")
+            Text("Range $hrMin-$hrMax BPM")
         }
         Spacer(modifier = Modifier.weight(1f))
 
@@ -132,6 +140,7 @@ fun TrackingScreenContent(
             hrMin = hrMin,
             hrMax = hrMax,
             alertInterval = alertInterval,
+            outOfRangeFor = outOfRangeFor,
             vibrate = vibrate,
             initialBpm = initialBpm,
         )
@@ -166,6 +175,7 @@ fun BpmView(
     hrMin: Int = SettingsDefaults.HR_MIN,
     hrMax: Int = SettingsDefaults.HR_MAX,
     alertInterval: Int = SettingsDefaults.ALERT_INTERVAL,
+    outOfRangeFor: Int = SettingsDefaults.OUT_OF_RANGE_FOR,
     vibrate: (VibrationType) -> Unit = {},
     initialBpm: Int = -1,
 ) {
@@ -174,7 +184,13 @@ fun BpmView(
     var prevConnectionState by rememberSaveable(
         stateSaver = DeviceConnectionState.Saver
     ) { mutableStateOf(DeviceConnectionState.Connected()) }
-    var lastTriggerTime by rememberSaveable { mutableStateOf<Date?>(null) }
+    // timestamps in ms, null when they haven't happened yet
+    var lastTriggerTime by rememberSaveable { mutableStateOf<Long?>(null) }
+    // start of the current uninterrupted out-of-range stretch, null while in range
+    var outOfRangeSince by rememberSaveable { mutableStateOf<Long?>(null) }
+    // whether the stretch has already lasted long enough for alerts to start
+    var alerting by rememberSaveable { mutableStateOf(false) }
+    val outOfRangeForInterval = outOfRangeFor * 1000 // ms
     val throttleInterval = alertInterval * 1000 - 310 // ms
 
     when (val connectionState = deviceConnectionState) {
@@ -192,6 +208,7 @@ fun BpmView(
         }
         is DeviceConnectionState.Connected -> {
             if (hrFeature.isSupported) {
+                val bpmColor = if (alerting) Colors.Red else Colors.White
                 Column(
                     verticalArrangement = Arrangement.spacedBy(20.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
@@ -208,7 +225,7 @@ fun BpmView(
                             style = Fonts.text2XlBold,
                             overflow = TextOverflow.Visible,
                             modifier = Modifier.offset(y = (-12).dp),
-                            color = state.heartBeatColor,
+                            color = bpmColor,
                         )
                         Column(
                             verticalArrangement = Arrangement.spacedBy(12.dp),
@@ -218,7 +235,7 @@ fun BpmView(
                             Text(
                                 text = "BPM",
                                 style = Fonts.textLg,
-                                color = state.heartBeatColor,
+                                color = bpmColor,
                             )
                             LaunchedEffect(Unit) {
                                 if (prevConnectionState is DeviceConnectionState.Disconnected) {
@@ -228,36 +245,60 @@ fun BpmView(
                                 hrStreamStart(connectionState.address) { hr ->
                                     bpm = hr
                                     val prevState = state
-                                    state = when {
-                                        bpm > hrMax -> TrackingState.HIGH
-                                        bpm < hrMin -> TrackingState.LOW
-                                        else -> TrackingState.GOOD
+                                    state = TrackingState.of(hr, hrMin, hrMax)
+                                    val now = System.currentTimeMillis()
+
+                                    // back in range: forget the stretch, announce recovery
+                                    // only if we actually raised an alert during it
+                                    if (state == TrackingState.GOOD) {
+                                        outOfRangeSince = null
+                                        lastTriggerTime = null
+                                        if (alerting) {
+                                            alerting = false
+                                            playSound(state.soundState)
+                                        }
+                                        return@hrStreamStart
                                     }
 
-                                    if (state != prevState) {
+                                    // out of range: stay quiet until the stretch is long enough
+                                    val since = outOfRangeSince ?: now
+                                    outOfRangeSince = since
+                                    if (now - since < outOfRangeForInterval) return@hrStreamStart
+
+                                    // speak up when alerts begin, and again on a low <-> high flip
+                                    if (!alerting || state != prevState) {
+                                        alerting = true
                                         playSound(state.soundState)
                                     }
 
-                                    val now = Date()
-                                    if (lastTriggerTime == null ||
-                                        now.time - lastTriggerTime!!.time > throttleInterval
-                                    ) {
+                                    // repeat the beep/vibration at the chosen interval
+                                    val lastTrigger = lastTriggerTime
+                                    if (lastTrigger == null || now - lastTrigger > throttleInterval) {
                                         lastTriggerTime = now
-                                        state.sound?.let { sound ->
-                                            playSound(sound)
-                                        }
-                                        state.vibration?.let { vibration ->
-                                            vibrate(vibration)
-                                        }
+                                        state.sound?.let(playSound)
+                                        state.vibration?.let(vibrate)
                                     }
                                 }
                             }
                         }
                     }
-                    Text(
-                        text = state.heartBeatDescription,
-                        style = Fonts.textLg,
-                    )
+                    // out of range, but not alerting yet: count down the sustained period
+                    val waitingSince = outOfRangeSince.takeIf { !alerting && outOfRangeForInterval > 0 }
+                    Box(
+                        contentAlignment = Alignment.Center,
+                        modifier = Modifier.height(30.dp),
+                    ) {
+                        when {
+                            alerting -> Text(
+                                text = state.heartBeatDescription,
+                                style = Fonts.textLg,
+                            )
+                            waitingSince != null -> AlertCountdown(
+                                since = waitingSince,
+                                duration = outOfRangeForInterval,
+                            )
+                        }
+                    }
                 }
             } else {
                 Text("Reconnecting...", style = Fonts.textLg)
@@ -273,9 +314,36 @@ fun PlaySoundRepeatedly(playSound: (SoundType) -> Unit = {}, soundType: SoundTyp
         onStart()
         while (true) {
             playSound(soundType)
-            delay(5000)
+            delay(5000.milliseconds)
         }
     }
+}
+
+/**
+ * Fills up as the current out-of-range stretch approaches [duration] ms, at which
+ * point alerts start. [since] is the start of the stretch, in epoch ms.
+ */
+@Composable
+fun AlertCountdown(since: Long, duration: Int) {
+    var progress by remember(since, duration) { mutableFloatStateOf(0f) }
+
+    LaunchedEffect(since, duration) {
+        // one step per ~1% of the wait, so a 10 min countdown isn't redrawn 20x a second
+        val step = (duration / 100).coerceIn(50, 1000).toLong()
+        while (progress < 1f) {
+            progress = ((System.currentTimeMillis() - since).toFloat() / duration).coerceIn(0f, 1f)
+            delay(step.milliseconds)
+        }
+    }
+
+    CircularProgressIndicator(
+        progress = { progress },
+        modifier = Modifier.size(20.dp),
+        color = Colors.Red,
+        trackColor = Colors.White,
+        strokeWidth = 2.dp,
+        gapSize = 0.dp,
+    )
 }
 
 @Composable

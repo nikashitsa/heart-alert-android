@@ -8,6 +8,14 @@ enum class TrackingState {
     LOW,
     HIGH;
 
+    companion object {
+        fun of(bpm: Int, hrMin: Int, hrMax: Int): TrackingState = when {
+            bpm > hrMax -> HIGH
+            bpm < hrMin -> LOW
+            else -> GOOD
+        }
+    }
+
     val heartBeatDuration: Double
         get() = when (this) {
             GOOD -> 30.0 / 80
@@ -20,12 +28,6 @@ enum class TrackingState {
             GOOD -> "Good"
             LOW -> "Too low!"
             HIGH -> "Too high!"
-        }
-
-    val heartBeatColor: Color
-        get() = when (this) {
-            GOOD -> Colors.White
-            LOW, HIGH -> Colors.Red
         }
 
     val sound: SoundType?

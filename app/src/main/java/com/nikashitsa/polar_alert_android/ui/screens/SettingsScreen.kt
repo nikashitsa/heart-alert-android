@@ -55,6 +55,7 @@ fun SettingsScreen(
     val hrMin by settings.hrMin.collectAsState()
     val hrMax by settings.hrMax.collectAsState()
     val alertInterval by settings.alertInterval.collectAsState()
+    val outOfRangeFor by settings.outOfRangeFor.collectAsState()
 
     BackHandler {
         onBack()
@@ -69,6 +70,8 @@ fun SettingsScreen(
         setVibrate = settings::setVibrate,
         alertInterval = alertInterval,
         setAlertInterval = settings::setAlertInterval,
+        outOfRangeFor = outOfRangeFor,
+        setOutOfRangeFor = settings::setOutOfRangeFor,
         hrMin = hrMin,
         setHrMin = settings::setHrMin,
         hrMax = hrMax,
@@ -89,6 +92,8 @@ fun SettingsScreenContent(
     setVibrate: (Boolean) -> Unit = {},
     alertInterval: Int = SettingsDefaults.ALERT_INTERVAL,
     setAlertInterval: (Int) -> Unit = {},
+    outOfRangeFor: Int = SettingsDefaults.OUT_OF_RANGE_FOR,
+    setOutOfRangeFor: (Int) -> Unit = {},
     hrMin: Int = SettingsDefaults.HR_MIN,
     setHrMin: (Int) -> Unit = {},
     hrMax: Int = SettingsDefaults.HR_MAX,
@@ -171,6 +176,15 @@ fun SettingsScreenContent(
                         setValue = { it -> setAlertInterval(it) }
                     )
                 }
+                SettingRow(label = "Out of range for") {
+                    DropdownMenuSelector(
+                        outOfRangeFor,
+                        options = SettingsOptions.OUT_OF_RANGE_FOR,
+                        label = { formatDuration(it) },
+                        itemLabel = { formatDuration(it) },
+                        setValue = { it -> setOutOfRangeFor(it) }
+                    )
+                }
             }
         }
 
@@ -202,6 +216,9 @@ fun SettingsScreenContent(
         }
     }
 }
+
+private fun formatDuration(seconds: Int): String =
+    if (seconds < 60) "$seconds sec" else "${seconds / 60} min"
 
 @Composable
 fun SettingSection(

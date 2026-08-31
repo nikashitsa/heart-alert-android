@@ -27,10 +27,12 @@ object SettingsDefaults {
     const val HR_MAX = 140
     const val VIBRATE = false
     const val ALERT_INTERVAL = 1
+    const val OUT_OF_RANGE_FOR = 0
 }
 
 object SettingsOptions {
     val ALERT_INTERVAL = listOf(1, 3, 5, 10)
+    val OUT_OF_RANGE_FOR = listOf(0, 5, 10, 30, 60, 300, 600)
 }
 
 object SettingsKeys {
@@ -39,6 +41,7 @@ object SettingsKeys {
     val hrMax = intPreferencesKey("hrMax")
     val vibrate = booleanPreferencesKey("vibrate")
     val alertInterval = intPreferencesKey("alertInterval")
+    val outOfRangeFor = intPreferencesKey("outOfRangeFor")
 }
 
 @Singleton
@@ -61,6 +64,9 @@ class SettingsRepository @Inject constructor(
 
     val alertIntervalFlow: Flow<Int> = get(SettingsKeys.alertInterval, SettingsDefaults.ALERT_INTERVAL)
     suspend fun setAlertInterval(value: Int) = set(SettingsKeys.alertInterval, value)
+
+    val outOfRangeForFlow: Flow<Int> = get(SettingsKeys.outOfRangeFor, SettingsDefaults.OUT_OF_RANGE_FOR)
+    suspend fun setOutOfRangeFor(value: Int) = set(SettingsKeys.outOfRangeFor, value)
 
     private fun <T> get(key: Preferences.Key<T>, default: T): Flow<T> =
         dataStore.data.map { prefs -> prefs[key] ?: default }
