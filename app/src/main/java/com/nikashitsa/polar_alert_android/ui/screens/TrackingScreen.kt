@@ -38,6 +38,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
@@ -203,6 +204,55 @@ fun BpmView(
     val outOfRangeForInterval = outOfRangeFor * 1000 // ms
     val throttleInterval = alertInterval * 1000 - 310 // ms
 
+    // Called for every heart rate sample the strap sends, about once a second.
+    fun onHeartRate(hr: Int) {
+        bpm = hr
+        val prevState = state
+        state = TrackingState.of(hr, hrMin, hrMax)
+        val now = System.currentTimeMillis()
+
+        // Back in range. Announce the recovery only if we were really alerting.
+        if (state == TrackingState.GOOD) {
+            outOfRangeSince = null
+            lastTriggerTime = null
+            initialDelayPassed = true // reaching the range always ends the initial delay
+            if (alerting) {
+                alerting = false
+                playSound(state.soundState)
+            }
+            return
+        }
+
+        // Out of range. Keep timing the stretch even while alerts are held back.
+        val since = outOfRangeSince ?: now
+        outOfRangeSince = since
+
+        // Hold everything back until the initial delay times out. The "until in
+        // range" option never times out, it only ends in the branch above.
+        if (initialDelay != 0 && !initialDelayPassed) {
+            val timedOut = initialDelay > 0 && now - trackingStartedAt >= initialDelay * 1000
+            if (!timedOut) return
+            initialDelayPassed = true
+        }
+
+        // Stay quiet until HR has been out of range long enough.
+        if (now - since < outOfRangeForInterval) return
+
+        // Say what is wrong when alerts start, and again on a too low <-> too high flip.
+        if (!alerting || state != prevState) {
+            alerting = true
+            playSound(state.soundState)
+        }
+
+        // Repeat the beep and the vibration at the chosen interval.
+        val lastTrigger = lastTriggerTime
+        if (lastTrigger == null || now - lastTrigger > throttleInterval) {
+            lastTriggerTime = now
+            state.sound?.let(playSound)
+            state.vibration?.let(vibrate)
+        }
+    }
+
     when (val connectionState = deviceConnectionState) {
         is DeviceConnectionState.Disconnected -> {
             Text("Disconnected", style = Fonts.textLg)
@@ -218,129 +268,105 @@ fun BpmView(
         }
         is DeviceConnectionState.Connected -> {
             if (hrFeature.isSupported) {
-                val bpmColor = if (alerting) Colors.Red else Colors.White
+                LaunchedEffect(Unit) {
+                    if (prevConnectionState is DeviceConnectionState.Disconnected) {
+                        playSound(SoundType.CONNECTED)
+                    }
+                    hrStreamStart(connectionState.address, ::onHeartRate)
+                }
+
                 Column(
                     verticalArrangement = Arrangement.spacedBy(20.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
-                    Row(
-                        horizontalArrangement = Arrangement.spacedBy(12.dp),
-                        verticalAlignment = Alignment.Bottom,
-                        modifier = Modifier
-                            .height(80.dp),
-                    ) {
-                        val bpmLabel = if (bpm > -1) "$bpm" else "--"
-                        Text(
-                            text = bpmLabel,
-                            style = Fonts.text2XlBold,
-                            overflow = TextOverflow.Visible,
-                            modifier = Modifier.offset(y = (-12).dp),
-                            color = bpmColor,
-                        )
-                        Column(
-                            verticalArrangement = Arrangement.spacedBy(12.dp),
-                            horizontalAlignment = Alignment.CenterHorizontally,
-                        ) {
-                            HeartIcon(state)
-                            Text(
-                                text = "BPM",
-                                style = Fonts.textLg,
-                                color = bpmColor,
-                            )
-                            LaunchedEffect(Unit) {
-                                if (prevConnectionState is DeviceConnectionState.Disconnected) {
-                                    playSound(SoundType.CONNECTED)
-                                }
-
-                                hrStreamStart(connectionState.address) { hr ->
-                                    bpm = hr
-                                    val prevState = state
-                                    state = TrackingState.of(hr, hrMin, hrMax)
-                                    val now = System.currentTimeMillis()
-
-                                    // back in range: forget the stretch, announce recovery
-                                    // only if we actually raised an alert during it
-                                    if (state == TrackingState.GOOD) {
-                                        outOfRangeSince = null
-                                        lastTriggerTime = null
-                                        // reaching the range always ends the initial delay
-                                        initialDelayPassed = true
-                                        if (alerting) {
-                                            alerting = false
-                                            playSound(state.soundState)
-                                        }
-                                        return@hrStreamStart
-                                    }
-
-                                    // out of range: keep timing the stretch even while
-                                    // the initial delay is still holding alerts back
-                                    val since = outOfRangeSince ?: now
-                                    outOfRangeSince = since
-
-                                    if (initialDelay != 0 && !initialDelayPassed) {
-                                        val timedOut = initialDelay > 0 &&
-                                            now - trackingStartedAt >= initialDelay * 1000
-                                        if (!timedOut) return@hrStreamStart
-                                        initialDelayPassed = true
-                                    }
-
-                                    // stay quiet until the stretch is long enough
-                                    if (now - since < outOfRangeForInterval) return@hrStreamStart
-
-                                    // speak up when alerts begin, and again on a low <-> high flip
-                                    if (!alerting || state != prevState) {
-                                        alerting = true
-                                        playSound(state.soundState)
-                                    }
-
-                                    // repeat the beep/vibration at the chosen interval
-                                    val lastTrigger = lastTriggerTime
-                                    if (lastTrigger == null || now - lastTrigger > throttleInterval) {
-                                        lastTriggerTime = now
-                                        state.sound?.let(playSound)
-                                        state.vibration?.let(vibrate)
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    // out of range, but not alerting yet: count down the sustained period
-                    val waitingSince = outOfRangeSince.takeIf {
-                        !alerting && !initialDelayActive && outOfRangeForInterval > 0
-                    }
-                    Box(
-                        contentAlignment = Alignment.Center,
-                        modifier = Modifier.height(30.dp),
-                    ) {
-                        when {
-                            alerting -> Text(
-                                text = state.heartBeatDescription,
-                                style = Fonts.textLg,
-                            )
-                            initialDelayActive -> if (initialDelay > 0) {
-                                InitialDelayCountdown(
-                                    since = trackingStartedAt,
-                                    duration = initialDelay * 1000,
-                                )
-                            } else {
-                                Text(
-                                    text = "Initial delay until in range",
-                                    style = Fonts.textLg,
-                                )
-                            }
-                            waitingSince != null -> AlertCountdown(
-                                since = waitingSince,
-                                duration = outOfRangeForInterval,
-                            )
-                        }
-                    }
+                    BpmReadout(
+                        bpm = bpm,
+                        state = state,
+                        color = if (alerting) Colors.Red else Colors.White,
+                    )
+                    AlertStatus(
+                        state = state,
+                        alerting = alerting,
+                        initialDelay = initialDelay,
+                        initialDelayActive = initialDelayActive,
+                        trackingStartedAt = trackingStartedAt,
+                        outOfRangeSince = outOfRangeSince,
+                        outOfRangeForInterval = outOfRangeForInterval,
+                    )
                 }
             } else {
                 Text("Reconnecting...", style = Fonts.textLg)
             }
         }
     }
+}
 
+/** The big BPM number with the beating heart next to it. */
+@Composable
+fun BpmReadout(bpm: Int, state: TrackingState, color: Color) {
+    Row(
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+        verticalAlignment = Alignment.Bottom,
+        modifier = Modifier.height(80.dp),
+    ) {
+        Text(
+            text = if (bpm > -1) "$bpm" else "--",
+            style = Fonts.text2XlBold,
+            overflow = TextOverflow.Visible,
+            modifier = Modifier.offset(y = (-12).dp),
+            color = color,
+        )
+        Column(
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            HeartIcon(state)
+            Text(text = "BPM", style = Fonts.textLg, color = color)
+        }
+    }
+}
+
+/**
+ * The line under the BPM number. It shows whichever of the three is happening:
+ * the alert itself, the initial delay, or the wait for HR to stay out of range.
+ * The fixed height keeps the screen from jumping as it switches between them.
+ */
+@Composable
+fun AlertStatus(
+    state: TrackingState,
+    alerting: Boolean,
+    initialDelay: Int,
+    initialDelayActive: Boolean,
+    trackingStartedAt: Long,
+    outOfRangeSince: Long?,
+    outOfRangeForInterval: Int,
+) {
+    Box(
+        contentAlignment = Alignment.Center,
+        modifier = Modifier.height(30.dp),
+    ) {
+        when {
+            alerting -> Text(
+                text = state.heartBeatDescription,
+                style = Fonts.textLg,
+            )
+            initialDelayActive -> if (initialDelay > 0) {
+                InitialDelayCountdown(
+                    since = trackingStartedAt,
+                    duration = initialDelay * 1000,
+                )
+            } else {
+                Text(
+                    text = "Initial delay until in range",
+                    style = Fonts.textLg,
+                )
+            }
+            outOfRangeSince != null && outOfRangeForInterval > 0 -> AlertCountdown(
+                since = outOfRangeSince,
+                duration = outOfRangeForInterval,
+            )
+        }
+    }
 }
 
 @Composable
