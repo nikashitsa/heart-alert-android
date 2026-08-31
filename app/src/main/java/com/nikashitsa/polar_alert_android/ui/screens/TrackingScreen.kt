@@ -79,6 +79,7 @@ fun TrackingScreen(
     val hrMax by settings.hrMax.collectAsState()
     val alertInterval by settings.alertInterval.collectAsState()
     val outOfRangeFor by settings.outOfRangeFor.collectAsState()
+    val initialDelay by settings.initialDelay.collectAsState()
 
     BackHandler {
         bluetooth.hrStreamStop()
@@ -95,6 +96,7 @@ fun TrackingScreen(
         hrMax = hrMax,
         alertInterval = alertInterval,
         outOfRangeFor = outOfRangeFor,
+        initialDelay = initialDelay,
         vibrate = vibration::vibrate,
         onBack = onBack,
     )
@@ -112,6 +114,7 @@ fun TrackingScreenContent(
     hrMax: Int = SettingsDefaults.HR_MAX,
     alertInterval: Int = SettingsDefaults.ALERT_INTERVAL,
     outOfRangeFor: Int = SettingsDefaults.OUT_OF_RANGE_FOR,
+    initialDelay: Int = SettingsDefaults.INITIAL_DELAY,
     vibrate: (VibrationType) -> Unit = {},
     initialBpm: Int = -1,
     onBack: () -> Unit = {}
@@ -141,6 +144,7 @@ fun TrackingScreenContent(
             hrMax = hrMax,
             alertInterval = alertInterval,
             outOfRangeFor = outOfRangeFor,
+            initialDelay = initialDelay,
             vibrate = vibrate,
             initialBpm = initialBpm,
         )
@@ -176,6 +180,7 @@ fun BpmView(
     hrMax: Int = SettingsDefaults.HR_MAX,
     alertInterval: Int = SettingsDefaults.ALERT_INTERVAL,
     outOfRangeFor: Int = SettingsDefaults.OUT_OF_RANGE_FOR,
+    initialDelay: Int = SettingsDefaults.INITIAL_DELAY,
     vibrate: (VibrationType) -> Unit = {},
     initialBpm: Int = -1,
 ) {
@@ -190,6 +195,11 @@ fun BpmView(
     var outOfRangeSince by rememberSaveable { mutableStateOf<Long?>(null) }
     // whether the stretch has already lasted long enough for alerts to start
     var alerting by rememberSaveable { mutableStateOf(false) }
+    // alerts are held back at the start of a session until HR first reaches the
+    // range, or until the initial delay times out, whichever comes first
+    var initialDelayPassed by rememberSaveable { mutableStateOf(false) }
+    val trackingStartedAt = rememberSaveable { System.currentTimeMillis() }
+    val initialDelayActive = initialDelay != 0 && !initialDelayPassed
     val outOfRangeForInterval = outOfRangeFor * 1000 // ms
     val throttleInterval = alertInterval * 1000 - 310 // ms
 
@@ -253,6 +263,8 @@ fun BpmView(
                                     if (state == TrackingState.GOOD) {
                                         outOfRangeSince = null
                                         lastTriggerTime = null
+                                        // reaching the range always ends the initial delay
+                                        initialDelayPassed = true
                                         if (alerting) {
                                             alerting = false
                                             playSound(state.soundState)
@@ -260,9 +272,19 @@ fun BpmView(
                                         return@hrStreamStart
                                     }
 
-                                    // out of range: stay quiet until the stretch is long enough
+                                    // out of range: keep timing the stretch even while
+                                    // the initial delay is still holding alerts back
                                     val since = outOfRangeSince ?: now
                                     outOfRangeSince = since
+
+                                    if (initialDelay != 0 && !initialDelayPassed) {
+                                        val timedOut = initialDelay > 0 &&
+                                            now - trackingStartedAt >= initialDelay * 1000
+                                        if (!timedOut) return@hrStreamStart
+                                        initialDelayPassed = true
+                                    }
+
+                                    // stay quiet until the stretch is long enough
                                     if (now - since < outOfRangeForInterval) return@hrStreamStart
 
                                     // speak up when alerts begin, and again on a low <-> high flip
@@ -283,7 +305,9 @@ fun BpmView(
                         }
                     }
                     // out of range, but not alerting yet: count down the sustained period
-                    val waitingSince = outOfRangeSince.takeIf { !alerting && outOfRangeForInterval > 0 }
+                    val waitingSince = outOfRangeSince.takeIf {
+                        !alerting && !initialDelayActive && outOfRangeForInterval > 0
+                    }
                     Box(
                         contentAlignment = Alignment.Center,
                         modifier = Modifier.height(30.dp),
@@ -293,6 +317,17 @@ fun BpmView(
                                 text = state.heartBeatDescription,
                                 style = Fonts.textLg,
                             )
+                            initialDelayActive -> if (initialDelay > 0) {
+                                InitialDelayCountdown(
+                                    since = trackingStartedAt,
+                                    duration = initialDelay * 1000,
+                                )
+                            } else {
+                                Text(
+                                    text = "Initial delay until in range",
+                                    style = Fonts.textLg,
+                                )
+                            }
                             waitingSince != null -> AlertCountdown(
                                 since = waitingSince,
                                 duration = outOfRangeForInterval,
@@ -317,6 +352,28 @@ fun PlaySoundRepeatedly(playSound: (SoundType) -> Unit = {}, soundType: SoundTyp
             delay(5000.milliseconds)
         }
     }
+}
+
+/**
+ * Counts down the time left of the initial delay, during which alerts are held back.
+ * [since] is when tracking started, in epoch ms, [duration] the delay in ms.
+ */
+@Composable
+fun InitialDelayCountdown(since: Long, duration: Int) {
+    var remaining by remember(since, duration) { mutableIntStateOf(duration) }
+
+    LaunchedEffect(since, duration) {
+        while (remaining > 0) {
+            remaining = (duration - (System.currentTimeMillis() - since)).coerceAtLeast(0L).toInt()
+            // faster than once a second, so the displayed second never lags behind
+            delay(200.milliseconds)
+        }
+    }
+
+    Text(
+        text = "Initial delay %02d:%02d".format(remaining / 60_000, remaining / 1000 % 60),
+        style = Fonts.textLg,
+    )
 }
 
 /**

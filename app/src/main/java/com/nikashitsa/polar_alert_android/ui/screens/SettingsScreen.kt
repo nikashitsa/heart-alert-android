@@ -56,6 +56,7 @@ fun SettingsScreen(
     val hrMax by settings.hrMax.collectAsState()
     val alertInterval by settings.alertInterval.collectAsState()
     val outOfRangeFor by settings.outOfRangeFor.collectAsState()
+    val initialDelay by settings.initialDelay.collectAsState()
 
     BackHandler {
         onBack()
@@ -72,6 +73,8 @@ fun SettingsScreen(
         setAlertInterval = settings::setAlertInterval,
         outOfRangeFor = outOfRangeFor,
         setOutOfRangeFor = settings::setOutOfRangeFor,
+        initialDelay = initialDelay,
+        setInitialDelay = settings::setInitialDelay,
         hrMin = hrMin,
         setHrMin = settings::setHrMin,
         hrMax = hrMax,
@@ -94,6 +97,8 @@ fun SettingsScreenContent(
     setAlertInterval: (Int) -> Unit = {},
     outOfRangeFor: Int = SettingsDefaults.OUT_OF_RANGE_FOR,
     setOutOfRangeFor: (Int) -> Unit = {},
+    initialDelay: Int = SettingsDefaults.INITIAL_DELAY,
+    setInitialDelay: (Int) -> Unit = {},
     hrMin: Int = SettingsDefaults.HR_MIN,
     setHrMin: (Int) -> Unit = {},
     hrMax: Int = SettingsDefaults.HR_MAX,
@@ -185,6 +190,15 @@ fun SettingsScreenContent(
                         setValue = { it -> setOutOfRangeFor(it) }
                     )
                 }
+                SettingRow(label = "Initial delay") {
+                    DropdownMenuSelector(
+                        initialDelay,
+                        options = SettingsOptions.INITIAL_DELAY,
+                        label = { formatInitialDelay(it) },
+                        itemLabel = { formatInitialDelay(it) },
+                        setValue = { it -> setInitialDelay(it) }
+                    )
+                }
             }
         }
 
@@ -219,6 +233,12 @@ fun SettingsScreenContent(
 
 private fun formatDuration(seconds: Int): String =
     if (seconds < 60) "$seconds sec" else "${seconds / 60} min"
+
+private fun formatInitialDelay(seconds: Int): String = when (seconds) {
+    0 -> "off"
+    SettingsOptions.UNTIL_IN_RANGE -> "until in range"
+    else -> formatDuration(seconds)
+}
 
 @Composable
 fun SettingSection(

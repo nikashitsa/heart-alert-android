@@ -28,11 +28,16 @@ object SettingsDefaults {
     const val VIBRATE = false
     const val ALERT_INTERVAL = 1
     const val OUT_OF_RANGE_FOR = 0
+    const val INITIAL_DELAY = 0
 }
 
 object SettingsOptions {
+    // initial delay never times out, it only ends once HR first reaches the range
+    const val UNTIL_IN_RANGE = -1
+
     val ALERT_INTERVAL = listOf(1, 3, 5, 10)
     val OUT_OF_RANGE_FOR = listOf(0, 5, 10, 30, 60, 300, 600)
+    val INITIAL_DELAY = listOf(0, UNTIL_IN_RANGE, 60, 300, 600, 900)
 }
 
 object SettingsKeys {
@@ -42,6 +47,7 @@ object SettingsKeys {
     val vibrate = booleanPreferencesKey("vibrate")
     val alertInterval = intPreferencesKey("alertInterval")
     val outOfRangeFor = intPreferencesKey("outOfRangeFor")
+    val initialDelay = intPreferencesKey("initialDelay")
 }
 
 @Singleton
@@ -67,6 +73,9 @@ class SettingsRepository @Inject constructor(
 
     val outOfRangeForFlow: Flow<Int> = get(SettingsKeys.outOfRangeFor, SettingsDefaults.OUT_OF_RANGE_FOR)
     suspend fun setOutOfRangeFor(value: Int) = set(SettingsKeys.outOfRangeFor, value)
+
+    val initialDelayFlow: Flow<Int> = get(SettingsKeys.initialDelay, SettingsDefaults.INITIAL_DELAY)
+    suspend fun setInitialDelay(value: Int) = set(SettingsKeys.initialDelay, value)
 
     private fun <T> get(key: Preferences.Key<T>, default: T): Flow<T> =
         dataStore.data.map { prefs -> prefs[key] ?: default }
