@@ -52,7 +52,7 @@ class BillingViewModel @Inject constructor(
 
     fun purchase(activity: Activity?) {
         beginPlayCall()
-//        billing.purchase(activity)
+        billing.purchase(activity)
     }
 
     fun restore() {
