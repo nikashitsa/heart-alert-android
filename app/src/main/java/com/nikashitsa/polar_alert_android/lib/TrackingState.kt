@@ -1,8 +1,5 @@
 package com.nikashitsa.polar_alert_android.lib
 
-import androidx.compose.ui.graphics.Color
-import com.nikashitsa.polar_alert_android.ui.theme.Colors
-
 enum class TrackingState {
     GOOD,
     LOW,
