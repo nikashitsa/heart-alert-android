@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import com.nikashitsa.polar_alert_android.ui.theme.*
@@ -14,6 +15,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun AppButton(
     text: String,
+    colors: ButtonColors = Colors.Button,
     onClick: () -> Unit,
 ) {
     Button(
@@ -22,7 +24,7 @@ fun AppButton(
             .fillMaxWidth()
             .height(50.dp),
         shape = CircleShape,
-        colors = Colors.Button
+        colors = colors,
     ) {
         Text(
             text = text,

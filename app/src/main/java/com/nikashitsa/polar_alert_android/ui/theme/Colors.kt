@@ -35,6 +35,12 @@ object Colors {
         contentColor = Colors.Transparent,
         disabledContentColor = Colors.Transparent
     )
+    var LinkButton = ButtonColors(
+        containerColor = Colors.Transparent,
+        disabledContainerColor = Colors.Transparent,
+        contentColor = Colors.White,
+        disabledContentColor = Colors.White
+    )
 }
 
 @Preview

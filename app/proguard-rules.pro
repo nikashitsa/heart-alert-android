@@ -19,3 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+# Keep release stack traces readable. There is a payment path in here now, and an R8-only
+# failure is otherwise very hard to diagnose from a crash report.
+-keepattributes SourceFile,LineNumberTable
+-renamesourcefileattribute SourceFile

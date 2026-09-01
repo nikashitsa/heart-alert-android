@@ -16,6 +16,7 @@ reviewKtx = "2.0.2"
 rxjava = "3.1.11"
 rxandroid = "3.0.2"
 polar-ble-sdk = "6.16.0"
+billing = "9.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +43,7 @@ review-ktx = { module = "com.google.android.play:review-ktx", version.ref = "rev
 rxjava = { group = "io.reactivex.rxjava3", name = "rxjava", version.ref = "rxjava" }
 rxandroid = { group = "io.reactivex.rxjava3", name = "rxandroid", version.ref = "rxandroid" }
 polar-ble-sdk = { group = "com.github.polarofficial", name = "polar-ble-sdk", version.ref = "polar-ble-sdk" }
+billing-ktx = { module = "com.android.billingclient:billing-ktx", version.ref = "billing" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

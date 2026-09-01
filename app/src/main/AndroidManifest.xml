@@ -41,6 +41,8 @@
     <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
     <uses-permission android:name="android.permission.VIBRATE" />
 
+    <uses-permission android:name="com.android.vending.BILLING" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"

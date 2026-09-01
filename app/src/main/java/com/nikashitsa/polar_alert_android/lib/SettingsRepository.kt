@@ -1,6 +1,7 @@
 package com.nikashitsa.polar_alert_android.lib
 
 import android.content.Context
+import androidx.datastore.core.DataMigration
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.SharedPreferencesMigration
 import androidx.datastore.preferences.core.Preferences
@@ -17,7 +18,10 @@ import javax.inject.Singleton
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = "settings",
     produceMigrations = { context ->
-        listOf(SharedPreferencesMigration(context, "settings"))
+        listOf(
+            SharedPreferencesMigration(context, "settings"),
+            EntitlementMigration(context),
+        )
     }
 )
 
@@ -29,6 +33,8 @@ object SettingsDefaults {
     const val ALERT_INTERVAL = 1
     const val OUT_OF_RANGE_FOR = 0
     const val INITIAL_DELAY = 0
+    const val TRACKED_SESSIONS = 0
+    const val UNLIMITED_ACCESS = false
 }
 
 object SettingsOptions {
@@ -40,6 +46,14 @@ object SettingsOptions {
     val INITIAL_DELAY = listOf(0, UNTIL_IN_RANGE, 60, 300, 600, 900)
 }
 
+object SettingsLimits {
+    /** Tracking sessions a new user gets before the paywall. */
+    const val FREE_SESSIONS = 5
+
+    /** A session only counts, and only earns a review prompt, once it passes this. */
+    const val SESSION_MIN_DURATION_MS = 60_000L
+}
+
 object SettingsKeys {
     val volume = intPreferencesKey("volume")
     val hrMin = intPreferencesKey("hrMin")
@@ -48,6 +62,49 @@ object SettingsKeys {
     val alertInterval = intPreferencesKey("alertInterval")
     val outOfRangeFor = intPreferencesKey("outOfRangeFor")
     val initialDelay = intPreferencesKey("initialDelay")
+    val trackedSessions = intPreferencesKey("trackedSessions")
+    val unlimitedAccess = booleanPreferencesKey("unlimitedAccess")
+    val entitlementResolved = booleanPreferencesKey("entitlementResolved")
+}
+
+/**
+ * Settings that already existed before the paywall shipped. Their presence means the user
+ * was here first. Frozen on purpose: a setting added later is not evidence of seniority.
+ */
+private val LEGACY_SETTING_KEYS = setOf(
+    "volume", "hrMin", "hrMax", "vibrate", "alertInterval", "outOfRangeFor", "initialDelay"
+)
+
+/**
+ * Grants free unlimited access to everyone who was already using the app when the paywall
+ * shipped. Runs as a DataStore migration, which happens inside the store's own actor before
+ * any read or write the app makes, so it cannot race with a settings write.
+ */
+private class EntitlementMigration(private val context: Context) : DataMigration<Preferences> {
+
+    override suspend fun shouldMigrate(currentData: Preferences) =
+        currentData[SettingsKeys.entitlementResolved] != true
+
+    override suspend fun migrate(currentData: Preferences): Preferences {
+        // The install has been updated at least once, so it predates this release. Catches
+        // long-time users who never opened Settings and therefore have nothing stored.
+        val updatedOnce = runCatching {
+            @Suppress("DEPRECATION")
+            val info = context.packageManager.getPackageInfo(context.packageName, 0)
+            info.lastUpdateTime - info.firstInstallTime > 60_000L
+        }.getOrDefault(false)
+
+        val hasLegacySettings = currentData.asMap().keys.any { it.name in LEGACY_SETTING_KEYS }
+
+        return currentData.toMutablePreferences().apply {
+            this[SettingsKeys.entitlementResolved] = true
+            if (updatedOnce || hasLegacySettings) {
+                this[SettingsKeys.unlimitedAccess] = true
+            }
+        }.toPreferences()
+    }
+
+    override suspend fun cleanUp() {}
 }
 
 @Singleton
@@ -76,6 +133,48 @@ class SettingsRepository @Inject constructor(
 
     val initialDelayFlow: Flow<Int> = get(SettingsKeys.initialDelay, SettingsDefaults.INITIAL_DELAY)
     suspend fun setInitialDelay(value: Int) = set(SettingsKeys.initialDelay, value)
+
+    /**
+     * Entitled, whether bought or granted for being an existing user. Only ever set to true:
+     * a grandfathered user has no Play purchase, so "no purchase found" must never revoke it.
+     */
+    val unlimitedAccessFlow: Flow<Boolean> = get(SettingsKeys.unlimitedAccess, SettingsDefaults.UNLIMITED_ACCESS)
+    suspend fun setUnlimitedAccess() = set(SettingsKeys.unlimitedAccess, true)
+
+    val trackedSessionsFlow: Flow<Int> = get(SettingsKeys.trackedSessions, SettingsDefaults.TRACKED_SESSIONS)
+
+    /**
+     * Free sessions still on offer, for the Start button's label. Zero once they are used up
+     * and also for an entitled user, who should not be told about free sessions at all.
+     */
+    val freeSessionsLeftFlow: Flow<Int> = dataStore.data.map { prefs ->
+        if (prefs[SettingsKeys.unlimitedAccess] == true) {
+            0
+        } else {
+            val used = prefs[SettingsKeys.trackedSessions] ?: SettingsDefaults.TRACKED_SESSIONS
+            (SettingsLimits.FREE_SESSIONS - used).coerceAtLeast(0)
+        }
+    }
+
+    /** Whether tracking may start: entitled, or still has free sessions left. */
+    val hasAccessFlow: Flow<Boolean> = dataStore.data.map { prefs ->
+        prefs[SettingsKeys.unlimitedAccess] == true ||
+            (prefs[SettingsKeys.trackedSessions] ?: SettingsDefaults.TRACKED_SESSIONS) < SettingsLimits.FREE_SESSIONS
+    }
+
+    /**
+     * Counts one completed session. Read and write happen in a single transaction so two
+     * sessions can never both read the same value, and the count stops at the free limit.
+     */
+    suspend fun countTrackedSession() {
+        dataStore.edit { prefs ->
+            if (prefs[SettingsKeys.unlimitedAccess] == true) return@edit
+            val used = prefs[SettingsKeys.trackedSessions] ?: SettingsDefaults.TRACKED_SESSIONS
+            if (used < SettingsLimits.FREE_SESSIONS) {
+                prefs[SettingsKeys.trackedSessions] = used + 1
+            }
+        }
+    }
 
     private fun <T> get(key: Preferences.Key<T>, default: T): Flow<T> =
         dataStore.data.map { prefs -> prefs[key] ?: default }

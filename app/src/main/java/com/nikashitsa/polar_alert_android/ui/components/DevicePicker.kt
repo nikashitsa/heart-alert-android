@@ -6,10 +6,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.ListItemDefaults
@@ -43,6 +41,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.coroutines.cancellation.CancellationException
+import kotlin.time.Duration.Companion.milliseconds
 
 enum class DevicePickerState {
     Searching,
@@ -131,12 +130,12 @@ fun DevicePickerContent(
                                 text = "Searching for devices...",
                                 style = Fonts.textLgBold
                             )
-                            Loader(Modifier.weight(1f))
+                            AppLoader(Modifier.weight(1f))
                             LaunchedEffect(Unit) {
                                 searchForDevice()
                                 timeoutTask = launch {
                                     try {
-                                        delay(10_000L) // 10s
+                                        delay(10_000L.milliseconds) // 10s
                                         if (foundDevices.isEmpty()) {
                                             stopDevicesSearch()
                                             state = DevicePickerState.NotFound
@@ -152,7 +151,7 @@ fun DevicePickerContent(
                             text = "Connecting...",
                             style = Fonts.textLgBold,
                         )
-                        Loader(Modifier.weight(1f))
+                        AppLoader(Modifier.weight(1f))
                     }
 
                     DevicePickerState.NotFound -> {
@@ -213,21 +212,6 @@ fun DeviceListItem(name: String, onClick: () -> Unit) {
             containerColor = Color.Transparent
         )
     )
-}
-
-@Composable
-fun Loader(modifier: Modifier) {
-    Column(
-        modifier = modifier,
-        verticalArrangement = Arrangement.Center,
-    ) {
-        CircularProgressIndicator(
-            modifier = Modifier
-                .width(32.dp),
-            color = Colors.White,
-            strokeWidth = 2.dp
-        )
-    }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)

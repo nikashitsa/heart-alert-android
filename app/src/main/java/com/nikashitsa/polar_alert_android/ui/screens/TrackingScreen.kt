@@ -52,6 +52,7 @@ import com.nikashitsa.polar_alert_android.lib.BluetoothViewModel
 import com.nikashitsa.polar_alert_android.lib.DeviceConnectionState
 import com.nikashitsa.polar_alert_android.lib.HrFeature
 import com.nikashitsa.polar_alert_android.lib.SettingsDefaults
+import com.nikashitsa.polar_alert_android.lib.SettingsLimits
 import com.nikashitsa.polar_alert_android.lib.SettingsViewModel
 import com.nikashitsa.polar_alert_android.lib.SoundType
 import com.nikashitsa.polar_alert_android.lib.SoundViewModel
@@ -99,6 +100,7 @@ fun TrackingScreen(
         outOfRangeFor = outOfRangeFor,
         initialDelay = initialDelay,
         vibrate = vibration::vibrate,
+        countTrackedSession = settings::countTrackedSession,
         onBack = onBack,
     )
 }
@@ -117,11 +119,13 @@ fun TrackingScreenContent(
     outOfRangeFor: Int = SettingsDefaults.OUT_OF_RANGE_FOR,
     initialDelay: Int = SettingsDefaults.INITIAL_DELAY,
     vibrate: (VibrationType) -> Unit = {},
+    countTrackedSession: () -> Unit = {},
     initialBpm: Int = -1,
     onBack: () -> Unit = {}
 ) {
     val context = LocalContext.current
     val activity = context as? Activity
+    val sessionCompleted = rememberSessionCompleted(onComplete = countTrackedSession)
 
     Column(
         modifier = Modifier
@@ -154,10 +158,31 @@ fun TrackingScreenContent(
 
         AppButton("Stop") {
             hrStreamStop()
-            requestAppReview(context, activity)
+            // Only worth asking for a review after a session that actually ran.
+            if (sessionCompleted) requestAppReview(context, activity)
             onBack()
         }
     }
+}
+
+/**
+ * Waits out the minimum session length, then reports the session as completed exactly once.
+ * Returns whether that point has been reached. Both pieces of state survive rotation and
+ * process death, and the remaining time is recomputed rather than restarted.
+ */
+@Composable
+private fun rememberSessionCompleted(onComplete: () -> Unit): Boolean {
+    val startedAt = rememberSaveable { System.currentTimeMillis() }
+    var completed by rememberSaveable { mutableStateOf(false) }
+
+    LaunchedEffect(Unit) {
+        if (completed) return@LaunchedEffect
+        val remaining = SettingsLimits.SESSION_MIN_DURATION_MS - (System.currentTimeMillis() - startedAt)
+        if (remaining > 0) delay(remaining.milliseconds)
+        completed = true
+        onComplete()
+    }
+    return completed
 }
 
 private fun requestAppReview(context: Context, activity: Activity?) {

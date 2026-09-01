@@ -21,7 +21,7 @@ android {
         minSdk = 26
         targetSdk = 36
         versionCode = commitCount
-        versionName = "2.0.2"
+        versionName = "3.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -83,6 +83,7 @@ dependencies {
     ksp(libs.hilt.android.compiler)
     implementation(libs.review)
     implementation(libs.review.ktx)
+    implementation(libs.billing.ktx)
 }
 
 fun String.runCommand(): String {
