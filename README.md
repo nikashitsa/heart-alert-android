@@ -14,7 +14,6 @@ Perfect for training, recovery, or health monitoring.
 ## Install
 
 [<img src="assets/googleplay.png" width="170">](https://play.google.com/store/apps/details?id=com.nikashitsa.polar_alert_android)
-[<img src="assets/izzysoft.png" width="170">](https://apt.izzysoft.de/fdroid/index/apk/com.nikashitsa.polar_alert_android)
 
 ## Usage
 
