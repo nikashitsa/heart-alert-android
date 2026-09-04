@@ -324,6 +324,7 @@ fun BpmView(
                     AlertStatus(
                         state = state,
                         alerting = alerting,
+                        hasReading = bpm > -1,
                         initialDelay = initialDelay,
                         initialDelayActive = initialDelayActive,
                         trackingStartedAt = trackingStartedAt,
@@ -364,14 +365,16 @@ fun BpmReadout(bpm: Int, state: TrackingState, color: Color) {
 }
 
 /**
- * The line under the BPM number. It shows whichever of the three is happening:
- * the alert itself, the initial delay, or the wait for HR to stay out of range.
+ * The line under the BPM number. It shows whichever of these is happening: the
+ * alert itself, the initial delay, the wait for HR to stay out of range, or else
+ * the plain state of the last reading.
  * The fixed height keeps the screen from jumping as it switches between them.
  */
 @Composable
 fun AlertStatus(
     state: TrackingState,
     alerting: Boolean,
+    hasReading: Boolean,
     initialDelay: Int,
     initialDelayActive: Boolean,
     trackingStartedAt: Long,
@@ -401,6 +404,10 @@ fun AlertStatus(
             outOfRangeSince != null && outOfRangeForInterval > 0 -> AlertCountdown(
                 since = outOfRangeSince,
                 duration = outOfRangeForInterval,
+            )
+            hasReading -> Text(
+                text = state.heartBeatDescription,
+                style = Fonts.textLg,
             )
         }
     }
