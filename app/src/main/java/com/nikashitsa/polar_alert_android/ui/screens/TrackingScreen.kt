@@ -53,6 +53,7 @@ import com.nikashitsa.polar_alert_android.lib.DeviceConnectionState
 import com.nikashitsa.polar_alert_android.lib.HrFeature
 import com.nikashitsa.polar_alert_android.lib.SettingsDefaults
 import com.nikashitsa.polar_alert_android.lib.SettingsLimits
+import com.nikashitsa.polar_alert_android.lib.SettingsOptions
 import com.nikashitsa.polar_alert_android.lib.SettingsViewModel
 import com.nikashitsa.polar_alert_android.lib.SoundType
 import com.nikashitsa.polar_alert_android.lib.SoundViewModel
@@ -221,13 +222,23 @@ fun BpmView(
     var outOfRangeSince by rememberSaveable { mutableStateOf<Long?>(null) }
     // whether the stretch has already lasted long enough for alerts to start
     var alerting by rememberSaveable { mutableStateOf(false) }
-    // alerts are held back at the start of a session until HR first reaches the
-    // range, or until the initial delay times out, whichever comes first
+    // alerts are held back at the start of a session: for a fixed delay until it
+    // runs out, or, with "until in range", until HR first reaches the range
     var initialDelayPassed by rememberSaveable { mutableStateOf(false) }
     val trackingStartedAt = rememberSaveable { System.currentTimeMillis() }
     val initialDelayActive = initialDelay != 0 && !initialDelayPassed
     val outOfRangeForInterval = outOfRangeFor * 1000 // ms
     val throttleInterval = alertInterval * 1000 - 310 // ms
+
+    // A fixed delay ends on time even if no out-of-range sample arrives to notice it,
+    // so the countdown doesn't sit at 00:00 while HR stays in range.
+    if (initialDelay > 0 && !initialDelayPassed) {
+        LaunchedEffect(trackingStartedAt, initialDelay) {
+            val remaining = initialDelay * 1000L - (System.currentTimeMillis() - trackingStartedAt)
+            if (remaining > 0) delay(remaining.milliseconds)
+            initialDelayPassed = true
+        }
+    }
 
     // Called for every heart rate sample the strap sends, about once a second.
     fun onHeartRate(hr: Int) {
@@ -240,7 +251,8 @@ fun BpmView(
         if (state == TrackingState.GOOD) {
             outOfRangeSince = null
             lastTriggerTime = null
-            initialDelayPassed = true // reaching the range always ends the initial delay
+            // only the "until in range" delay ends here; a fixed delay runs its full time
+            if (initialDelay == SettingsOptions.UNTIL_IN_RANGE) initialDelayPassed = true
             if (alerting) {
                 alerting = false
                 playSound(state.soundState)
@@ -252,7 +264,7 @@ fun BpmView(
         val since = outOfRangeSince ?: now
         outOfRangeSince = since
 
-        // Hold everything back until the initial delay times out. The "until in
+        // Hold everything back until the initial delay is over. The "until in
         // range" option never times out, it only ends in the branch above.
         if (initialDelay != 0 && !initialDelayPassed) {
             val timedOut = initialDelay > 0 && now - trackingStartedAt >= initialDelay * 1000
