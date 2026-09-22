@@ -1,0 +1,51 @@
+Heart Alert povezuje se s tvojim Bluetooth mjeračem otkucaja srca i oglasi se u trenutku kad puls prijeđe iznad ili padne ispod raspona koji si postavio. Odaberi minimum i maksimum, spremi telefon i treniraj po sluhu.
+
+Bez gledanja u zaslon. Bez računanja zona. Bez računa.
+
+<h2>Kako radi</h2>
+1. Stavi Bluetooth mjerač otkucaja srca ili prsni pojas.
+2. Postavi najmanji i najveći BPM.
+3. Pritisni start — dobit ćeš upozorenje kad odeš previsoko ili padneš prenisko, i još jedno kad se vratiš u raspon.
+
+<h2>Značajke</h2>
+– Slobodno biraš donju i gornju granicu u BPM
+– Upozorenja za previsok i za prenizak puls
+– Trenutačni zvučni signali s podesivom glasnoćom
+– Vibracija po želji
+– Ponavljanje svakih 1, 3, 5 ili 10 sekundi dok si izvan raspona
+– Odgoda „izvan raspona već", da kratki skok ili prolazni pad ostanu tihi
+– Početna odgoda, da tijekom zagrijavanja bude mirno
+– Razina baterije senzora na prvi pogled
+– Radi u pozadini dok koristiš drugu aplikaciju
+– Brzo postavljanje, bez registracije
+
+<h2>Radi s tvojim mjeračem</h2>
+Podržava većinu kompatibilnih Bluetooth Low Energy (BLE) mjerača otkucaja srca, prsnih pojaseva i traka za ruku, među njima:
+– Polar H10, H9, H7, OH1 i Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon i druge
+
+Trebao bi raditi svaki senzor koji emitira standardni Bluetooth LE signal otkucaja srca, premda sam Bluetooth ne jamči kompatibilnost. Ako tvoj nije prepoznat, javi se razvijatelju.
+
+Potreban je vanjski senzor otkucaja srca. Mjerenje kamerom ili samo sa zapešća nije podržano.
+
+<h2>Napravljeno za</h2>
+– Zonu 2 i izgradnju aerobne baze
+– Trčanje, biciklizam i sobni bicikl
+– Kardio, teretanu i intervalni trening
+– Izdržljivost i napor u ravnomjernom tempu
+– Lagane dane oporavka, kad je cijela poanta ne ubrzati
+– Svakoga tko želi alarm otkucaja srca i ništa drugo
+
+<h2>Zašto alarm umjesto zaslona?</h2>
+Broj na zaslonu pomaže samo ako ga gledaš. Upozorenje se samo brine za tvoj ciljani raspon: misliš na njega tek kad je stvarno potrebno — na traci, na cesti ili s telefonom u džepu dresa.
+
+<h2>Cijena</h2>
+Prvih 5 treninga je besplatno. Neograničeno praćenje je jednokratna kupnja. Bez pretplate i bez oglasa.
+
+<h2>Privatnost</h2>
+Heart Alert nema baš nikakvo dopuštenje za internet. Tvoji otkucaji nikad ne napuštaju telefon.
+
+<h2>Važno: rad u pozadini</h2>
+Aplikacija nastavlja mjeriti u pozadini, ali je Android može ugasiti radi štednje baterije. Kako to spriječiti, piše na <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert je sportski i trenažni alat. Nije medicinski uređaj, nije namijenjen dijagnosticiranju, liječenju ni sprječavanju bolesti i ne smije se koristiti za hitni ni neprekidni zdravstveni nadzor. Za pitanja o srcu ili treningu obrati se liječniku.

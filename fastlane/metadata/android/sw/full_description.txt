@@ -1,0 +1,51 @@
+Heart Alert huunganishwa na kifaa chako cha kupima mapigo ya moyo cha Bluetooth na kutoa sauti mara tu mapigo yako yanapopanda juu ya au kushuka chini ya kiwango ulichoweka. Weka kiwango cha chini na cha juu, weka simu pembeni, na ufanye mazoezi kwa kusikiliza.
+
+Hakuna kutazama skrini. Hakuna hesabu za kanda. Hakuna akaunti.
+
+<h2>Jinsi inavyofanya kazi</h2>
+1. Vaa kitambuzi chako cha mapigo ya moyo cha Bluetooth au mkanda wa kifuani.
+2. Weka BPM ya chini na ya juu.
+3. Bonyeza anza — utapata tahadhari unapopanda juu mno au kushuka chini mno, na nyingine unaporudi kwenye kiwango.
+
+<h2>Vipengele</h2>
+– Mipaka ya chini na ya juu katika BPM, kama upendavyo
+– Tahadhari kwa mapigo ya juu na ya chini
+– Tahadhari za sauti papo hapo, sauti inabadilishwa
+– Mtetemo ukitaka
+– Kurudia kila sekunde 1, 3, 5 au 10 wakati uko nje ya kiwango
+– Ucheleweshaji wa "nje ya kiwango kwa muda", ili kupanda kwa muda mfupi au kushuka kwa dakika chache kubaki kimya
+– Ucheleweshaji wa mwanzo, ili kujipasha moto kupite kwa utulivu
+– Kiwango cha betri ya kitambuzi kwa mtazamo mmoja
+– Huendelea kufanya kazi chinichini unapotumia programu nyingine
+– Usanidi wa haraka, hakuna cha kujisajili
+
+<h2>Hufanya kazi na kitambuzi chako</h2>
+Inasaidia vifaa vingi vinavyooana vya Bluetooth Low Energy (BLE) vya kupima mapigo ya moyo, mikanda ya kifuani na ya mkononi, pamoja na:
+– Polar H10, H9, H7, OH1 na Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon na vingine
+
+Kitambuzi chochote kinachotuma ishara ya kawaida ya mapigo ya moyo ya Bluetooth LE kinapaswa kufanya kazi, ingawa Bluetooth pekee haihakikishi uoanifu. Kama chako hakitambuliki, mtumie ujumbe msanidi.
+
+Kitambuzi cha nje cha mapigo ya moyo kinahitajika. Kupima kwa kamera au kwa kifundo cha mkono pekee hakuungwi mkono.
+
+<h2>Kimetengenezwa kwa ajili ya</h2>
+– Kanda ya 2 na kujenga msingi wa aerobiki
+– Kukimbia, kuendesha baiskeli na baiskeli ya ndani
+– Kadio, jimu na mazoezi ya vipindi
+– Uvumilivu na juhudi za mwendo sawa
+– Siku nyepesi za kupumzika, ambapo lengo hasa ni kutoongeza kasi
+– Yeyote anayetaka kengele ya mapigo ya moyo na si kingine
+
+<h2>Kwa nini kengele badala ya skrini?</h2>
+Namba kwenye skrini husaidia tu ukiiangalia. Tahadhari yenyewe hushughulikia kiwango chako: unafikiria juu yake pale tu inapohitajika kweli — kwenye mashine ya kukimbia, barabarani, au na simu mfukoni.
+
+<h2>Bei</h2>
+Vipindi 5 vya kwanza ni bure. Ufuatiliaji usio na kikomo ni ununuzi wa mara moja. Hakuna usajili wa kila mwezi wala matangazo.
+
+<h2>Faragha</h2>
+Heart Alert haina ruhusa yoyote ya intaneti. Mapigo yako ya moyo hayatoki kamwe kwenye simu yako.
+
+<h2>Muhimu: matumizi chinichini</h2>
+Programu huendelea kupima chinichini, lakini Android inaweza kuifunga ili kuokoa betri. Jinsi ya kuzuia hilo: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert ni kifaa cha michezo na mazoezi. Si kifaa cha matibabu, hakikusudiwi kutambua, kutibu au kuzuia ugonjwa wowote, na hakipaswi kutegemewa kwa ufuatiliaji wa dharura au wa afya wa kuendelea. Ukiwa na maswali kuhusu moyo wako au mazoezi yako, zungumza na daktari.

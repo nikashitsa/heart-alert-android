@@ -1,0 +1,1 @@
+Alarm otkucaja preko Bluetootha: zvuk kad BPM izađe iz tvog raspona

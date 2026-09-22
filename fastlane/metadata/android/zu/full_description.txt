@@ -1,0 +1,51 @@
+I-Heart Alert ixhuma kumonitha yakho yokushaya kwenhliziyo ye-Bluetooth futhi ikhale ngaso leso sikhathi lapho ukushaya kwenhliziyo kwenyuka ngaphezulu noma kwehla ngaphansi kwebanga olibekile. Beka umkhawulo ophansi nophezulu, ubeke ifoni eceleni, uzivocavoce ngendlebe.
+
+Akudingeki ubuke isikrini. Azikho izibalo zezindawo. Alikho i-akhawunti.
+
+<h2>Isebenza kanjani</h2>
+1. Gqoka inzwa yakho yokushaya kwenhliziyo ye-Bluetooth noma ibhande lesifuba.
+2. Beka i-BPM ephansi nephezulu.
+3. Cindezela qala — uthola isexwayiso lapho wenyuka kakhulu noma wehla kakhulu, futhi esinye lapho usubuyele ebangeni.
+
+<h2>Izici</h2>
+– Imikhawulo ephansi nephezulu nge-BPM, njengoba ufisa
+– Izexwayiso zokushaya okuphezulu nokuphansi
+– Izexwayiso zomsindo ngokushesha, ivolumu iyalungiseka
+– Ukudlidliza uma ukufuna
+– Ukuphinda njalo ngemizuzwana engu-1, 3, 5 noma 10 uma usaphume ebangeni
+– Ukubambezeleka kwe-"usuphume ebangeni isikhathi esingaka", ukuze ukuqhuma okufushane noma ukwehla kwesikhashana kuhlale kuthule
+– Ukubambezeleka kokuqala, ukuze ukufudumeza kudlule ngokuthula
+– Izinga lebhethri lenzwa ngokubuka kanye
+– Iqhubeka ngemuva ngenkathi usebenzisa enye i-app
+– Ukusetha okusheshayo, akukho okumele ubhalisele
+
+<h2>Isebenza nenzwa yakho</h2>
+Isekela iningi lamamonitha okushaya kwenhliziyo e-Bluetooth Low Energy (BLE) ahambisanayo, amabhande esifuba nawengalo, okubandakanya:
+– Polar H10, H9, H7, OH1 ne-Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon nokunye
+
+Noma iyiphi inzwa esakaza isignali evamile yokushaya kwenhliziyo ye-Bluetooth LE kufanele isebenze, nakuba i-Bluetooth yodwa ingaqinisekisi ukuhambisana. Uma eyakho ingatholakali, thumela umyalezo kumthuthukisi.
+
+Kudingeka inzwa yangaphandle yokushaya kwenhliziyo. Ukukala ngekhamera noma ngesihlakala kuphela akusekelwe.
+
+<h2>Yenzelwe</h2>
+– Indawo 2 nokwakha isisekelo se-aerobic
+– Ukugijima, ukugibela ibhayisikili nebhayisikili elingaphakathi
+– I-cardio, i-gym nokuqeqeshwa kwezikhathi
+– Ukubekezela nomsebenzi wesivinini esilinganayo
+– Izinsuku ezilula zokululama, lapho inhloso kuwukuthi ungasheshisi
+– Noma ubani ofuna i-alamu yokushaya kwenhliziyo, angafuni okunye
+
+<h2>Kungani i-alamu esikhundleni sesikrini?</h2>
+Inombolo esikrinini isiza kuphela uma uyibuka. Isexwayiso sona sinakekela ibanga lakho: ucabanga ngalo kuphela lapho kudingeka ngempela — ku-treadmill, emgwaqweni, noma ifoni isephaketheni.
+
+<h2>Intengo</h2>
+Izikhathi ezi-5 zokuqala zimahhala. Ukulandelela okungenamkhawulo kuwukuthenga kanye. Akukho okubhaliselwa, azikho izikhangiso.
+
+<h2>Ubumfihlo</h2>
+I-Heart Alert ayinayo nhlobo imvume ye-inthanethi. Ukushaya kwenhliziyo yakho akuze kuphume efonini yakho.
+
+<h2>Kubalulekile: ukusebenzisa ngemuva</h2>
+I-app iyaqhubeka nokukala ngemuva, kodwa i-Android ingayivala ukuze ilondoloze ibhethri. Indlela yokugwema lokhu: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+I-Heart Alert iyithuluzi lezemidlalo nokuqeqeshwa. Akulona ithuluzi lezokwelapha, alihloselwe ukuxilonga, ukwelapha noma ukuvimbela noma yisiphi isifo, futhi akufanele lithenjwe ekuqapheni okuphuthumayo noma okuqhubekayo kwezempilo. Uma unemibuzo ngenhliziyo yakho noma ngokuqeqeshwa kwakho, khuluma nodokotela.

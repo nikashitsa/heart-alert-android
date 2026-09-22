@@ -1,0 +1,51 @@
+Heart Alert lidhet me matësin tënd të pulsit me Bluetooth dhe nxjerr një tingull në çastin kur pulsi ngjitet mbi ose bie nën intervalin që cakton ti. Vendos një minimum dhe një maksimum, lëre telefonin mënjanë dhe stërvitu me vesh.
+
+Pa e vështruar ekranin. Pa llogaritje zonash. Pa llogari.
+
+<h2>Si funksionon</h2>
+1. Vish sensorin e pulsit me Bluetooth ose rripin e gjoksit.
+2. Cakto BPM-në minimale dhe maksimale.
+3. Shtyp nisjen — merr një sinjal kur ngjitesh shumë lart ose bie shumë poshtë, dhe një tjetër kur kthehesh brenda intervalit.
+
+<h2>Veçoritë</h2>
+– Kufij të poshtëm dhe të sipërm në BPM, sipas dëshirës
+– Sinjalizime për puls të lartë dhe për puls të ulët
+– Sinjale zanore të menjëhershme, me volum të rregullueshëm
+– Dridhje nëse do
+– Përsëritje çdo 1, 3, 5 ose 10 sekonda sa kohë je jashtë intervalit
+– Vonesa «jashtë intervalit prej», që një kërcim i shkurtër ose një rënie kalimtare të mbetet pa zë
+– Vonesa fillestare, që ngrohja të kalojë në qetësi
+– Niveli i baterisë së sensorit me një shikim
+– Vazhdon në sfond ndërsa ti përdor një aplikacion tjetër
+– Konfigurim i shpejtë, asgjë për t'u regjistruar
+
+<h2>Punon me sensorin tënd</h2>
+Mbështet shumicën e matësve të pulsit me Bluetooth Low Energy (BLE) të përputhshëm, rripave të gjoksit dhe fashove të krahut, ndër to:
+– Polar H10, H9, H7, OH1 dhe Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon e të tjerë
+
+Çdo sensor që transmeton një sinjal standard pulsi Bluetooth LE duhet të funksionojë, megjithëse vetëm Bluetooth-i nuk e garanton përputhshmërinë. Nëse i yti nuk gjendet, shkruaji zhvilluesit.
+
+Nevojitet një sensor i jashtëm pulsi. Matja me kamerë ose vetëm nga kyçi i dorës nuk mbështetet.
+
+<h2>Bërë për</h2>
+– Zonën 2 dhe ndërtimin e bazës aerobike
+– Vrapim, çiklizëm dhe çiklizëm në ambient të mbyllur
+– Kardio, palestër dhe stërvitje me intervale
+– Qëndrueshmëri dhe punë me ritëm të njëtrajtshëm
+– Ditë të lehta rikuperimi, ku e gjithë poenta është të mos nxitosh
+– Këdo që do vetëm një alarm pulsi dhe asgjë tjetër
+
+<h2>Pse alarm në vend të ekranit?</h2>
+Një numër në ekran ndihmon vetëm nëse e shikon. Një sinjal kujdeset vetë për intervalin tënd: mendon për të vetëm kur vërtet duhet — në rrip vrapimi, në rrugë, ose me telefonin në xhepin e bluzës.
+
+<h2>Çmimi</h2>
+5 seancat e para janë falas. Gjurmimi i pakufizuar është një blerje e vetme. Pa abonim dhe pa reklama.
+
+<h2>Privatësia</h2>
+Heart Alert nuk ka fare leje interneti. Pulsi yt nuk e lë kurrë telefonin.
+
+<h2>E rëndësishme: përdorimi në sfond</h2>
+Aplikacioni vazhdon të masë në sfond, por Android mund ta mbyllë për të kursyer baterinë. Si ta parandalosh: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert është një mjet sporti dhe stërvitjeje. Nuk është pajisje mjekësore, nuk synon të diagnostikojë, trajtojë ose parandalojë ndonjë sëmundje dhe nuk duhet të përdoret për monitorim urgjence apo të vazhdueshëm të shëndetit. Për pyetje mbi zemrën ose stërvitjen, flisni me një mjek.

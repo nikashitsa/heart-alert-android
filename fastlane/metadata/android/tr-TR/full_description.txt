@@ -1,0 +1,51 @@
+Heart Alert, Bluetooth nabız sensörüne bağlanır ve nabzın belirlediğin aralığın üstüne çıktığı ya da altına düştüğü anda ses verir. Bir alt ve bir üst sınır seç, telefonu cebine koy ve kulağınla antrenman yap.
+
+Ekrana bakmak yok. Bölge hesabı yok. Hesap açmak yok.
+
+<h2>Nasıl çalışır</h2>
+1. Bluetooth nabız sensörünü ya da göğüs bandını tak.
+2. En düşük ve en yüksek BPM değerini ayarla.
+3. Başlat'a bas — çok yükselince ya da çok düşünce bir uyarı, aralığa geri döndüğünde bir uyarı daha alırsın.
+
+<h2>Özellikler</h2>
+– İstediğin gibi alt ve üst BPM sınırı
+– Yüksek nabız ve düşük nabız uyarıları
+– Anında sesli uyarı, ses düzeyi ayarlanabilir
+– İstersen titreşim
+– Aralığın dışındayken 1, 3, 5 veya 10 saniyede bir tekrar
+– "Şu süredir aralık dışında" gecikmesi, böylece kısa bir sıçrama ya da geçici bir düşüş sessiz kalır
+– Başlangıç gecikmesi, ısınma boyunca sessizlik için
+– Sensörün pil düzeyi tek bakışta
+– Başka bir uygulama kullanırken arka planda çalışmayı sürdürür
+– Hızlı kurulum, kaydolacak bir şey yok
+
+<h2>Kendi nabız sensörünle çalışır</h2>
+Çoğu uyumlu Bluetooth Low Energy (BLE) nabız sensörünü, göğüs bandını ve kol bandını destekler:
+– Polar H10, H9, H7, OH1 ve Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon ve diğerleri
+
+Standart Bluetooth LE nabız sinyali yayan her sensörün çalışması beklenir, ancak tek başına Bluetooth uyumluluğu garanti etmez. Seninki bulunamazsa geliştiriciye yaz.
+
+Harici bir nabız sensörü gerekir. Kamerayla ya da yalnızca bilekten ölçüm desteklenmez.
+
+<h2>Şunlar için</h2>
+– 2. bölge ve aerobik temel çalışması
+– Koşu, bisiklet ve kapalı alan bisikleti
+– Kardiyo, spor salonu ve interval antrenman
+– Dayanıklılık ve sabit tempolu çalışma
+– Asıl amacın hızlanmamak olduğu hafif toparlanma günleri
+– Sadece bir nabız alarmı isteyen, fazlasını istemeyen herkes
+
+<h2>Neden ekran değil de alarm?</h2>
+Ekrandaki sayı ancak bakarsan işe yarar. Uyarı ise hedef aralığını kendi başına kollar: yalnızca gerçekten gerektiğinde aklına gelir — koşu bandında, yolda ya da telefon formanın cebindeyken.
+
+<h2>Fiyat</h2>
+İlk 5 antrenman ücretsiz. Sınırsız takip tek seferlik bir satın alma. Abonelik yok, reklam yok.
+
+<h2>Gizlilik</h2>
+Heart Alert'in hiçbir internet izni yok. Nabzın telefonundan asla çıkmaz.
+
+<h2>Önemli: arka planda kullanım</h2>
+Uygulama arka planda ölçmeyi sürdürür, ancak Android pil tasarrufu için onu kapatabilir. Bunu nasıl önleyeceğini <a href="https://dontkillmyapp.com">dontkillmyapp.com</a> adresinde bulabilirsin.
+
+Heart Alert bir spor ve antrenman aracıdır. Tıbbi cihaz değildir; hastalık teşhisi, tedavisi ya da önlenmesi için tasarlanmamıştır ve acil durum veya sürekli sağlık takibi için kullanılmamalıdır. Kalbin ya da antrenmanınla ilgili soruların varsa bir doktora danış.

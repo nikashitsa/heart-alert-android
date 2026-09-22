@@ -1,0 +1,1 @@
+Alarmă de puls prin Bluetooth: sunet când BPM iese din intervalul tău

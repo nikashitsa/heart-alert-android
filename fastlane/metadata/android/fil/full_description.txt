@@ -1,0 +1,51 @@
+Kumukonekta ang Heart Alert sa iyong Bluetooth heart rate monitor at tutunog sa mismong sandaling lumampas o bumaba ang tibok ng puso mo sa range na itinakda mo. Magtakda ng minimum at maximum, itabi ang telepono, at mag-ensayo gamit ang tainga.
+
+Hindi na kailangang tingnan ang screen. Walang kalkulasyon ng zone. Walang account.
+
+<h2>Paano ito gumagana</h2>
+1. Isuot ang iyong Bluetooth heart rate sensor o chest strap.
+2. Itakda ang minimum at maximum na BPM.
+3. Pindutin ang simula — may alerto kapag masyado kang tumaas o bumaba, at isa pa kapag bumalik ka sa range.
+
+<h2>Mga tampok</h2>
+– Sarili mong mababang at mataas na hangganan sa BPM
+– Alerto para sa mataas at sa mababang tibok
+– Agarang tunog na alerto, nababago ang lakas
+– Vibration kung gusto mo
+– Uulit tuwing 1, 3, 5, o 10 segundo habang nasa labas ka ng range
+– Delay na "ganito na katagal sa labas ng range", para tahimik lang ang panandaliang pagtaas o saglit na pagbaba
+– Panimulang delay, para tahimik ang warm-up mo
+– Baterya ng sensor sa isang sulyap
+– Tuloy sa background habang gumagamit ka ng ibang app
+– Mabilis i-setup, walang kailangang i-sign up
+
+<h2>Gumagana sa sensor mo</h2>
+Sinusuportahan ang karamihan sa mga tugmang Bluetooth Low Energy (BLE) heart rate monitor, chest strap, at armband, kabilang ang:
+– Polar H10, H9, H7, OH1 at Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon at iba pa
+
+Dapat gumana ang anumang sensor na nagpapadala ng karaniwang Bluetooth LE heart rate signal, bagaman hindi garantiya ng pagkatugma ang Bluetooth lamang. Kung hindi ito matukoy, magmensahe sa developer.
+
+Kailangan ng panlabas na heart rate sensor. Hindi suportado ang pagsukat sa pamamagitan ng camera o sa pulso lamang.
+
+<h2>Para saan</h2>
+– Zone 2 at pagbuo ng aerobic base
+– Pagtakbo, pagbibisikleta, at indoor cycling
+– Cardio, gym, at interval training
+– Endurance at pantay na tempo
+– Magaang recovery days, kung saan ang buong punto ay huwag bumilis
+– Sinumang gustong magkaroon ng heart rate alarm at wala nang iba
+
+<h2>Bakit alarm sa halip na display?</h2>
+Nakakatulong lang ang numero sa screen kung titingnan mo. Ang alerto naman ang bahala sa target range mo: iisipin mo lang ito kapag talagang kailangan — sa treadmill, sa kalsada, o kapag nasa bulsa ang telepono.
+
+<h2>Presyo</h2>
+Libre ang unang 5 sesyon. Ang walang limitasyong pagsubaybay ay isang beses na bayad. Walang subscription at walang ads.
+
+<h2>Privacy</h2>
+Walang anumang internet permission ang Heart Alert. Hindi kailanman lumalabas sa telepono mo ang tibok ng puso mo.
+
+<h2>Mahalaga: paggamit sa background</h2>
+Patuloy na sumusukat ang app sa background, pero puwedeng isara ito ng Android para makatipid ng baterya. Paano ito maiiwasan: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Kasangkapan ang Heart Alert para sa sports at pagsasanay. Hindi ito medical device, hindi ito para mag-diagnose, gumamot, o pumigil ng anumang sakit, at hindi ito dapat asahan para sa emergency o tuloy-tuloy na pagsubaybay sa kalusugan. Kung may tanong ka tungkol sa puso o pagsasanay mo, kumonsulta sa doktor.

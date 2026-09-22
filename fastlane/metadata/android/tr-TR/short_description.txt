@@ -1,0 +1,1 @@
+Bluetooth nabız alarmı: nabzın aralığından çıkınca sesli uyarı verir

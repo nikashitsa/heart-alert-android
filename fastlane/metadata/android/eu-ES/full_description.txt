@@ -1,0 +1,51 @@
+Heart Alert zure Bluetooth bihotz-maiztasun sentsorearekin konektatzen da eta soinua egiten du pultsua ezarritako tartetik gora edo behera doan unean bertan. Jarri gutxieneko eta gehieneko muga bat, gorde mugikorra eta entrenatu belarriz.
+
+Pantailari begira egon beharrik ez. Zonaldeen kalkulurik ez. Konturik ez.
+
+<h2>Nola dabilen</h2>
+1. Jantzi Bluetooth bihotz-maiztasun sentsorea edo bularreko banda.
+2. Ezarri gutxieneko eta gehieneko pultsua.
+3. Sakatu hasi — abisua jasoko duzu gehiegi igotzean edo gehiegi jaistean, eta beste bat tartera itzultzean.
+
+<h2>Ezaugarriak</h2>
+– Nahi dituzun beheko eta goiko mugak taupadatan
+– Pultsu altuaren eta pultsu baxuaren abisuak
+– Berehalako soinu-abisuak, bolumen doigarriarekin
+– Bibrazioa, nahi izanez gero
+– Errepikapena 1, 3, 5 edo 10 segundoro, tartetik kanpo zauden bitartean
+– «Tartetik kanpo denbora hau» atzerapena, une bateko gorakada edo jaitsiera isilik gera dadin
+– Hasierako atzerapena, berotze-lana isiltasunean egiteko
+– Sentsorearen bateria-maila begirada batez
+– Atzeko planoan jarraitzen du, beste aplikazio bat erabiltzen duzun bitartean
+– Konfigurazio azkarra, ez dago ezer izena emateko
+
+<h2>Zure sentsorearekin dabil</h2>
+Bateragarriak diren Bluetooth Low Energy (BLE) bihotz-maiztasun sentsore, bularreko banda eta beso-banda gehienak onartzen ditu, besteak beste:
+– Polar H10, H9, H7, OH1 eta Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon eta gehiago
+
+Bluetooth LE bihotz-seinale estandarra igortzen duen edozein sentsorek funtzionatu beharko luke, nahiz eta Bluetooth hutsak bateragarritasuna bermatzen ez duen. Zurea antzematen ez bada, idatzi garatzaileari.
+
+Kanpoko sentsore bat behar da. Ez da onartzen kamerarekin edo eskumuturretik soilik neurtzea.
+
+<h2>Honetarako egina</h2>
+– 2. zonaldea eta oinarri aerobikoa lantzeko
+– Korrika, txirrindularitza eta barruko bizikleta
+– Kardioa, gimnasioa eta tarteka entrenatzea
+– Erresistentzia eta erritmo konstanteko saioak
+– Errekuperazio-egun lasaiak, non kontua azeleratu gabe jarraitzea den
+– Bihotz-maiztasunaren alarma bat besterik nahi ez duen edonor
+
+<h2>Zergatik alarma bat eta ez pantaila?</h2>
+Pantailako zenbakiak begiratzen badiozu bakarrik balio du. Abisuak zure tartea bere kabuz zaintzen du: benetan behar denean bakarrik pentsatzen duzu hartan — zinta gainean, errepidean edo mugikorra elastikoaren poltsikoan duzula.
+
+<h2>Prezioa</h2>
+Lehen 5 saioak doan dira. Mugarik gabeko jarraipena behin ordaintzekoa da. Harpidetzarik gabe eta iragarkirik gabe.
+
+<h2>Pribatutasuna</h2>
+Heart Alertek ez du inolako interneterako baimenik. Zure pultsua ez da inoiz mugikorretik ateratzen.
+
+<h2>Garrantzitsua: atzeko planoko erabilera</h2>
+Aplikazioak atzeko planoan neurtzen jarraitzen du, baina Androidek itxi dezake bateria aurrezteko. Nola saihestu: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert kirol eta entrenamendurako tresna bat da. Ez da produktu sanitarioa, ez du balio gaixotasunik diagnostikatzeko, tratatzeko edo prebenitzeko, eta ez da erabili behar larrialdiko edo etengabeko osasun-zaintzarako. Bihotzari edo entrenamenduari buruzko zalantzarik baduzu, joan medikuarengana.

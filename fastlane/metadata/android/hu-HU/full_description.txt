@@ -1,0 +1,51 @@
+A Heart Alert csatlakozik a Bluetooth pulzusmérődhöz, és megszólal abban a pillanatban, amikor a pulzusod a beállított tartomány fölé megy vagy alá esik. Adj meg egy alsó és egy felső határt, tedd el a telefont, és edzz fülre.
+
+Nem kell a kijelzőt lesni. Nincs zónaszámolgatás. Nincs regisztráció.
+
+<h2>Így működik</h2>
+1. Vedd fel a Bluetooth pulzusmérőt vagy a mellkaspántot.
+2. Állítsd be a minimális és maximális BPM értéket.
+3. Nyomd meg az indítást — jelzést kapsz, ha túl magasra mész vagy túl alacsonyra esel, és még egyet, amikor visszatérsz a tartományba.
+
+<h2>Funkciók</h2>
+– Szabadon választható alsó és felső BPM határ
+– Riasztás magas és alacsony pulzusnál is
+– Azonnali hangjelzés, állítható hangerővel
+– Rezgés, ha kéred
+– Ismétlés 1, 3, 5 vagy 10 másodpercenként, amíg kívül vagy a tartományon
+– „Tartományon kívül ennyi ideje" késleltetés, hogy egy rövid kiugrás vagy egy múló esés néma maradjon
+– Kezdeti késleltetés, hogy a bemelegítés alatt csend legyen
+– Az érzékelő töltöttsége egy pillantásra
+– Háttérben is fut, miközben másik alkalmazást használsz
+– Gyors beállítás, semmit nem kell regisztrálni
+
+<h2>Működik a te pulzusmérőddel</h2>
+Támogatja a legtöbb kompatibilis Bluetooth Low Energy (BLE) pulzusmérőt, mellkaspántot és karpántot, köztük:
+– Polar H10, H9, H7, OH1 és Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon és továbbiak
+
+Minden olyan érzékelőnek működnie kell, amely szabványos Bluetooth LE pulzusjelet sugároz, bár önmagában a Bluetooth nem garantálja a kompatibilitást. Ha a tiédet nem találja meg, írj a fejlesztőnek.
+
+Külső pulzusérzékelő szükséges. A kamerás és a csak csuklós mérés nem támogatott.
+
+<h2>Ehhez készült</h2>
+– 2-es zóna és az aerob alap építése
+– Futás, kerékpározás és teremkerékpár
+– Kardió, edzőterem és intervallumedzés
+– Állóképesség és egyenletes tempójú munka
+– Könnyű regenerációs napok, ahol pont az a lényeg, hogy ne gyorsulj be
+– Bárkinek, aki pulzusriasztót akar és semmi mást
+
+<h2>Miért riasztás kijelző helyett?</h2>
+A képernyőn lévő szám csak akkor segít, ha ránézel. Egy jelzéssel a céltartomány magától elintéződik: csak akkor gondolsz rá, amikor tényleg kell — futópadon, az úton vagy a mez zsebében lapuló telefonnal.
+
+<h2>Ár</h2>
+Az első 5 edzés ingyenes. A korlátlan mérés egyszeri vásárlás. Nincs előfizetés és nincs reklám.
+
+<h2>Adatvédelem</h2>
+A Heart Alertnek semmilyen internetjogosultsága nincs. A pulzusod soha nem hagyja el a telefonodat.
+
+<h2>Fontos: háttérben futás</h2>
+Az alkalmazás a háttérben is mér, de az Android akkumulátorkímélés miatt leállíthatja. Hogy ezt megelőzd, nézd meg: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+A Heart Alert sport- és edzéseszköz. Nem orvostechnikai eszköz, nem alkalmas betegség felismerésére, kezelésére vagy megelőzésére, és nem használható vészhelyzeti vagy folyamatos egészségügyi megfigyelésre. Ha kérdésed van a szívedről vagy az edzésedről, fordulj orvoshoz.

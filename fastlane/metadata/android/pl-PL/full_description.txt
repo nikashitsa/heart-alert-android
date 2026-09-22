@@ -1,0 +1,51 @@
+Heart Alert łączy się z Twoim pulsometrem Bluetooth i odzywa się w chwili, gdy tętno przekroczy ustawiony zakres w górę lub w dół. Ustaw minimum i maksimum, schowaj telefon i trenuj ze słuchu.
+
+Bez patrzenia w ekran. Bez liczenia stref. Bez konta.
+
+<h2>Jak to działa</h2>
+1. Załóż pulsometr Bluetooth lub pas piersiowy.
+2. Ustaw minimalne i maksymalne BPM.
+3. Naciśnij start — usłyszysz sygnał, gdy wyjdziesz za wysoko lub za nisko, i kolejny, gdy wrócisz do zakresu.
+
+<h2>Funkcje</h2>
+– Dowolne granice dolna i górna w BPM
+– Alarm przy zbyt wysokim i przy zbyt niskim tętnie
+– Natychmiastowe sygnały dźwiękowe z regulacją głośności
+– Opcjonalne wibracje
+– Powtarzanie co 1, 3, 5 lub 10 sekund, dopóki jesteś poza zakresem
+– Opóźnienie „poza zakresem od", żeby krótki skok albo chwilowy spadek pozostał cichy
+– Opóźnienie początkowe, żeby rozgrzewka przebiegła w ciszy
+– Poziom baterii czujnika na pierwszy rzut oka
+– Działa w tle, gdy korzystasz z innej aplikacji
+– Szybka konfiguracja, żadnej rejestracji
+
+<h2>Działa z Twoim pulsometrem</h2>
+Obsługuje większość zgodnych pulsometrów Bluetooth Low Energy (BLE), pasów piersiowych i opasek na ramię, w tym:
+– Polar H10, H9, H7, OH1 i Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon i inne
+
+Każdy czujnik nadający standardowy sygnał tętna Bluetooth LE powinien zadziałać, choć sam Bluetooth nie gwarantuje zgodności. Jeśli Twój nie zostanie wykryty, napisz do twórcy aplikacji.
+
+Potrzebny jest zewnętrzny czujnik tętna. Pomiar aparatem ani wyłącznie z nadgarstka nie jest obsługiwany.
+
+<h2>Dla kogo</h2>
+– Strefa 2 i budowanie bazy tlenowej
+– Bieganie, kolarstwo i rower stacjonarny
+– Cardio, siłownia i trening interwałowy
+– Wytrzymałość i wysiłek w stałym tempie
+– Spokojne dni regeneracyjne, w których chodzi właśnie o to, żeby nie przyspieszać
+– Każdy, kto chce alarm tętna i nic poza tym
+
+<h2>Dlaczego alarm, a nie wyświetlacz?</h2>
+Liczba na ekranie pomaga tylko wtedy, gdy na nią patrzysz. Sygnał sprawia, że zakres pilnuje się sam: myślisz o nim tylko wtedy, kiedy naprawdę trzeba — na bieżni, na drodze albo z telefonem w kieszeni koszulki.
+
+<h2>Cena</h2>
+Pierwsze 5 sesji jest za darmo. Nielimitowane pomiary to jednorazowy zakup. Bez subskrypcji i bez reklam.
+
+<h2>Prywatność</h2>
+Heart Alert nie ma żadnego uprawnienia do internetu. Twoje tętno nigdy nie opuszcza telefonu.
+
+<h2>Ważne: praca w tle</h2>
+Aplikacja mierzy dalej w tle, ale Android może ją zamknąć, żeby oszczędzić baterię. Jak temu zapobiec, przeczytasz na <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert to narzędzie sportowe i treningowe. Nie jest wyrobem medycznym, nie służy do diagnozowania, leczenia ani zapobiegania chorobom i nie nadaje się do monitorowania ratunkowego ani ciągłego nadzoru zdrowia. W razie pytań o serce lub trening skontaktuj się z lekarzem.

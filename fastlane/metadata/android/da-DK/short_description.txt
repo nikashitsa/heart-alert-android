@@ -1,0 +1,1 @@
+Pulsalarm via Bluetooth: lyd når din puls forlader dit valgte interval

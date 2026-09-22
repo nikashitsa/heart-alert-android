@@ -1,0 +1,51 @@
+Heart Alert ühendub sinu Bluetooth-pulsivööga ja annab heli sel hetkel, kui pulss tõuseb üle või langeb alla sinu seatud vahemiku. Vali alumine ja ülemine piir, pane telefon ära ja treeni kõrva järgi.
+
+Ekraani pole vaja jälgida. Tsoone pole vaja arvutada. Kontot pole vaja luua.
+
+<h2>Kuidas see töötab</h2>
+1. Pane selga Bluetooth-pulsiandur või rinnavöö.
+2. Sea vähim ja suurim pulss.
+3. Vajuta alusta — saad märguande, kui lähed liiga kõrgele või langed liiga madalale, ja veel ühe, kui oled vahemikku tagasi jõudnud.
+
+<h2>Võimalused</h2>
+– Vabalt valitud alumine ja ülemine piir löökides minutis
+– Märguanne nii kõrge kui ka madala pulsi korral
+– Kohesed helisignaalid reguleeritava valjusega
+– Soovi korral vibratsioon
+– Kordus iga 1, 3, 5 või 10 sekundi järel, kuni oled vahemikust väljas
+– Viivitus „vahemikust väljas juba", et lühike hüpe või mööduv langus jääks vaikseks
+– Algviivitus, et soojendus kulgeks vaikuses
+– Anduri aku tase ühe pilguga
+– Töötab taustal edasi, kui kasutad teist rakendust
+– Kiire seadistus, midagi pole vaja registreerida
+
+<h2>Sobib sinu pulsianduriga</h2>
+Toetab enamikku ühilduvaid Bluetooth Low Energy (BLE) pulsiandureid, rinnavöösid ja käepaelu, sealhulgas:
+– Polar H10, H9, H7, OH1 ja Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon ja teised
+
+Töötama peaks iga andur, mis edastab tavalist Bluetooth LE pulsisignaali, kuigi Bluetooth üksi ühilduvust ei taga. Kui sinu oma ei tuvastata, kirjuta arendajale.
+
+Vaja on välist pulsiandurit. Kaameraga ega ainult randmelt mõõtmine ei ole toetatud.
+
+<h2>Tehtud selleks</h2>
+– Tsoon 2 ja aeroobse vundamendi ehitamine
+– Jooks, rattasõit ja toarattasõit
+– Kardio, jõusaal ja intervalltreening
+– Vastupidavus ja ühtlases tempos töö
+– Kerged taastumispäevad, kus mõte ongi mitte kiirendada
+– Kõik, kes tahavad pulsihäiret ja mitte midagi muud
+
+<h2>Miks häire, mitte ekraaninäit?</h2>
+Number ekraanil aitab ainult siis, kui sa seda vaatad. Märguanne hoolitseb sihtvahemiku eest ise: mõtled sellele alles siis, kui seda tõesti vaja on — jooksulindil, maanteel või telefon särgitaskus.
+
+<h2>Hind</h2>
+Esimesed 5 treeningut on tasuta. Piiramatu jälgimine on ühekordne ost. Ilma tellimuse ja ilma reklaamideta.
+
+<h2>Privaatsus</h2>
+Heart Alertil pole üldse interneti luba. Sinu pulss ei lahku kunagi telefonist.
+
+<h2>Tähtis: taustal töötamine</h2>
+Rakendus mõõdab taustal edasi, kuid Android võib selle aku säästmiseks sulgeda. Kuidas seda vältida: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert on spordi- ja treeningutööriist. See ei ole meditsiiniseade, see ei ole mõeldud haiguste diagnoosimiseks, raviks ega ennetamiseks ning seda ei tohi kasutada hädaolukorra ega pideva tervisejälgimise jaoks. Kui sul on küsimusi südame või treeningu kohta, pöördu arsti poole.

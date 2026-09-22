@@ -1,0 +1,51 @@
+Heart Alert terhubung ke monitor detak jantung Bluetooth-mu dan berbunyi tepat saat detakmu naik di atas atau turun di bawah rentang yang kamu tetapkan. Tentukan batas bawah dan batas atas, simpan ponsel, lalu berlatih dengan telinga.
+
+Tak perlu melihat layar. Tak perlu hitung-hitungan zona. Tak perlu akun.
+
+<h2>Cara kerjanya</h2>
+1. Pakai sensor detak jantung Bluetooth atau chest strap-mu.
+2. Atur BPM minimum dan maksimum.
+3. Tekan mulai — kamu mendapat peringatan saat naik terlalu tinggi atau turun terlalu rendah, dan satu lagi saat kembali ke rentang.
+
+<h2>Fitur</h2>
+– Batas bawah dan atas dalam BPM, sesukamu
+– Peringatan untuk detak tinggi maupun detak rendah
+– Peringatan suara langsung, volume bisa diatur
+– Getaran kalau kamu mau
+– Pengulangan tiap 1, 3, 5, atau 10 detik selama kamu di luar rentang
+– Jeda "sudah di luar rentang selama", supaya lonjakan singkat atau penurunan sesaat tetap senyap
+– Jeda awal, supaya pemanasan berjalan tenang
+– Level baterai sensor dalam sekali lihat
+– Tetap jalan di latar belakang sementara kamu memakai aplikasi lain
+– Penyiapan cepat, tak ada yang perlu didaftarkan
+
+<h2>Cocok dengan sensormu</h2>
+Mendukung sebagian besar monitor detak jantung Bluetooth Low Energy (BLE) yang kompatibel, chest strap, dan armband, antara lain:
+– Polar H10, H9, H7, OH1, dan Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon, dan lainnya
+
+Sensor apa pun yang memancarkan sinyal detak jantung Bluetooth LE standar semestinya bekerja, meski Bluetooth saja tidak menjamin kompatibilitas. Kalau sensormu tidak terdeteksi, kirim pesan ke pengembang.
+
+Diperlukan sensor detak jantung eksternal. Pengukuran lewat kamera atau hanya dari pergelangan tangan tidak didukung.
+
+<h2>Dibuat untuk</h2>
+– Zona 2 dan pembangunan basis aerobik
+– Lari, bersepeda, dan sepeda statis
+– Kardio, gym, dan latihan interval
+– Daya tahan dan kerja bertempo stabil
+– Hari pemulihan ringan, yang justru intinya adalah jangan ngebut
+– Siapa pun yang ingin alarm detak jantung dan tak lebih dari itu
+
+<h2>Kenapa alarm, bukan layar?</h2>
+Angka di layar baru berguna kalau kamu melihatnya. Peringatan justru menjaga rentang targetmu sendiri: kamu memikirkannya hanya saat memang perlu — di treadmill, di jalan, atau dengan ponsel di saku jersey.
+
+<h2>Harga</h2>
+5 sesi pertama gratis. Pelacakan tanpa batas adalah pembelian sekali bayar. Tanpa langganan dan tanpa iklan.
+
+<h2>Privasi</h2>
+Heart Alert sama sekali tidak punya izin internet. Detak jantungmu tidak pernah keluar dari ponsel.
+
+<h2>Penting: penggunaan di latar belakang</h2>
+Aplikasi tetap mengukur di latar belakang, tetapi Android bisa menutupnya demi menghemat baterai. Cara mencegahnya: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert adalah alat olahraga dan latihan. Ini bukan perangkat medis, tidak dimaksudkan untuk mendiagnosis, mengobati, atau mencegah penyakit apa pun, dan tidak boleh diandalkan untuk pemantauan darurat maupun pemantauan kesehatan terus-menerus. Jika ada pertanyaan tentang jantung atau latihanmu, bicaralah dengan dokter.

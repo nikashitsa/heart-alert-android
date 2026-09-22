@@ -1,0 +1,1 @@
+Pulsalarm via Bluetooth: lyd når pulsen går ut av området du har satt

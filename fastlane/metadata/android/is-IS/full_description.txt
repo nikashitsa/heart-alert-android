@@ -1,0 +1,51 @@
+Heart Alert tengist Bluetooth-púlsmælinum þínum og gefur hljóð um leið og púlsinn fer yfir eða undir bilið sem þú stillir. Veldu lágmark og hámark, leggðu símann frá þér og æfðu eftir eyranu.
+
+Enginn skjár til að fylgjast með. Engir svæðaútreikningar. Enginn aðgangur.
+
+<h2>Svona virkar það</h2>
+1. Settu á þig Bluetooth-púlsmælinn eða brjóstólina.
+2. Stilltu lægsta og hæsta púls.
+3. Ýttu á byrja — þú færð viðvörun þegar þú ferð of hátt eða of lágt, og aðra þegar þú ert kominn aftur inn á bilið.
+
+<h2>Eiginleikar</h2>
+– Frjálst valin neðri og efri mörk í slögum á mínútu
+– Viðvörun við bæði háum og lágum púlsi
+– Tafarlaus hljóðmerki með stillanlegum styrk
+– Titringur ef þú vilt
+– Endurtekning á 1, 3, 5 eða 10 sekúndna fresti á meðan þú ert utan bilsins
+– Töfin „utan bils í", svo að stuttur toppur eða skammvinn dýfa haldist hljóð
+– Upphafstöf, svo að upphitunin fái að vera í friði
+– Rafhlaðustaða skynjarans í einni sjónhendingu
+– Heldur áfram í bakgrunni á meðan þú notar annað forrit
+– Fljótleg uppsetning, ekkert að skrá sig í
+
+<h2>Virkar með púlsmælinum þínum</h2>
+Styður flesta samhæfa Bluetooth Low Energy (BLE) púlsmæla, brjóstólar og armbönd, þar á meðal:
+– Polar H10, H9, H7, OH1 og Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon og fleiri
+
+Allir skynjarar sem senda venjulegt Bluetooth LE-púlsmerki ættu að virka, þótt Bluetooth eitt og sér tryggi ekki samhæfni. Finnist þinn ekki, sendu þróunaraðilanum skilaboð.
+
+Ytri púlsskynjari er nauðsynlegur. Mæling með myndavél eða eingöngu af úlnlið er ekki studd.
+
+<h2>Gert fyrir</h2>
+– Svæði 2 og uppbyggingu þolgrunns
+– Hlaup, hjólreiðar og innanhússhjól
+– Þrek, ræktina og millibilsæfingar
+– Úthald og jafnt álag
+– Rólega endurheimtardaga, þar sem allur tilgangurinn er að auka ekki hraðann
+– Alla sem vilja púlsviðvörun og ekkert annað
+
+<h2>Af hverju viðvörun í stað skjás?</h2>
+Tala á skjá hjálpar aðeins ef þú lítur á hana. Viðvörun sér um markbilið fyrir þig: þú hugsar um það einungis þegar þess er raunverulega þörf — á hlaupabrettinu, úti á vegi eða með símann í treyjuvasanum.
+
+<h2>Verð</h2>
+Fyrstu 5 æfingarnar eru ókeypis. Ótakmörkuð mæling er einskiptiskaup. Engin áskrift og engar auglýsingar.
+
+<h2>Persónuvernd</h2>
+Heart Alert hefur enga internetheimild yfirhöfuð. Púlsinn þinn fer aldrei úr símanum.
+
+<h2>Mikilvægt: notkun í bakgrunni</h2>
+Forritið heldur áfram að mæla í bakgrunni, en Android getur lokað því til að spara rafhlöðu. Hvernig þú kemur í veg fyrir það: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert er íþrótta- og æfingatól. Það er ekki lækningatæki, því er ekki ætlað að greina, meðhöndla, lækna eða fyrirbyggja sjúkdóma og það á ekki að nota til neyðarvöktunar eða samfelldrar heilsuvöktunar. Ef þú hefur spurningar um hjartað eða æfingarnar skaltu ræða við lækni.

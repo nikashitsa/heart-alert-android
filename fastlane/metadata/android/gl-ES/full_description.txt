@@ -1,0 +1,51 @@
+Heart Alert conéctase ao teu sensor de frecuencia cardíaca Bluetooth e soa xusto cando as pulsacións soben por riba ou baixan por debaixo do rango que ti fixas. Escolle un mínimo e un máximo, garda o móbil e adestra de oído.
+
+Sen mirar a pantalla. Sen cálculos de zonas. Sen contas.
+
+<h2>Como funciona</h2>
+1. Ponte o sensor de frecuencia cardíaca Bluetooth ou a banda peitoral.
+2. Fixa as pulsacións mínimas e máximas.
+3. Preme iniciar — recibes un aviso cando subas de máis ou baixes de máis, e outro cando volvas ao rango.
+
+<h2>Funcións</h2>
+– Límites mínimo e máximo en pulsacións, ao teu gusto
+– Avisos de pulsacións altas e de pulsacións baixas
+– Avisos sonoros inmediatos, con volume axustable
+– Vibración opcional
+– Repetición cada 1, 3, 5 ou 10 segundos mentres esteas fóra do rango
+– Atraso «fóra do rango desde hai», para que un pico curto ou unha baixada puntual queden en silencio
+– Atraso inicial, para que o quecemento transcorra en silencio
+– Nivel de batería do sensor dunha ollada
+– Continúa en segundo plano mentres usas outra aplicación
+– Configuración rápida, nada que rexistrar
+
+<h2>Funciona co teu sensor</h2>
+Admite a maioría dos sensores de frecuencia cardíaca Bluetooth Low Energy (BLE) compatibles, bandas peitorais e brazaletes, entre eles:
+– Polar H10, H9, H7, OH1 e Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon e máis
+
+Debería funcionar calquera sensor que emita un sinal cardíaco Bluetooth LE estándar, aínda que o Bluetooth por si só non garante a compatibilidade. Se o teu non se detecta, escríbelle ao desenvolvedor.
+
+Fai falta un sensor externo. Non se admite a medición coa cámara nin só desde o pulso.
+
+<h2>Pensado para</h2>
+– A zona 2 e a construción de base aeróbica
+– Correr, ciclismo e ciclismo indoor
+– Cardio, ximnasio e adestramento por intervalos
+– Resistencia e esforzos a ritmo constante
+– Días de recuperación suave, onde a graza está xusto en non acelerar
+– Quen queira unha alarma de pulsacións e nada máis
+
+<h2>Por que unha alarma e non unha pantalla?</h2>
+Un número na pantalla só serve se o miras. Un aviso fai que o teu rango se coide só: pensas nel unicamente cando fai falta de verdade — na cinta, na estrada ou co móbil no peto do maillot.
+
+<h2>Prezo</h2>
+As túas 5 primeiras sesións son de balde. O seguimento ilimitado é unha compra única. Sen subscrición e sen anuncios.
+
+<h2>Privacidade</h2>
+Heart Alert non ten ningún permiso de internet. As túas pulsacións nunca saen do móbil.
+
+<h2>Importante: uso en segundo plano</h2>
+A aplicación segue medindo en segundo plano, pero Android pode pechala para aforrar batería. Como evitalo: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert é unha ferramenta de deporte e adestramento. Non é un produto sanitario, non serve para diagnosticar, tratar, curar nin previr ningunha enfermidade e non debe usarse para vixilancia de urxencias nin para seguimento continuo da saúde. Se tes dúbidas sobre o corazón ou o adestramento, consulta o teu médico.

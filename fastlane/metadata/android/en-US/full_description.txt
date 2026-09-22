@@ -1,0 +1,51 @@
+Heart Alert connects to your Bluetooth heart rate monitor and plays a sound the moment your BPM goes above or below the range you set. Choose a minimum and a maximum, put your phone away, and train by ear.
+
+No screen-watching. No zone math. No account.
+
+<h2>How it works</h2>
+1. Put on your Bluetooth heart rate monitor or chest strap.
+2. Set your min and max BPM.
+3. Press start — you get an alert when you drift too high or too low, and another one when you are back in range.
+
+<h2>Features</h2>
+– Custom minimum and maximum BPM limits
+– High heart rate alerts and low heart rate alerts
+– Immediate audio alerts, with adjustable volume
+– Optional vibration
+– Repeat interval of 1, 3, 5 or 10 seconds while you are out of range
+– "Out of range for" delay, so a short spike or a passing dip stays quiet
+– Initial delay, to keep things silent during your warm-up
+– Sensor battery level at a glance
+– Runs in the background while you use another app
+– Fast setup, nothing to sign up for
+
+<h2>Works with your heart rate monitor</h2>
+Supports most compatible Bluetooth Low Energy (BLE) heart rate monitors, chest straps and armbands, including:
+– Polar H10, H9, H7, OH1 and Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon and more
+
+Any sensor that broadcasts a standard Bluetooth LE heart rate signal should work, though Bluetooth on its own does not guarantee compatibility. If yours is not detected, send the developer a message.
+
+An external heart rate sensor is required. Camera-based and wrist-only phone measurement are not supported.
+
+<h2>Made for</h2>
+– Zone 2 work and aerobic base building
+– Running, cycling and indoor cycling
+– Cardio, gym sessions and interval training
+– Endurance and steady-state efforts
+– Easy recovery days, where the whole point is keeping the effort down
+– Anyone who wants a heart rate alarm and nothing else
+
+<h2>Why an alarm instead of a display?</h2>
+A number on a screen only helps if you look at it. An alert means your target range takes care of itself, and you only think about it when something actually needs attention — on the treadmill, on the road, or with your phone in a jersey pocket.
+
+<h2>Pricing</h2>
+Your first 5 tracking sessions are free. Unlimited tracking is a one-time purchase. No subscription, no ads.
+
+<h2>Privacy</h2>
+Heart Alert has no internet permission at all. Your heart rate never leaves your phone.
+
+<h2>Important: background use</h2>
+The app keeps tracking in the background, but Android may shut it down to save battery. To prevent this, see <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert is a fitness and training tool. It is not a medical device, it is not intended to diagnose, treat, cure or prevent any disease, and it should not be relied on for emergency or continuous health monitoring. Check with a doctor if you have questions about your heart rate or your training.

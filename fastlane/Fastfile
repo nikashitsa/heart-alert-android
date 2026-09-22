@@ -1,0 +1,79 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Validate Google Play metadata"
+  lane :validate_metadata do
+    metadata_path = File.expand_path("metadata/android", __dir__)
+    UI.message("Checking: #{metadata_path}")
+    unless Dir.exist?(metadata_path)
+      UI.user_error!("Metadata directory does not exist: #{metadata_path}")
+    end
+
+    locales = Dir.children(metadata_path)
+                 .select { |entry| File.directory?(File.join(metadata_path, entry)) }
+                 .sort
+    UI.message("Found #{locales.length} locales")
+
+    limits = {
+      "title.txt" => 30,
+      "short_description.txt" => 80,
+      "full_description.txt" => 4000
+    }
+
+    errors = []
+
+    locales.each do |locale|
+      limits.each do |filename, max_length|
+        path = File.join(metadata_path, locale, filename)
+        next unless File.file?(path)
+        text = File.read(path, encoding: "UTF-8").strip
+        length = text.length
+        UI.message("#{locale}/#{filename}: #{length}/#{max_length}")
+        if length > max_length
+          errors << "#{locale}/#{filename}: #{length} characters (maximum #{max_length})"
+        end
+      end
+    end
+
+    unless errors.empty?
+      UI.error("Metadata validation failed:")
+      errors.each do |error|
+        UI.error("  #{error}")
+      end
+      UI.user_error!("Fix #{errors.length} metadata error(s) before uploading.")
+    end
+    UI.success("All metadata is within the character limits.")
+  end
+
+  desc "Upload to Google Play and submit changes"
+  lane :upload do
+    validate_metadata
+
+    upload_to_play_store(
+      skip_upload_apk: true,
+      skip_upload_aab: true,
+      skip_upload_changelogs: true,
+      sync_image_upload: true
+    )
+  end
+end

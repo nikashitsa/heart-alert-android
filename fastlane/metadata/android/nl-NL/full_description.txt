@@ -1,0 +1,51 @@
+Heart Alert verbindt met je Bluetooth-hartslagmeter en geeft een geluid op het moment dat je hartslag boven of onder het bereik komt dat jij instelt. Kies een minimum en een maximum, leg je telefoon weg en train op het gehoor.
+
+Geen scherm in de gaten houden. Geen zonerekenwerk. Geen account.
+
+<h2>Zo werkt het</h2>
+1. Doe je Bluetooth-hartslagmeter of borstband om.
+2. Stel je minimale en maximale BPM in.
+3. Druk op start — je krijgt een signaal als je te hoog of te laag zit, en nog een als je weer binnen het bereik bent.
+
+<h2>Functies</h2>
+– Vrij in te stellen onder- en bovengrens in BPM
+– Waarschuwing bij een te hoge en bij een te lage hartslag
+– Directe geluidssignalen, met instelbaar volume
+– Trillen als optie
+– Herhaling elke 1, 3, 5 of 10 seconden zolang je buiten het bereik zit
+– Vertraging "buiten bereik gedurende", zodat een korte piek of dip stil blijft
+– Startvertraging, zodat het tijdens je warming-up rustig blijft
+– Batterijniveau van de sensor in één oogopslag
+– Loopt door op de achtergrond terwijl je een andere app gebruikt
+– Snel ingesteld, niets om je voor aan te melden
+
+<h2>Werkt met jouw hartslagmeter</h2>
+Ondersteunt de meeste compatibele Bluetooth Low Energy (BLE) hartslagmeters, borstbanden en armbanden, waaronder:
+– Polar H10, H9, H7, OH1 en Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon en meer
+
+Elke sensor die een standaard Bluetooth LE-hartslagsignaal uitzendt zou moeten werken, al is Bluetooth alleen geen garantie voor compatibiliteit. Wordt die van jou niet gevonden, stuur de ontwikkelaar dan een bericht.
+
+Een externe hartslagsensor is nodig. Meten via de camera of alleen via de pols wordt niet ondersteund.
+
+<h2>Gemaakt voor</h2>
+– Zone 2 en het opbouwen van je aerobe basis
+– Hardlopen, fietsen en indoor cycling
+– Cardio, sportschool en intervaltraining
+– Duurwerk en inspanning op constant tempo
+– Rustige hersteldagen, waar het juist de bedoeling is om laag te blijven
+– Iedereen die een hartslagalarm wil en verder niets
+
+<h2>Waarom een alarm in plaats van een display?</h2>
+Een getal op je scherm helpt alleen als je ernaar kijkt. Een signaal laat je streefbereik zichzelf bewaken: je denkt er alleen aan wanneer het echt nodig is, op de loopband, op de weg of met je telefoon in je shirtzak.
+
+<h2>Prijs</h2>
+Je eerste 5 sessies zijn gratis. Onbeperkt meten is een eenmalige aankoop. Geen abonnement, geen advertenties.
+
+<h2>Privacy</h2>
+Heart Alert heeft helemaal geen internetrechten. Je hartslag verlaat je telefoon nooit.
+
+<h2>Belangrijk: gebruik op de achtergrond</h2>
+De app meet door op de achtergrond, maar Android kan hem afsluiten om batterij te sparen. Hoe je dat voorkomt, lees je op <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert is een sport- en trainingshulpmiddel. Het is geen medisch hulpmiddel, het is niet bedoeld om een ziekte vast te stellen, te behandelen, te genezen of te voorkomen, en het is niet geschikt voor noodbewaking of doorlopende gezondheidsbewaking. Heb je vragen over je hart of je training, raadpleeg dan een arts.

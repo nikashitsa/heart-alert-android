@@ -1,0 +1,51 @@
+Heart Alert se conectează la centura ta cardio Bluetooth și sună în clipa în care pulsul urcă peste sau coboară sub intervalul pe care l-ai ales. Pune o limită minimă și una maximă, lasă telefonul deoparte și antrenează-te după ureche.
+
+Fără ochii pe ecran. Fără calcule de zone. Fără cont.
+
+<h2>Cum funcționează</h2>
+1. Pune-ți senzorul cardio Bluetooth sau centura toracică.
+2. Setează BPM minim și maxim.
+3. Apasă start — primești un semnal când urci prea sus sau cobori prea jos, și încă unul când revii în interval.
+
+<h2>Funcții</h2>
+– Limite minime și maxime în BPM, la alegerea ta
+– Alerte pentru puls prea mare și pentru puls prea mic
+– Semnale sonore imediate, cu volum reglabil
+– Vibrație opțională
+– Repetare la 1, 3, 5 sau 10 secunde cât timp ești în afara intervalului
+– Întârzierea „în afara intervalului de", ca un vârf scurt sau o scădere trecătoare să rămână tăcute
+– Întârziere inițială, ca încălzirea să decurgă în liniște
+– Nivelul bateriei senzorului dintr-o privire
+– Merge în fundal cât timp folosești altă aplicație
+– Configurare rapidă, fără înregistrare
+
+<h2>Merge cu senzorul tău cardio</h2>
+Acceptă majoritatea monitoarelor de puls Bluetooth Low Energy (BLE) compatibile, centuri toracice și brățări, printre care:
+– Polar H10, H9, H7, OH1 și Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon și altele
+
+Ar trebui să meargă orice senzor care emite un semnal cardiac Bluetooth LE standard, deși Bluetooth-ul singur nu garantează compatibilitatea. Dacă al tău nu este detectat, scrie-i dezvoltatorului.
+
+Este necesar un senzor cardiac extern. Măsurarea cu camera sau doar de la încheietură nu este acceptată.
+
+<h2>Făcut pentru</h2>
+– Zona 2 și construirea bazei aerobe
+– Alergare, ciclism și ciclism indoor
+– Cardio, sală și antrenament pe intervale
+– Anduranță și eforturi în ritm constant
+– Zile ușoare de recuperare, unde tocmai asta contează: să nu accelerezi
+– Oricine vrea o alarmă de puls și nimic altceva
+
+<h2>De ce o alarmă și nu un afișaj?</h2>
+Un număr pe ecran ajută doar dacă te uiți la el. O alertă face ca intervalul tău să se descurce singur: te gândești la el doar când chiar e nevoie — pe bandă, pe șosea sau cu telefonul în buzunarul tricoului.
+
+<h2>Preț</h2>
+Primele 5 sesiuni sunt gratuite. Urmărirea nelimitată este o achiziție unică. Fără abonament și fără reclame.
+
+<h2>Confidențialitate</h2>
+Heart Alert nu are absolut nicio permisiune de internet. Pulsul tău nu părăsește niciodată telefonul.
+
+<h2>Important: folosirea în fundal</h2>
+Aplicația măsoară în continuare în fundal, dar Android o poate opri ca să economisească bateria. Cum eviți asta, vezi pe <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert este un instrument sportiv și de antrenament. Nu este un dispozitiv medical, nu este destinat diagnosticării, tratării sau prevenirii vreunei boli și nu trebuie folosit pentru supraveghere de urgență sau monitorizare continuă a sănătății. Pentru întrebări despre inima ta sau despre antrenament, vorbește cu un medic.

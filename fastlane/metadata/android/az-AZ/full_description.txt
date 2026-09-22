@@ -1,0 +1,51 @@
+Heart Alert Bluetooth nəbz ölçəninizə qoşulur və nəbziniz təyin etdiyiniz aralığın üstünə qalxdığı və ya altına düşdüyü anda səs verir. Bir alt, bir də üst hədd seçin, telefonu bir kənara qoyun və qulaqla məşq edin.
+
+Ekrana baxmağa ehtiyac yoxdur. Zona hesablaması yoxdur. Hesab da lazım deyil.
+
+<h2>Necə işləyir</h2>
+1. Bluetooth nəbz sensorunu və ya sinə kəmərini taxın.
+2. Minimum və maksimum BPM təyin edin.
+3. Başlat düyməsini basın — çox yuxarı qalxanda və ya çox aşağı düşəndə xəbərdarlıq alacaqsınız, aralığa qayıdanda isə bir dəfə də.
+
+<h2>İmkanlar</h2>
+– Aşağı və yuxarı hədləri özünüz seçirsiniz (BPM)
+– Həm yüksək, həm də aşağı nəbz üçün xəbərdarlıq
+– Dərhal səslənən xəbərdarlıq, səs səviyyəsi tənzimlənir
+– İstəsəniz, vibrasiya
+– Aralıqdan kənarda olduğunuz müddətdə hər 1, 3, 5 və ya 10 saniyədən bir təkrar
+– «Bu qədər müddətdir aralıqdan kənarda» gecikməsi — qısa sıçrayış və ya keçici enmə səssiz qalsın deyə
+– Başlanğıc gecikməsi — qızışdırma sakitlikdə keçsin deyə
+– Sensorun batareya səviyyəsi bir baxışda
+– Başqa tətbiq işlədəndə də arxa fonda işləməyə davam edir
+– Sürətli quraşdırma, qeydiyyatdan keçməyə heç nə yoxdur
+
+<h2>Sizin sensorunuzla işləyir</h2>
+Uyğun Bluetooth Low Energy (BLE) nəbz ölçənlərinin, sinə kəmərlərinin və qol bantlarının əksəriyyətini dəstəkləyir, o cümlədən:
+– Polar H10, H9, H7, OH1 və Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon və digərləri
+
+Standart Bluetooth LE nəbz siqnalı ötürən istənilən sensor işləməlidir, lakin təkcə Bluetooth olması uyğunluğa zəmanət vermir. Sizinki tapılmasa, tərtibatçıya yazın.
+
+Xarici nəbz sensoru tələb olunur. Kamera ilə və ya yalnız bilək üzərindən ölçmə dəstəklənmir.
+
+<h2>Nə üçün</h2>
+– 2-ci zona və aerob bazanın qurulması
+– Qaçış, velosiped və qapalı velosiped
+– Kardio, zal və interval məşqi
+– Dözümlülük və eyni templi iş
+– Yüngül bərpa günləri — bütün məsələ elə sürəti artırmamaqdır
+– Yalnız nəbz həyəcanı istəyən, başqa heç nə istəməyən hər kəs üçün
+
+<h2>Nə üçün ekran yox, həyəcan siqnalı?</h2>
+Ekrandakı rəqəm yalnız ona baxanda kömək edir. Xəbərdarlıq isə hədəf aralığınıza özü baxır: siz onu yalnız həqiqətən lazım olanda düşünürsünüz — qaçış zolağında, yolda və ya telefon cibdə olanda.
+
+<h2>Qiymət</h2>
+İlk 5 məşq pulsuzdur. Limitsiz izləmə birdəfəlik alışdır. Abunə yoxdur, reklam yoxdur.
+
+<h2>Məxfilik</h2>
+Heart Alert-in ümumiyyətlə internet icazəsi yoxdur. Nəbziniz heç vaxt telefondan kənara çıxmır.
+
+<h2>Vacibdir: arxa fonda istifadə</h2>
+Tətbiq arxa fonda ölçməyə davam edir, ancaq Android batareyaya qənaət üçün onu bağlaya bilər. Bunun qarşısını necə almaq olar: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert idman və məşq alətidir. O, tibbi cihaz deyil, hər hansı xəstəliyi aşkarlamaq, müalicə etmək və ya qarşısını almaq üçün nəzərdə tutulmayıb və təcili yaxud fasiləsiz sağlamlıq nəzarəti üçün ona arxalanmaq olmaz. Ürəyiniz və ya məşqinizlə bağlı sualınız varsa, həkimə müraciət edin.

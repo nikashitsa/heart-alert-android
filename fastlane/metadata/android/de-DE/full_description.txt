@@ -1,0 +1,51 @@
+Heart Alert verbindet sich mit deinem Bluetooth-Herzfrequenzmesser und gibt einen Ton aus, sobald dein Puls über oder unter den von dir gewählten Bereich geht. Minimum und Maximum einstellen, Handy weglegen und nach Gehör trainieren.
+
+Kein Blick auf den Bildschirm. Keine Zonen-Rechnerei. Kein Konto.
+
+<h2>So funktioniert es</h2>
+1. Lege deinen Bluetooth-Herzfrequenzmesser oder Brustgurt an.
+2. Stelle deinen minimalen und maximalen Puls ein.
+3. Auf Start drücken — du bekommst einen Alarm, wenn du zu hoch oder zu tief liegst, und noch einen, wenn du wieder im Bereich bist.
+
+<h2>Funktionen</h2>
+– Frei wählbare Ober- und Untergrenze in BPM
+– Alarm bei zu hohem und bei zu niedrigem Puls
+– Sofortige Tonsignale mit einstellbarer Lautstärke
+– Optionale Vibration
+– Wiederholung alle 1, 3, 5 oder 10 Sekunden, solange du außerhalb liegst
+– Verzögerung "Außerhalb seit", damit kurze Ausreißer still bleiben
+– Startverzögerung, damit es beim Aufwärmen ruhig bleibt
+– Akkustand des Sensors auf einen Blick
+– Läuft im Hintergrund weiter, während du eine andere App nutzt
+– Schnell eingerichtet, keine Anmeldung nötig
+
+<h2>Passt zu deinem Herzfrequenzmesser</h2>
+Unterstützt die meisten kompatiblen Bluetooth-Low-Energy-Herzfrequenzmesser (BLE), Brustgurte und Armbänder, darunter:
+– Polar H10, H9, H7, OH1 und Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon und weitere
+
+Jeder Sensor, der ein normales Bluetooth-LE-Herzfrequenzsignal sendet, sollte funktionieren — Bluetooth allein ist aber keine Garantie für Kompatibilität. Wird deiner nicht erkannt, schreib dem Entwickler.
+
+Ein externer Herzfrequenzsensor ist erforderlich. Messung über die Kamera oder allein am Handgelenk wird nicht unterstützt.
+
+<h2>Gemacht für</h2>
+– Zone 2 und den Aufbau der Grundlagenausdauer
+– Laufen, Radfahren und Indoor-Cycling
+– Cardio, Gym und Intervalltraining
+– Ausdauer- und Tempodauerläufe
+– Lockere Regenerationstage, an denen es genau darum geht, ruhig zu bleiben
+– Alle, die einen Pulsalarm wollen und sonst nichts
+
+<h2>Warum ein Alarm statt einer Anzeige?</h2>
+Eine Zahl auf dem Display hilft nur, wenn du hinsiehst. Ein Signal heißt: dein Zielbereich regelt sich von selbst, und du denkst nur dann daran, wenn es wirklich nötig ist — auf dem Laufband, auf der Straße oder mit dem Handy in der Trikottasche.
+
+<h2>Preis</h2>
+Deine ersten 5 Trainings sind kostenlos. Unbegrenztes Tracking gibt es als einmaligen Kauf. Kein Abo, keine Werbung.
+
+<h2>Datenschutz</h2>
+Heart Alert hat überhaupt keine Internet-Berechtigung. Deine Herzfrequenz verlässt dein Handy nie.
+
+<h2>Wichtig: Nutzung im Hintergrund</h2>
+Die App misst im Hintergrund weiter, doch Android kann sie zum Stromsparen beenden. Wie du das verhinderst, steht auf <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert ist ein Trainings- und Fitness-Tool. Es ist kein Medizinprodukt, nicht zur Diagnose, Behandlung, Heilung oder Vorbeugung von Krankheiten bestimmt und nicht für Notfälle oder die dauerhafte Gesundheitsüberwachung geeignet. Bei Fragen zu deinem Puls oder deinem Training wende dich an eine Ärztin oder einen Arzt.

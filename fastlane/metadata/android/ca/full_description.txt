@@ -1,0 +1,51 @@
+Heart Alert es connecta al teu sensor de freqüència cardíaca Bluetooth i sona just quan les pulsacions pugen per sobre o baixen per sota del rang que tu fixes. Tria un mínim i un màxim, desa el mòbil i entrena d'oïda.
+
+Sense mirar la pantalla. Sense càlculs de zones. Sense comptes.
+
+<h2>Com funciona</h2>
+1. Posa't el sensor de freqüència cardíaca Bluetooth o la banda pectoral.
+2. Fixa les pulsacions mínimes i màximes.
+3. Prem inicia — reps un avís quan puges massa o baixes massa, i un altre quan tornes al rang.
+
+<h2>Funcions</h2>
+– Límits mínim i màxim en pulsacions, al teu gust
+– Avisos de pulsacions altes i de pulsacions baixes
+– Avisos sonors immediats, amb volum ajustable
+– Vibració opcional
+– Repetició cada 1, 3, 5 o 10 segons mentre ets fora del rang
+– Retard «fora del rang des de fa», perquè un pic curt o una baixada puntual no facin soroll
+– Retard inicial, perquè l'escalfament passi en silenci
+– Nivell de bateria del sensor amb un cop d'ull
+– Continua en segon pla mentre fas servir una altra aplicació
+– Configuració ràpida, res per registrar
+
+<h2>Funciona amb el teu sensor</h2>
+Admet la majoria de sensors de freqüència cardíaca Bluetooth Low Energy (BLE) compatibles, bandes pectorals i braçals, entre els quals:
+– Polar H10, H9, H7, OH1 i Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon i més
+
+Hauria de funcionar qualsevol sensor que emeti un senyal cardíac Bluetooth LE estàndard, tot i que el Bluetooth per si sol no garanteix la compatibilitat. Si el teu no es detecta, escriu al desenvolupador.
+
+Cal un sensor extern. No s'admet la mesura amb la càmera ni només des del canell.
+
+<h2>Pensat per a</h2>
+– La zona 2 i la construcció de base aeròbica
+– Córrer, ciclisme i ciclisme indoor
+– Cardio, gimnàs i entrenament per intervals
+– Resistència i esforços a ritme constant
+– Dies de recuperació suau, on la gràcia és justament no accelerar
+– Qui vulgui una alarma de pulsacions i res més
+
+<h2>Per què una alarma i no una pantalla?</h2>
+Un número a la pantalla només serveix si el mires. Un avís fa que el teu rang es cuidi sol: hi penses només quan cal de debò — a la cinta, a la carretera o amb el mòbil a la butxaca del mallot.
+
+<h2>Preu</h2>
+Les 5 primeres sessions són gratuïtes. El seguiment il·limitat és una compra única. Sense subscripció i sense anuncis.
+
+<h2>Privadesa</h2>
+Heart Alert no té cap permís d'internet. Les teves pulsacions no surten mai del mòbil.
+
+<h2>Important: ús en segon pla</h2>
+L'aplicació continua mesurant en segon pla, però Android la pot tancar per estalviar bateria. Com evitar-ho: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert és una eina d'esport i entrenament. No és un producte sanitari, no serveix per diagnosticar, tractar, curar ni prevenir cap malaltia i no s'ha d'utilitzar per a vigilància d'emergència ni per a monitoratge continu de la salut. Si tens dubtes sobre el cor o l'entrenament, consulta un metge.

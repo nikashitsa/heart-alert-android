@@ -1,0 +1,51 @@
+Heart Alert se connecte à votre ceinture cardio Bluetooth et émet un son dès que votre fréquence cardiaque dépasse ou passe sous la plage que vous avez choisie. Réglez un minimum et un maximum, rangez votre téléphone et entraînez-vous à l'oreille.
+
+Pas d'écran à surveiller. Pas de calcul de zones. Pas de compte.
+
+<h2>Comment ça marche</h2>
+1. Enfilez votre capteur cardio Bluetooth ou votre ceinture pectorale.
+2. Réglez vos BPM minimum et maximum.
+3. Appuyez sur démarrer — une alerte se déclenche quand vous montez trop haut ou descendez trop bas, et une autre quand vous revenez dans la plage.
+
+<h2>Fonctions</h2>
+– Limites minimale et maximale en BPM entièrement libres
+– Alertes de fréquence cardiaque haute et basse
+– Alertes sonores immédiates, avec volume réglable
+– Vibration en option
+– Répétition toutes les 1, 3, 5 ou 10 secondes tant que vous êtes hors plage
+– Délai « hors plage depuis », pour qu'un pic bref ou un creux passager reste silencieux
+– Délai initial, pour rester tranquille pendant l'échauffement
+– Niveau de batterie du capteur en un coup d'œil
+– Continue en arrière-plan pendant que vous utilisez une autre application
+– Réglage rapide, aucune inscription
+
+<h2>Compatible avec votre capteur cardio</h2>
+Prend en charge la plupart des capteurs de fréquence cardiaque Bluetooth Low Energy (BLE) compatibles, ceintures pectorales et brassards, dont :
+– Polar H10, H9, H7, OH1 et Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon et d'autres
+
+Tout capteur qui diffuse un signal cardiaque Bluetooth LE standard devrait fonctionner, même si le Bluetooth seul ne garantit pas la compatibilité. Si le vôtre n'est pas détecté, écrivez au développeur.
+
+Un capteur cardiaque externe est nécessaire. La mesure par l'appareil photo ou au poignet seul n'est pas prise en charge.
+
+<h2>Pensé pour</h2>
+– La zone 2 et le travail foncier
+– La course à pied, le vélo et le vélo d'intérieur
+– Le cardio, la salle et le fractionné
+– L'endurance et les efforts à allure constante
+– Les journées de récupération, où tout l'enjeu est de rester tranquille
+– Tous ceux qui veulent une alarme cardio et rien d'autre
+
+<h2>Pourquoi une alarme plutôt qu'un affichage ?</h2>
+Un chiffre à l'écran ne sert que si vous le regardez. Une alerte, elle, laisse votre plage cible se gérer toute seule : vous n'y pensez que lorsque c'est vraiment nécessaire, sur le tapis, sur la route ou avec le téléphone dans la poche du maillot.
+
+<h2>Tarif</h2>
+Vos 5 premières séances sont gratuites. Le suivi illimité s'obtient par un achat unique. Pas d'abonnement, pas de publicité.
+
+<h2>Confidentialité</h2>
+Heart Alert n'a aucune autorisation d'accès à Internet. Votre fréquence cardiaque ne quitte jamais votre téléphone.
+
+<h2>Important : usage en arrière-plan</h2>
+L'application continue en arrière-plan, mais Android peut l'arrêter pour économiser la batterie. Pour l'éviter, voyez <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert est un outil de sport et d'entraînement. Ce n'est pas un dispositif médical, il n'est pas destiné à diagnostiquer, traiter, guérir ou prévenir une maladie, et il ne doit pas servir à une surveillance d'urgence ou continue de la santé. En cas de question sur votre cœur ou votre entraînement, consultez un médecin.

@@ -1,0 +1,51 @@
+Heart Alert prisijungia prie tavo Bluetooth pulso jutiklio ir sugroja tą akimirką, kai pulsas pakyla virš arba nukrenta žemiau tavo nustatytų ribų. Nustatyk mažiausią ir didžiausią reikšmę, padėk telefoną ir treniruokis klausa.
+
+Nereikia žiūrėti į ekraną. Nereikia skaičiuoti zonų. Nereikia paskyros.
+
+<h2>Kaip tai veikia</h2>
+1. Užsidėk Bluetooth pulso jutiklį arba krūtinės juostą.
+2. Nustatyk mažiausią ir didžiausią pulsą.
+3. Paspausk pradėti — gausi signalą, kai pakilsi per aukštai arba nukrisi per žemai, ir dar vieną, kai grįši į ribas.
+
+<h2>Galimybės</h2>
+– Laisvai pasirenkamos apatinė ir viršutinė ribos dūžiais per minutę
+– Įspėjimas ir dėl aukšto, ir dėl žemo pulso
+– Momentiniai garso signalai su reguliuojamu garsumu
+– Vibracija, jei nori
+– Kartojimas kas 1, 3, 5 ar 10 sekundžių, kol esi už ribų
+– Delsa „už ribų jau", kad trumpas šuolis ar laikinas kritimas liktų tylus
+– Pradinė delsa, kad apšilimas praeitų tyliai
+– Jutiklio baterijos lygis vienu žvilgsniu
+– Veikia fone, kol naudoji kitą programą
+– Greitas nustatymas, nieko nereikia registruoti
+
+<h2>Veikia su tavo jutikliu</h2>
+Palaiko daugumą suderinamų Bluetooth Low Energy (BLE) pulso jutiklių, krūtinės juostų ir rankos raiščių, tarp jų:
+– Polar H10, H9, H7, OH1 ir Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon ir kitus
+
+Turėtų veikti bet kuris jutiklis, siunčiantis įprastą Bluetooth LE pulso signalą, nors vien Bluetooth suderinamumo negarantuoja. Jei tavo nerandamas, parašyk kūrėjui.
+
+Reikia išorinio pulso jutiklio. Matavimas kamera ar vien nuo riešo nepalaikomas.
+
+<h2>Skirta</h2>
+– 2 zonai ir aerobinio pagrindo statymui
+– Bėgimui, dviračiui ir dviračiui salėje
+– Kardio, sporto salei ir intervalinėms treniruotėms
+– Ištvermei ir tolygiam tempui
+– Lengvoms atsigavimo dienoms, kur visa esmė — neįsibėgėti
+– Visiems, kam reikia pulso signalo ir nieko daugiau
+
+<h2>Kodėl signalas, o ne ekranas?</h2>
+Skaičius ekrane padeda tik tada, jei į jį pažiūri. Signalas pats pasirūpina tavo ribomis: apie jas pagalvoji tik tada, kai iš tikrųjų reikia — ant takelio, kelyje ar su telefonu marškinėlių kišenėje.
+
+<h2>Kaina</h2>
+Pirmos 5 treniruotės nemokamos. Neribotas sekimas — vienkartinis pirkinys. Jokių prenumeratų ir jokių reklamų.
+
+<h2>Privatumas</h2>
+Heart Alert apskritai neturi interneto leidimo. Tavo pulsas niekada neišeina iš telefono.
+
+<h2>Svarbu: veikimas fone</h2>
+Programa toliau matuoja fone, tačiau Android gali ją uždaryti, kad taupytų bateriją. Kaip to išvengti: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert yra sporto ir treniruočių įrankis. Tai nėra medicinos priemonė, ji neskirta ligoms nustatyti, gydyti ar užkirsti joms kelią ir netinka skubiai ar nuolatinei sveikatos stebėsenai. Jei turi klausimų apie širdį ar treniruotes, kreipkis į gydytoją.

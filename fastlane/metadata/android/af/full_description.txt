@@ -1,0 +1,51 @@
+Heart Alert koppel aan jou Bluetooth-hartkloppingmeter en gee 'n klank die oomblik wanneer jou polsslag bo of onder die bereik gaan wat jy self stel. Kies 'n minimum en 'n maksimum, sit die foon weg en oefen op die oor.
+
+Geen skerm om dop te hou nie. Geen sonesommetjies nie. Geen rekening nie.
+
+<h2>Hoe dit werk</h2>
+1. Sit jou Bluetooth-hartkloppingsensor of borsband aan.
+2. Stel jou minimum en maksimum BPM.
+3. Druk begin — jy kry 'n waarskuwing wanneer jy te hoog gaan of te laag val, en nog een wanneer jy terug in die bereik is.
+
+<h2>Kenmerke</h2>
+– Vrylik gekose onder- en bogrense in BPM
+– Waarskuwings vir 'n hoë sowel as 'n lae polsslag
+– Onmiddellike klankwaarskuwings, met verstelbare volume
+– Vibrasie as jy wil
+– Herhaling elke 1, 3, 5 of 10 sekondes solank jy buite die bereik is
+– Die vertraging "al hoe lank buite bereik", sodat 'n kort piek of 'n verbygaande dip stil bly
+– Aanvangsvertraging, sodat die opwarming rustig verloop
+– Die sensor se batterryvlak met een oogopslag
+– Loop voort op die agtergrond terwyl jy 'n ander app gebruik
+– Vinnige opstelling, niks om voor aan te meld nie
+
+<h2>Werk met jou sensor</h2>
+Ondersteun die meeste versoenbare Bluetooth Low Energy (BLE) hartkloppingmeters, borsbande en armbande, onder meer:
+– Polar H10, H9, H7, OH1 en Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon en meer
+
+Enige sensor wat 'n gewone Bluetooth LE-hartkloppingsein uitsaai, behoort te werk, hoewel Bluetooth alleen nie versoenbaarheid waarborg nie. As joune nie opgespoor word nie, stuur die ontwikkelaar 'n boodskap.
+
+'n Eksterne hartkloppingsensor is nodig. Meting met die kamera of net vanaf die pols word nie ondersteun nie.
+
+<h2>Gemaak vir</h2>
+– Sone 2 en die bou van 'n aërobiese basis
+– Hardloop, fietsry en binnenshuise fietsry
+– Kardio, gimnasium en intervaloefening
+– Uithouvermoë en werk teen 'n gelyke tempo
+– Rustige hersteldae, waar die hele punt juis is om nie op te jaag nie
+– Enigiemand wat 'n hartkloppingalarm wil hê en niks anders nie
+
+<h2>Hoekom 'n alarm eerder as 'n skerm?</h2>
+'n Syfer op die skerm help net as jy daarna kyk. 'n Waarskuwing sorg self vir jou teikenbereik: jy dink net daaraan wanneer dit werklik nodig is — op die trapmeul, op die pad, of met die foon in jou trui se sak.
+
+<h2>Prys</h2>
+Jou eerste 5 sessies is gratis. Onbeperkte meting is 'n eenmalige aankoop. Geen intekening en geen advertensies nie.
+
+<h2>Privaatheid</h2>
+Heart Alert het glad nie internettoestemming nie. Jou polsslag verlaat nooit jou foon nie.
+
+<h2>Belangrik: gebruik op die agtergrond</h2>
+Die app meet voort op die agtergrond, maar Android kan dit toemaak om battery te spaar. Hoe om dit te voorkom: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert is 'n sport- en oefengereedskap. Dit is nie 'n mediese toestel nie, dit is nie bedoel om enige siekte te diagnoseer, te behandel of te voorkom nie, en dit moet nie vir noodmonitering of deurlopende gesondheidsmonitering vertrou word nie. As jy vrae oor jou hart of jou oefening het, praat met 'n dokter.

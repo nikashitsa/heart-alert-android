@@ -1,0 +1,1 @@
+Hartslagalarm via Bluetooth: geluid zodra je BPM buiten je bereik komt

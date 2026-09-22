@@ -1,0 +1,51 @@
+Heart Alert yhdistyy Bluetooth-sykemittariisi ja antaa äänen sillä hetkellä, kun syke nousee yli tai laskee alle asettamasi alueen. Valitse alaraja ja yläraja, laita puhelin pois ja treenaa korvakuulolta.
+
+Ei näytön tuijottamista. Ei vyöhykelaskelmia. Ei tiliä.
+
+<h2>Näin se toimii</h2>
+1. Pue Bluetooth-sykemittari tai sykevyö.
+2. Aseta pienin ja suurin syke.
+3. Paina käynnistä — saat hälytyksen, kun nouset liian ylös tai lasket liian alas, ja toisen, kun palaat alueelle.
+
+<h2>Ominaisuudet</h2>
+– Vapaasti valittavat ala- ja ylärajat sykkeenä
+– Hälytys sekä korkeasta että matalasta sykkeestä
+– Välittömät äänimerkit, säädettävä äänenvoimakkuus
+– Värinä halutessasi
+– Toisto 1, 3, 5 tai 10 sekunnin välein niin kauan kuin olet alueen ulkopuolella
+– Viive "alueen ulkopuolella jo", jotta lyhyt piikki tai hetkellinen notkahdus pysyy hiljaisena
+– Aloitusviive, jotta lämmittely sujuu rauhassa
+– Anturin akun taso yhdellä silmäyksellä
+– Jatkaa taustalla, kun käytät toista sovellusta
+– Nopea käyttöönotto, ei rekisteröitymistä
+
+<h2>Toimii sykemittarisi kanssa</h2>
+Tukee useimpia yhteensopivia Bluetooth Low Energy (BLE) -sykemittareita, sykevöitä ja käsivarsinauhoja, muun muassa:
+– Polar H10, H9, H7, OH1 ja Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon ja muut
+
+Minkä tahansa tavallista Bluetooth LE -sykesignaalia lähettävän anturin pitäisi toimia, vaikka pelkkä Bluetooth ei takaakaan yhteensopivuutta. Jos omaasi ei löydy, laita viestiä kehittäjälle.
+
+Tarvitset ulkoisen sykeanturin. Mittausta kameralla tai pelkästään ranteesta ei tueta.
+
+<h2>Tehty tähän</h2>
+– Vyöhyke 2 ja peruskestävyyden rakentaminen
+– Juoksu, pyöräily ja sisäpyöräily
+– Kunto, sali ja intervalliharjoittelu
+– Kestävyys ja tasaisen vauhdin työ
+– Kevyet palautuspäivät, joissa koko idea on olla kiihdyttämättä
+– Kaikille, jotka haluavat sykehälytyksen eivätkä mitään muuta
+
+<h2>Miksi hälytys näytön sijaan?</h2>
+Näytöllä oleva luku auttaa vain, jos katsot sitä. Hälytys hoitaa tavoitealueen puolestasi: ajattelet sitä vasta silloin, kun se on todella tarpeen — juoksumatolla, tiellä tai puhelin ajopaidan taskussa.
+
+<h2>Hinta</h2>
+Ensimmäiset 5 treeniä ovat ilmaisia. Rajaton seuranta on kertaosto. Ei tilausta eikä mainoksia.
+
+<h2>Yksityisyys</h2>
+Heart Alertilla ei ole lainkaan internet-oikeutta. Sykkeesi ei poistu koskaan puhelimesta.
+
+<h2>Tärkeää: käyttö taustalla</h2>
+Sovellus mittaa taustalla, mutta Android voi sulkea sen akun säästämiseksi. Näin estät sen: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert on liikunnan ja harjoittelun työkalu. Se ei ole lääkinnällinen laite, sitä ei ole tarkoitettu sairauden toteamiseen, hoitoon tai ehkäisyyn, eikä sitä pidä käyttää hätävalvontaan tai jatkuvaan terveydenseurantaan. Jos sinulla on kysyttävää sydämestäsi tai harjoittelustasi, keskustele lääkärin kanssa.

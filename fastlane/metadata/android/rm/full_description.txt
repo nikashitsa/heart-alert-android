@@ -1,0 +1,51 @@
+Heart Alert sa colliescha cun tes mesirader dal puls Bluetooth e dat in tun il mument che tes puls va sur u sut la zona che ti has fixà. Tscherna in minimum ed in maximum, metta davent il telefon ed exercitescha suenter l'ureglia.
+
+Nagin display da guardar. Nagins quints da zonas. Nagin conto.
+
+<h2>Uschia funcziunescha</h2>
+1. Metta si tes mesirader dal puls Bluetooth u la stgapina dal pèz.
+2. Fixescha il puls minimal e maximal.
+3. Smatga sin startar — ti retschaivas in avis cur che ti vas memia aut u memia bass, ed in auter cur che ti es puspè en la zona.
+
+<h2>Funcziuns</h2>
+– Limitas inferiura e superiura libras en battis per minuta
+– Avis tant per in puls aut sco per in puls bass
+– Segnals acustics immediats cun volumen reglabel
+– Vibraziun sche ti vuls
+– Repetiziun mintga 1, 3, 5 u 10 secundas entant che ti es ordaifer la zona
+– Retard «ordaifer la zona dapi», per che ina puncta curta u ina sbassada passagera restia quieta
+– Retard inizial, per che il stgaudar giaja en quietezza
+– Nivel da la battaria dal sensor cun in sguard
+– Va vinavant en il fund entant che ti dovras in'autra app
+– Configuraziun svelta, nagut da s'annunziar
+
+<h2>Funcziunescha cun tes mesirader</h2>
+Sustegna la gronda part dals mesiraders dal puls cumpatibels Bluetooth Low Energy (BLE), stgapinas dal pèz e bindels dal bratsch, tranter auter:
+– Polar H10, H9, H7, OH1 e Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon ed auters
+
+Mintga sensor che emetta in signal dal puls Bluetooth LE standard duess funcziunar, malgrà che Bluetooth sulet na garantescha betg la cumpatibilitad. Sche il tes na vegn betg chattà, scriva al sviluppader.
+
+I dovra in sensor dal puls extern. La mesiraziun cun la camera u mo dal pols na vegn betg sustegnida.
+
+<h2>Fatg per</h2>
+– La zona 2 e la construcziun da la basa aeroba
+– Currer, ir cun velo e velo en chasa
+– Cardio, palestra e training d'intervals
+– Resistenza e sforzs en tempo constant
+– Dis leves da recuperaziun, nua ch'i va gist per betg accelerar
+– Tuts che vulan in alarm dal puls e nagut dapli
+
+<h2>Pertge in alarm empè d'in display?</h2>
+Ina cifra sin il display gida mo sche ti la guardas. In avis tgira sez tia zona: ti pensas mo vi da quella cur ch'igl è propi necessari — sin il tapet da currer, sin via u cun il telefon en la giaglioffa dal tricot.
+
+<h2>Pretsch</h2>
+Las emprimas 5 sesiuns èn gratuitas. La registraziun senza limita è ina cumpra ina giada. Nagin abunament e nagina reclama.
+
+<h2>Protecziun da datas</h2>
+Heart Alert n'ha insumma nagin permess d'internet. Tes puls na banduna mai il telefon.
+
+<h2>Impurtant: diever en il fund</h2>
+L'app mesira vinavant en il fund, ma Android po la serrar per spargnar battaria. Co evitar quai: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert è in med da sport e da training. I n'è betg in product medicinal, i n'è betg destinà a diagnostitgar, tractar u impedir malsognas ed i na duess betg vegnir duvrà per surveglianza d'urgenza u permanenta da la sanadad. Sche ti has dumondas davart tes cor u tes training, discurra cun in medi.

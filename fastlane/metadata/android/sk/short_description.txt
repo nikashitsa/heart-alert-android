@@ -1,0 +1,1 @@
+Alarm tepu cez Bluetooth: zvuk, keď BPM opustí tvoj nastavený rozsah

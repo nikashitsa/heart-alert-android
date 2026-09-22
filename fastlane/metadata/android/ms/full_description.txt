@@ -1,0 +1,51 @@
+Heart Alert menyambung ke monitor kadar denyutan jantung Bluetooth anda dan berbunyi pada saat denyutan naik melebihi atau turun di bawah julat yang anda tetapkan. Tetapkan had bawah dan had atas, simpan telefon, dan berlatihlah dengan telinga.
+
+Tidak perlu memandang skrin. Tiada pengiraan zon. Tiada akaun.
+
+<h2>Bagaimana ia berfungsi</h2>
+1. Pakai sensor denyutan jantung Bluetooth atau tali dada anda.
+2. Tetapkan BPM minimum dan maksimum.
+3. Tekan mula — anda akan menerima amaran apabila naik terlalu tinggi atau turun terlalu rendah, dan satu lagi apabila kembali ke dalam julat.
+
+<h2>Ciri-ciri</h2>
+– Had bawah dan had atas dalam BPM mengikut pilihan anda
+– Amaran untuk denyutan tinggi dan denyutan rendah
+– Amaran bunyi serta-merta, kelantangan boleh dilaraskan
+– Getaran jika anda mahu
+– Ulangan setiap 1, 3, 5 atau 10 saat selagi anda di luar julat
+– Lengah "di luar julat selama", supaya lonjakan singkat atau penurunan sekejap kekal senyap
+– Lengah permulaan, supaya sesi memanaskan badan berlalu dengan tenang
+– Paras bateri sensor dengan satu pandangan
+– Terus berjalan di latar belakang sementara anda menggunakan aplikasi lain
+– Persediaan pantas, tiada apa-apa untuk didaftarkan
+
+<h2>Berfungsi dengan sensor anda</h2>
+Menyokong kebanyakan monitor denyutan jantung Bluetooth Low Energy (BLE) yang serasi, tali dada dan tali lengan, termasuk:
+– Polar H10, H9, H7, OH1 dan Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon dan lain-lain
+
+Mana-mana sensor yang memancarkan isyarat denyutan jantung Bluetooth LE piawai sepatutnya berfungsi, walaupun Bluetooth sahaja tidak menjamin keserasian. Jika sensor anda tidak dikesan, hantar mesej kepada pembangun.
+
+Sensor denyutan jantung luaran diperlukan. Pengukuran melalui kamera atau hanya dari pergelangan tangan tidak disokong.
+
+<h2>Dibuat untuk</h2>
+– Zon 2 dan pembinaan asas aerobik
+– Larian, berbasikal dan berbasikal dalam rumah
+– Kardio, gim dan latihan selang
+– Daya tahan dan usaha pada rentak sekata
+– Hari pemulihan ringan, yang intinya memang supaya tidak memecut
+– Sesiapa yang mahukan amaran denyutan jantung dan tiada yang lain
+
+<h2>Mengapa amaran, bukan paparan?</h2>
+Nombor di skrin hanya membantu jika anda memandangnya. Amaran pula menjaga julat sasaran anda dengan sendirinya: anda memikirkannya hanya apabila benar-benar perlu — di atas treadmill, di jalan raya, atau dengan telefon di dalam poket jersi.
+
+<h2>Harga</h2>
+5 sesi pertama percuma. Penjejakan tanpa had ialah pembelian sekali sahaja. Tiada langganan dan tiada iklan.
+
+<h2>Privasi</h2>
+Heart Alert langsung tiada kebenaran internet. Denyutan jantung anda tidak pernah keluar dari telefon.
+
+<h2>Penting: penggunaan di latar belakang</h2>
+Aplikasi terus mengukur di latar belakang, tetapi Android mungkin menutupnya untuk menjimatkan bateri. Cara mengelakkannya: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert ialah alat sukan dan latihan. Ia bukan peranti perubatan, ia tidak bertujuan untuk mendiagnosis, merawat atau mencegah sebarang penyakit, dan ia tidak boleh dijadikan sandaran untuk pemantauan kecemasan atau pemantauan kesihatan berterusan. Jika anda ada soalan tentang jantung atau latihan anda, rujuk doktor.

@@ -1,0 +1,1 @@
+Alarma de pulso Bluetooth: aviso sonoro si tus BPM salen de tu rango

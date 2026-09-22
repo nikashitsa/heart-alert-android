@@ -1,0 +1,51 @@
+Heart Alert savienojas ar tavu Bluetooth pulsa sensoru un atskan brīdī, kad pulss paceļas virs vai nokrīt zem tevis iestatītā diapazona. Uzstādi minimumu un maksimumu, noliec telefonu un trenējies pēc dzirdes.
+
+Nav jāskatās ekrānā. Nav jārēķina zonas. Nav jāveido konts.
+
+<h2>Kā tas darbojas</h2>
+1. Uzliec Bluetooth pulsa sensoru vai krūšu siksnu.
+2. Iestati mazāko un lielāko pulsu.
+3. Nospied sākt — saņemsi signālu, kad aizej par augstu vai nokrīti par zemu, un vēl vienu, kad atgriezies diapazonā.
+
+<h2>Iespējas</h2>
+– Brīvi izvēlēta apakšējā un augšējā robeža sitienos minūtē
+– Brīdinājums gan par augstu, gan par zemu pulsu
+– Tūlītēji skaņas signāli ar regulējamu skaļumu
+– Vibrācija pēc izvēles
+– Atkārtojums ik pēc 1, 3, 5 vai 10 sekundēm, kamēr esi ārpus diapazona
+– Aizture „ārpus diapazona jau", lai īss lēciens vai pārejošs kritums paliktu kluss
+– Sākuma aizture, lai iesildīšanās paietu klusumā
+– Sensora baterijas līmenis vienā acu uzmetienā
+– Turpina darboties fonā, kamēr lieto citu lietotni
+– Ātra iestatīšana, nekas nav jāreģistrē
+
+<h2>Darbojas ar tavu pulsa sensoru</h2>
+Atbalsta lielāko daļu saderīgo Bluetooth Low Energy (BLE) pulsa sensoru, krūšu siksnu un rokas aproču, tostarp:
+– Polar H10, H9, H7, OH1 un Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon un citus
+
+Darboties vajadzētu jebkuram sensoram, kas raida standarta Bluetooth LE pulsa signālu, lai gan pats Bluetooth saderību negarantē. Ja tavējais netiek atrasts, uzraksti izstrādātājam.
+
+Nepieciešams ārējs pulsa sensors. Mērīšana ar kameru vai tikai no plaukstas locītavas netiek atbalstīta.
+
+<h2>Domāts</h2>
+– 2. zonai un aerobā pamata veidošanai
+– Skriešanai, riteņbraukšanai un velotrenažierim
+– Kardio, sporta zālei un intervālu treniņiem
+– Izturībai un vienmērīgam tempam
+– Vieglām atjaunošanās dienām, kur visa jēga ir tieši nepaātrināties
+– Ikvienam, kam vajag pulsa trauksmi un neko vairāk
+
+<h2>Kāpēc signāls, nevis ekrāns?</h2>
+Skaitlis ekrānā palīdz tikai tad, ja uz to paskaties. Signāls par mērķa diapazonu parūpējas pats: tu par to domā tikai tad, kad tas patiešām vajadzīgs — uz skrejceliņa, uz ceļa vai ar telefonu kreklā kabatā.
+
+<h2>Cena</h2>
+Pirmie 5 treniņi ir bez maksas. Neierobežota uzskaite ir vienreizējs pirkums. Bez abonementa un bez reklāmām.
+
+<h2>Privātums</h2>
+Heart Alert nav nekādas interneta atļaujas. Tavs pulss nekad nepamet telefonu.
+
+<h2>Svarīgi: darbs fonā</h2>
+Lietotne turpina mērīt fonā, taču Android to var aizvērt, lai taupītu bateriju. Kā no tā izvairīties: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert ir sporta un treniņu rīks. Tā nav medicīniska ierīce, tā nav paredzēta slimību diagnosticēšanai, ārstēšanai vai profilaksei un to nedrīkst izmantot ārkārtas vai nepārtrauktai veselības uzraudzībai. Ja tev ir jautājumi par sirdi vai treniņiem, vērsies pie ārsta.

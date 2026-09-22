@@ -1,0 +1,51 @@
+Heart Alert si collega alla tua fascia cardio Bluetooth e suona nel momento in cui i battiti salgono sopra o scendono sotto l'intervallo che hai impostato. Scegli un minimo e un massimo, metti via il telefono e allenati a orecchio.
+
+Niente schermo da controllare. Niente calcoli sulle zone. Nessun account.
+
+<h2>Come funziona</h2>
+1. Indossa il tuo sensore cardio Bluetooth o la fascia toracica.
+2. Imposta i BPM minimi e massimi.
+3. Premi avvia — ricevi un avviso quando sali troppo o scendi troppo, e un altro quando rientri nell'intervallo.
+
+<h2>Funzioni</h2>
+– Limiti minimo e massimo in BPM completamente liberi
+– Avvisi di battito alto e di battito basso
+– Avvisi sonori immediati, con volume regolabile
+– Vibrazione opzionale
+– Ripetizione ogni 1, 3, 5 o 10 secondi finché resti fuori intervallo
+– Ritardo «fuori intervallo da», così un picco breve o un calo passeggero resta silenzioso
+– Ritardo iniziale, per tenere tutto muto durante il riscaldamento
+– Livello di batteria del sensore a colpo d'occhio
+– Continua in background mentre usi un'altra app
+– Configurazione rapida, nessuna registrazione
+
+<h2>Funziona con il tuo sensore cardio</h2>
+Supporta la maggior parte dei cardiofrequenzimetri Bluetooth Low Energy (BLE) compatibili, fasce toraciche e bracciali, tra cui:
+– Polar H10, H9, H7, OH1 e Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon e altri
+
+Qualsiasi sensore che trasmetta un segnale cardiaco Bluetooth LE standard dovrebbe funzionare, anche se il Bluetooth da solo non garantisce la compatibilità. Se il tuo non viene rilevato, scrivi allo sviluppatore.
+
+Serve un sensore cardio esterno. La misurazione con la fotocamera o solo dal polso non è supportata.
+
+<h2>Pensato per</h2>
+– Zona 2 e costruzione della base aerobica
+– Corsa, ciclismo e cyclette
+– Cardio, palestra e interval training
+– Fondo e sforzi a ritmo costante
+– Giorni di recupero facile, dove il punto è proprio restare tranquilli
+– Chi vuole un allarme cardio e nient'altro
+
+<h2>Perché un allarme invece di un display?</h2>
+Un numero sullo schermo serve solo se lo guardi. Un avviso fa sì che il tuo intervallo si gestisca da solo: ci pensi soltanto quando serve davvero, sul tapis roulant, su strada o con il telefono nella tasca della maglia.
+
+<h2>Prezzo</h2>
+Le prime 5 sessioni sono gratuite. Il monitoraggio illimitato è un acquisto singolo. Nessun abbonamento, nessuna pubblicità.
+
+<h2>Privacy</h2>
+Heart Alert non ha alcun permesso di accesso a internet. La tua frequenza cardiaca non lascia mai il telefono.
+
+<h2>Importante: uso in background</h2>
+L'app continua a misurare in background, ma Android può chiuderla per risparmiare batteria. Per evitarlo, vedi <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert è uno strumento per lo sport e l'allenamento. Non è un dispositivo medico, non serve a diagnosticare, trattare, curare o prevenire alcuna malattia e non va usato per la sorveglianza d'emergenza o per il monitoraggio continuo della salute. Per dubbi sul tuo cuore o sul tuo allenamento, rivolgiti a un medico.

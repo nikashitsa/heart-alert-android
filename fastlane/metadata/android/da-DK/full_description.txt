@@ -1,0 +1,51 @@
+Heart Alert forbinder til din Bluetooth-pulsmåler og giver lyd i det øjeblik, pulsen går over eller under det interval, du selv sætter. Vælg et minimum og et maksimum, læg telefonen væk, og træn efter øret.
+
+Ingen skærm at holde øje med. Ingen zoneregning. Ingen konto.
+
+<h2>Sådan virker det</h2>
+1. Tag din Bluetooth-pulsmåler eller dit brystbælte på.
+2. Sæt din laveste og højeste puls.
+3. Tryk start — du får en alarm, når du kommer for højt op eller for langt ned, og en til, når du er tilbage i intervallet.
+
+<h2>Funktioner</h2>
+– Frit valgte nedre og øvre grænser i puls
+– Alarm ved både høj og lav puls
+– Øjeblikkelige lydsignaler med justerbar lydstyrke
+– Vibration, hvis du vil
+– Gentagelse hvert 1., 3., 5. eller 10. sekund, så længe du er uden for intervallet
+– Forsinkelsen "uden for intervallet i", så en kort spids eller et kortvarigt dyk forbliver stille
+– Startforsinkelse, så der er ro under opvarmningen
+– Sensorens batteriniveau med et blik
+– Kører videre i baggrunden, mens du bruger en anden app
+– Hurtig opsætning, intet at melde sig til
+
+<h2>Virker med din pulsmåler</h2>
+Understøtter de fleste kompatible Bluetooth Low Energy (BLE) pulsmålere, brystbælter og armbånd, blandt andet:
+– Polar H10, H9, H7, OH1 og Verity Sense
+– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon og flere
+
+Enhver sensor, der sender et almindeligt Bluetooth LE-pulssignal, burde virke, men Bluetooth alene er ingen garanti for kompatibilitet. Bliver din ikke fundet, så skriv til udvikleren.
+
+Der kræves en ekstern pulssensor. Måling med kameraet eller udelukkende fra håndleddet understøttes ikke.
+
+<h2>Lavet til</h2>
+– Zone 2 og opbygning af aerob grundform
+– Løb, cykling og indendørs cykling
+– Kondition, træningscenter og intervaltræning
+– Udholdenhed og arbejde i jævnt tempo
+– Rolige restitutionsdage, hvor hele pointen er ikke at sætte tempoet op
+– Alle, der vil have en pulsalarm og ikke andet
+
+<h2>Hvorfor en alarm frem for et display?</h2>
+Et tal på skærmen hjælper kun, hvis du kigger på det. En alarm passer dit målinterval for dig: du tænker først på det, når der faktisk er brug for det — på løbebåndet, på vejen eller med telefonen i trøjelommen.
+
+<h2>Pris</h2>
+Dine første 5 træninger er gratis. Ubegrænset måling er et engangskøb. Intet abonnement og ingen reklamer.
+
+<h2>Privatliv</h2>
+Heart Alert har slet ingen internettilladelse. Din puls forlader aldrig telefonen.
+
+<h2>Vigtigt: brug i baggrunden</h2>
+Appen måler videre i baggrunden, men Android kan lukke den for at spare batteri. Sådan undgår du det: <a href="https://dontkillmyapp.com">dontkillmyapp.com</a>.
+
+Heart Alert er et sports- og træningsværktøj. Det er ikke medicinsk udstyr, er ikke beregnet til at diagnosticere, behandle, helbrede eller forebygge sygdom og bør ikke bruges til nødovervågning eller løbende sundhedsovervågning. Har du spørgsmål om dit hjerte eller din træning, så tal med en læge.

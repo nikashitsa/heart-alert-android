@@ -1,0 +1,1 @@
+Pulslarm via Bluetooth: ljud när pulsen lämnar intervallet du valt

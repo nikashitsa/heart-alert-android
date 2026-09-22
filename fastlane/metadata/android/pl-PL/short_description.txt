@@ -1,0 +1,1 @@
+Alarm tętna przez Bluetooth: dźwięk, gdy BPM wychodzi poza Twój zakres

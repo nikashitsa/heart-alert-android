@@ -1,0 +1,1 @@
+Bluetooth pulzusriasztó: hangjelzés, ha a BPM kilép a tartományodból
