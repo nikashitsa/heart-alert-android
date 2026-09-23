@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">tep/min</string>
+    <string name="bpm_value">%1$d tep/min</string>
+    <string name="seconds_value">%1$d s</string>
+    <string name="minutes_value">%1$d min</string>
+    <string name="chevron">Šipka</string>
+    <string name="heart">Srdce</string>
+    <string name="connecting">Připojování…</string>
+    <string name="reconnecting">Opětovné připojování…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Ukázkový režim</string>
+    <string name="connect">Připojit</string>
+
+    <!-- Settings -->
+    <string name="settings">Nastavení</string>
+    <string name="language">Jazyk</string>
+    <string name="heart_rate">Tepová frekvence</string>
+    <string name="min">Min.</string>
+    <string name="max">Max.</string>
+    <string name="alert">Upozornění</string>
+    <string name="volume_down">Ztišit</string>
+    <string name="volume_up">Zesílit</string>
+    <string name="advanced">Pokročilé</string>
+    <string name="vibration">Vibrace</string>
+    <string name="interval">Interval</string>
+    <string name="out_of_range_for">Mimo rozsah po dobu</string>
+    <string name="initial_delay">Počáteční prodleva</string>
+    <string name="initial_delay_off">vyp.</string>
+    <string name="initial_delay_until_in_range">do vstupu do rozsahu</string>
+    <string name="connection">Připojení</string>
+    <string name="device">Zařízení</string>
+    <string name="battery">Baterie</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Spustit</string>
+    <string name="start_for_free">Spustit zdarma (%1$d)</string>
+    <string name="expand">Rozbalit</string>
+    <string name="collapse">Sbalit</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Vyberte zařízení</string>
+    <string name="searching_for_devices">Hledání zařízení…</string>
+    <string name="devices_not_found">Žádná zařízení nenalezena</string>
+    <string name="devices_not_found_hint">Ujistěte se, že máte snímač nasazený a jeho baterie je dostatečně nabitá.</string>
+    <string name="try_again">Zkusit znovu</string>
+    <string name="bluetooth_off">Bluetooth je vypnutý</string>
+    <string name="bluetooth_off_hint">Pro pokračování zapněte v zařízení Bluetooth.</string>
+
+    <!-- Tracking -->
+    <string name="range">Rozsah %1$d-%2$d tep/min</string>
+    <string name="stop">Zastavit</string>
+    <string name="disconnected">Odpojeno</string>
+    <string name="state_good">V normě</string>
+    <string name="state_too_low">Příliš nízká!</string>
+    <string name="state_too_high">Příliš vysoká!</string>
+    <string name="initial_delay_until_in_range_status">Prodleva do vstupu do rozsahu</string>
+    <string name="initial_delay_countdown">Počáteční prodleva %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Hotovo</string>
+    <string name="paywall_success_description">Neomezený přístup je nyní k dispozici.</string>
+    <string name="continue_button">Pokračovat</string>
+    <string name="paywall_title">Neomezený přístup</string>
+    <string name="paywall_description">Bezplatné relace jsou vyčerpány.\nPokračujte v monitorování s neomezeným přístupem.</string>
+    <string name="one_time_purchase">Jednorázový nákup %1$s</string>
+    <string name="restore_purchase">Obnovit nákup</string>
+    <string name="billing_pending">Nákup čeká na zpracování. Přístup se odemkne po dokončení platby.</string>
+    <string name="billing_nothing_to_restore">Nebyl nalezen žádný předchozí nákup.</string>
+    <string name="billing_unavailable">Google Play teď není k dispozici.</string>
+    <string name="billing_failed">Něco se pokazilo. Zkuste to znovu.</string>
+</resources>

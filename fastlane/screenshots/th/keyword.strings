@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "สายรัดทุกรุ่น";
+"02_settings" = "โซนของคุณ";
+"03_tracking_too_low" = "ต่ำเกินไป?";
+"04_tracking_good" = "อยู่ในโซน";
+"05_tracking_too_high" = "สูงเกินไป?";

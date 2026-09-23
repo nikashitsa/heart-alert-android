@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "कोई भी स्ट्रैप";
+"02_settings" = "आपका ज़ोन";
+"03_tracking_too_low" = "बहुत कम?";
+"04_tracking_good" = "सही ज़ोन में";
+"05_tracking_too_high" = "बहुत ज़्यादा?";

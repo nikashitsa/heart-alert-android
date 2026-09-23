@@ -27,6 +27,8 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import com.nikashitsa.polar_alert_android.R
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.tooling.preview.Preview
@@ -58,11 +60,13 @@ fun DevicePicker(
 ) {
     val isBluetoothOn = bluetooth.isBluetoothOn.collectAsState()
     val foundDevices = bluetooth.foundDevices.collectAsState()
+    val demoEnabled = bluetooth.demoEnabled.collectAsState()
 
     DevicePickerContent(
         sheetState = sheetState,
         onDismissRequest = onDismissRequest,
-        isBluetoothOn = isBluetoothOn.value,
+        // The demo strap needs no Bluetooth, so don't block the list on it.
+        isBluetoothOn = isBluetoothOn.value || demoEnabled.value,
         foundDevices = foundDevices.value,
         searchForDevice = bluetooth::searchForDevice,
         stopDevicesSearch = bluetooth::stopDevicesSearch,
@@ -102,7 +106,7 @@ fun DevicePickerContent(
                     DevicePickerState.Searching -> {
                         if (foundDevices.isNotEmpty()) {
                             Text(
-                                text = "Choose device",
+                                text = stringResource(R.string.choose_device),
                                 style = Fonts.textLgBold
                             )
                             Column(
@@ -127,7 +131,7 @@ fun DevicePickerContent(
                             }
                         } else {
                             Text(
-                                text = "Searching for devices...",
+                                text = stringResource(R.string.searching_for_devices),
                                 style = Fonts.textLgBold
                             )
                             AppLoader(Modifier.weight(1f))
@@ -148,7 +152,7 @@ fun DevicePickerContent(
 
                     DevicePickerState.Connecting -> {
                         Text(
-                            text = "Connecting...",
+                            text = stringResource(R.string.connecting),
                             style = Fonts.textLgBold,
                         )
                         AppLoader(Modifier.weight(1f))
@@ -156,7 +160,7 @@ fun DevicePickerContent(
 
                     DevicePickerState.NotFound -> {
                         Text(
-                            text = "Devices not found",
+                            text = stringResource(R.string.devices_not_found),
                             style = Fonts.textLgBold,
                         )
                         Column(
@@ -165,18 +169,18 @@ fun DevicePickerContent(
                             verticalArrangement = Arrangement.Center,
                         ) {
                             Text(
-                                text = "Make sure that you put it on and the battery level is good.",
+                                text = stringResource(R.string.devices_not_found_hint),
                                 style = Fonts.textMd,
                             )
                         }
-                        AppButton("Try again") {
+                        AppButton(stringResource(R.string.try_again)) {
                             state = DevicePickerState.Searching
                         }
                     }
                 }
             } else {
                 Text(
-                    text = "Bluetooth is off",
+                    text = stringResource(R.string.bluetooth_off),
                     style = Fonts.textLgBold,
                 )
                 Column(
@@ -185,7 +189,7 @@ fun DevicePickerContent(
                     verticalArrangement = Arrangement.Center,
                 ) {
                     Text(
-                        text = "Please enable Bluetooth on your device to continue.",
+                        text = stringResource(R.string.bluetooth_off_hint),
                         style = Fonts.textMd,
                     )
                 }

@@ -1,0 +1,6 @@
+/* Main line under each keyword. Keys match the screenshot file names. */
+"01_connect" = "Polar, Garmin, Wahoo ve dahası";
+"02_settings" = "Nabız aralığını belirle";
+"03_tracking_too_low" = "Anında duy";
+"04_tracking_good" = "Doğru yoğunlukta antrenman";
+"05_tracking_too_high" = "Yavaşlaman için uyarı al";

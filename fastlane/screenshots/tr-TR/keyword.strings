@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Tüm bantlar";
+"02_settings" = "Senin bölgen";
+"03_tracking_too_low" = "Çok mu düşük?";
+"04_tracking_good" = "Tam bölgede";
+"05_tracking_too_high" = "Çok mu yüksek?";

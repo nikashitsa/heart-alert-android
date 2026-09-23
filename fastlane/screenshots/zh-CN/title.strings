@@ -1,0 +1,6 @@
+/* Main line under each keyword. Keys match the screenshot file names. */
+"01_connect" = "Polar、Garmin、Wahoo 等";
+"02_settings" = "设置心率范围";
+"03_tracking_too_low" = "立即听到提醒";
+"04_tracking_good" = "以合适强度训练";
+"05_tracking_too_high" = "提醒你放慢速度";

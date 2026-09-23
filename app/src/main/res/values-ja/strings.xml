@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">bpm</string>
+    <string name="bpm_value">%1$d bpm</string>
+    <string name="seconds_value">%1$d秒</string>
+    <string name="minutes_value">%1$d分</string>
+    <string name="chevron">矢印</string>
+    <string name="heart">ハート</string>
+    <string name="connecting">接続中…</string>
+    <string name="reconnecting">再接続中…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">デモモード</string>
+    <string name="connect">接続</string>
+
+    <!-- Settings -->
+    <string name="settings">設定</string>
+    <string name="language">言語</string>
+    <string name="heart_rate">心拍数</string>
+    <string name="min">最小</string>
+    <string name="max">最大</string>
+    <string name="alert">アラート</string>
+    <string name="volume_down">音量を下げる</string>
+    <string name="volume_up">音量を上げる</string>
+    <string name="advanced">詳細設定</string>
+    <string name="vibration">バイブレーション</string>
+    <string name="interval">間隔</string>
+    <string name="out_of_range_for">範囲外の継続時間</string>
+    <string name="initial_delay">開始時の遅延</string>
+    <string name="initial_delay_off">オフ</string>
+    <string name="initial_delay_until_in_range">範囲内になるまで</string>
+    <string name="connection">接続</string>
+    <string name="device">デバイス</string>
+    <string name="battery">バッテリー</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">開始</string>
+    <string name="start_for_free">無料で開始（%1$d）</string>
+    <string name="expand">展開</string>
+    <string name="collapse">折りたたむ</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">デバイスを選択</string>
+    <string name="searching_for_devices">デバイスを検索中…</string>
+    <string name="devices_not_found">デバイスが見つかりません</string>
+    <string name="devices_not_found_hint">センサーを装着していること、バッテリー残量が十分あることを確認してください。</string>
+    <string name="try_again">再試行</string>
+    <string name="bluetooth_off">Bluetoothがオフです</string>
+    <string name="bluetooth_off_hint">続行するには、端末のBluetoothをオンにしてください。</string>
+
+    <!-- Tracking -->
+    <string name="range">範囲 %1$d-%2$d bpm</string>
+    <string name="stop">停止</string>
+    <string name="disconnected">切断されました</string>
+    <string name="state_good">良好</string>
+    <string name="state_too_low">低すぎます！</string>
+    <string name="state_too_high">高すぎます！</string>
+    <string name="initial_delay_until_in_range_status">範囲内になるまで待機中</string>
+    <string name="initial_delay_countdown">開始時の遅延 %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">完了</string>
+    <string name="paywall_success_description">無制限アクセスが利用可能になりました。</string>
+    <string name="continue_button">続ける</string>
+    <string name="paywall_title">無制限アクセス</string>
+    <string name="paywall_description">無料セッションが終了しました。\n無制限アクセスでモニタリングを続けましょう。</string>
+    <string name="one_time_purchase">買い切り %1$s</string>
+    <string name="restore_purchase">購入を復元</string>
+    <string name="billing_pending">購入を処理中です。支払いが完了するとアクセスが有効になります。</string>
+    <string name="billing_nothing_to_restore">以前の購入が見つかりません。</string>
+    <string name="billing_unavailable">現在Google Playを利用できません。</string>
+    <string name="billing_failed">問題が発生しました。もう一度お試しください。</string>
+</resources>

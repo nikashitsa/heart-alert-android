@@ -8,6 +8,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.map
 
 @HiltViewModel
 class SettingsViewModel @Inject constructor(
@@ -28,6 +29,8 @@ class SettingsViewModel @Inject constructor(
     val outOfRangeFor: StateFlow<Int> = _outOfRangeFor
     private val _initialDelay = MutableStateFlow<Int>(SettingsDefaults.INITIAL_DELAY)
     val initialDelay: StateFlow<Int> = _initialDelay
+    private val _language = MutableStateFlow<AppLanguage>(AppLanguage.resolve(null))
+    val language: StateFlow<AppLanguage> = _language
     private val _unlimitedAccess = MutableStateFlow<Boolean>(SettingsDefaults.UNLIMITED_ACCESS)
     val unlimitedAccess: StateFlow<Boolean> = _unlimitedAccess
 
@@ -49,6 +52,7 @@ class SettingsViewModel @Inject constructor(
         observe(repository.alertIntervalFlow, _alertInterval)
         observe(repository.outOfRangeForFlow, _outOfRangeFor)
         observe(repository.initialDelayFlow, _initialDelay)
+        observe(repository.languageFlow.map(AppLanguage::resolve), _language)
         observe(repository.unlimitedAccessFlow, _unlimitedAccess)
         observe(repository.hasAccessFlow, _hasAccess)
         observe(repository.freeSessionsLeftFlow, _freeSessionsLeft)
@@ -61,6 +65,7 @@ class SettingsViewModel @Inject constructor(
     fun setAlertInterval(value: Int) = update { repository.setAlertInterval(value) }
     fun setOutOfRangeFor(value: Int) = update { repository.setOutOfRangeFor(value) }
     fun setInitialDelay(value: Int) = update { repository.setInitialDelay(value) }
+    fun setLanguage(value: AppLanguage) = update { repository.setLanguage(value) }
     fun countTrackedSession() = update { repository.countTrackedSession() }
 
     private fun <T> observe(flow: Flow<T>, state: MutableStateFlow<T>) {

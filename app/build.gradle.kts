@@ -6,6 +6,8 @@ plugins {
     id("com.google.dagger.hilt.android")
 }
 
+val javaVersion = 24
+
 val commitCount: Int = runCatching {
     "git rev-list --count HEAD".runCommand().trim().toInt() + 33
 }.getOrElse {
@@ -46,22 +48,30 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_24
-        targetCompatibility = JavaVersion.VERSION_24
+        sourceCompatibility = JavaVersion.toVersion(javaVersion)
+        targetCompatibility = JavaVersion.toVersion(javaVersion)
     }
     kotlin {
-        jvmToolchain(24)
+        jvmToolchain(javaVersion)
     }
     buildFeatures {
         compose = true
     }
+    bundle {
+        // The UI language can be switched in-app, so every translation must be installed,
+        // not just the ones matching the device languages Play would otherwise pick.
+        language {
+            enableSplit = false
+        }
+    }
 }
 
 dependencies {
+    val composeBom = platform(libs.androidx.compose.bom)
+    implementation(composeBom)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
@@ -74,8 +84,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.androidx.uiautomator)
+    androidTestImplementation(libs.screengrab)
     androidTestImplementation(libs.androidx.ui.test.junit4)
+    androidTestImplementation(composeBom)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.hilt.android)
@@ -84,6 +96,14 @@ dependencies {
     implementation(libs.review)
     implementation(libs.review.ktx)
     implementation(libs.billing.ktx)
+}
+
+// Hilt's hiltJavaCompile* tasks don't pick up the toolchain above and would otherwise compile
+// with whatever JDK is in JAVA_HOME, failing with "invalid source release: 24" on older ones.
+tasks.withType<JavaCompile>().configureEach {
+    javaCompiler = javaToolchains.compilerFor {
+        languageVersion = JavaLanguageVersion.of(javaVersion)
+    }
 }
 
 fun String.runCommand(): String {

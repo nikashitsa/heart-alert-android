@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "各种心率带";
+"02_settings" = "你的区间";
+"03_tracking_too_low" = "过低？";
+"04_tracking_good" = "区间达标";
+"05_tracking_too_high" = "过高？";

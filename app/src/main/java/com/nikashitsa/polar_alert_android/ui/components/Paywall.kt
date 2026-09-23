@@ -1,6 +1,7 @@
 package com.nikashitsa.polar_alert_android.ui.components
 
 import android.app.Activity
+import androidx.annotation.StringRes
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -20,6 +21,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import com.nikashitsa.polar_alert_android.R
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -71,7 +74,7 @@ fun PaywallContent(
     purchased: Boolean = false,
     price: String = BillingRepository.FALLBACK_PRICE,
     busy: Boolean = false,
-    notice: String? = null,
+    @StringRes notice: Int? = null,
     purchase: () -> Unit = {},
     restore: () -> Unit = {},
 ) {
@@ -91,26 +94,26 @@ fun PaywallContent(
         ) {
             if (purchased) {
                 PaywallBody(
-                    title = "Success",
-                    description = "Unlimited access is now available.",
+                    title = stringResource(R.string.paywall_success_title),
+                    description = stringResource(R.string.paywall_success_description),
                 )
-                AppButton("Continue") {
+                AppButton(stringResource(R.string.continue_button)) {
                     scope.launch { sheetState.hide() }.invokeOnCompletion {
                         if (!sheetState.isVisible) onContinue()
                     }
                 }
             } else {
                 PaywallBody(
-                    title = "Unlimited access",
-                    description = "Your free sessions are complete.\nKeep monitoring with unlimited access.",
+                    title = stringResource(R.string.paywall_title),
+                    description = stringResource(R.string.paywall_description),
                     notice = notice,
                 )
                 if (busy) {
                     AppLoader(Modifier.height(104.dp))
                 } else {
-                    AppButton("One-time purchase $price") { purchase() }
+                    AppButton(stringResource(R.string.one_time_purchase, price)) { purchase() }
                     Spacer(modifier = Modifier.height(4.dp))
-                    AppButton("Restore purchase", colors = Colors.LinkButton) { restore() }
+                    AppButton(stringResource(R.string.restore_purchase), colors = Colors.LinkButton) { restore() }
                 }
             }
         }
@@ -122,7 +125,7 @@ fun PaywallContent(
 private fun ColumnScope.PaywallBody(
     title: String,
     description: String,
-    notice: String? = null,
+    @StringRes notice: Int? = null,
 ) {
     Text(text = title, style = Fonts.textLgBold)
     Column(
@@ -135,7 +138,7 @@ private fun ColumnScope.PaywallBody(
         if (notice != null) {
             Spacer(modifier = Modifier.height(12.dp))
             Text(
-                text = notice,
+                text = stringResource(notice),
                 style = Fonts.textMd,
                 color = Colors.Red,
                 textAlign = TextAlign.Center,
@@ -177,7 +180,7 @@ fun PaywallUnavailablePreview() {
     HeartAlertTheme {
         PaywallContent(
             sheetState = previewSheetState(),
-            notice = "Google Play is not available right now.",
+            notice = R.string.billing_unavailable,
         )
     }
 }

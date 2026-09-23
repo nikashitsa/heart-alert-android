@@ -28,7 +28,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.nikashitsa.polar_alert_android.R
+import com.nikashitsa.polar_alert_android.lib.AppLanguage
 import com.nikashitsa.polar_alert_android.lib.BatteryStatusFeature
 import com.nikashitsa.polar_alert_android.lib.BluetoothViewModel
 import com.nikashitsa.polar_alert_android.lib.SettingsDefaults
@@ -41,6 +44,7 @@ import com.nikashitsa.polar_alert_android.ui.components.AppSlider
 import com.nikashitsa.polar_alert_android.ui.components.AppSwitch
 import com.nikashitsa.polar_alert_android.ui.components.DevicePicker
 import com.nikashitsa.polar_alert_android.ui.components.DropdownMenuSelector
+import com.nikashitsa.polar_alert_android.ui.components.LanguageSelector
 import com.nikashitsa.polar_alert_android.ui.components.Paywall
 
 @Composable
@@ -62,6 +66,7 @@ fun SettingsScreen(
     val initialDelay by settings.initialDelay.collectAsState()
     val hasAccess by settings.hasAccess.collectAsState()
     val freeSessionsLeft by settings.freeSessionsLeft.collectAsState()
+    val language by settings.language.collectAsState()
 
     BackHandler {
         onBack()
@@ -87,6 +92,8 @@ fun SettingsScreen(
         playSound = sound::play,
         hasAccess = hasAccess,
         freeSessionsLeft = freeSessionsLeft,
+        language = language,
+        setLanguage = settings::setLanguage,
         onNext = onNext,
     )
 }
@@ -113,6 +120,8 @@ fun SettingsScreenContent(
     playSound: (SoundType) -> Unit = {},
     hasAccess: Boolean = true,
     freeSessionsLeft: Int = 0,
+    language: AppLanguage = AppLanguage.DEFAULT,
+    setLanguage: (AppLanguage) -> Unit = {},
     onNext: () -> Unit = {}
 ) {
     val scrollState = rememberScrollState()
@@ -131,23 +140,27 @@ fun SettingsScreenContent(
             .padding(16.dp, 40.dp, 16.dp, 16.dp)
             .verticalScroll(scrollState),
     ) {
-        Text(text = "Settings", style = Fonts.textXlBold)
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(text = stringResource(R.string.settings), style = Fonts.textXlBold)
+            Spacer(modifier = Modifier.weight(1f))
+            LanguageSelector(value = language, setValue = setLanguage)
+        }
 
         Spacer(modifier = Modifier.height(40.dp))
 
-        SettingSection(title = "Heart rate") {
-            SettingRow(label = "Min") {
+        SettingSection(title = stringResource(R.string.heart_rate)) {
+            SettingRow(label = stringResource(R.string.min)) {
                 DropdownMenuSelector(
                     hrMin,
-                    label = { "$it BPM" },
+                    label = { stringResource(R.string.bpm_value, it) },
                     options = 30..hrMax,
                     setValue = { it -> setHrMin(it) }
                 )
             }
-            SettingRow(label = "Max") {
+            SettingRow(label = stringResource(R.string.max)) {
                 DropdownMenuSelector(
                     hrMax,
-                    label = { "$it BPM" },
+                    label = { stringResource(R.string.bpm_value, it) },
                     options = hrMin..240,
                     setValue = { it -> setHrMax(it) }
                 )
@@ -156,7 +169,7 @@ fun SettingsScreenContent(
 
         Spacer(modifier = Modifier.height(40.dp))
 
-        SettingSection(title = "Alert") {
+        SettingSection(title = stringResource(R.string.alert)) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -164,7 +177,7 @@ fun SettingsScreenContent(
             ) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.VolumeMute,
-                    contentDescription = "Volume down",
+                    contentDescription = stringResource(R.string.volume_down),
                 )
                 AppSlider(
                     value = volume,
@@ -177,25 +190,25 @@ fun SettingsScreenContent(
                 )
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.VolumeUp,
-                    contentDescription = "Volume up",
+                    contentDescription = stringResource(R.string.volume_up),
                 )
             }
             Spacer(modifier = Modifier.height(4.dp))
-            Accordion(label = "Advanced") {
-                SettingRow(label = "Vibration") {
+            Accordion(label = stringResource(R.string.advanced)) {
+                SettingRow(label = stringResource(R.string.vibration)) {
                     AppSwitch(vibrate) {
                         setVibrate(it)
                     }
                 }
-                SettingRow(label = "Interval") {
+                SettingRow(label = stringResource(R.string.interval)) {
                     DropdownMenuSelector(
                         alertInterval,
                         options = SettingsOptions.ALERT_INTERVAL,
-                        label = { "$it sec" },
+                        label = { stringResource(R.string.seconds_value, it) },
                         setValue = { it -> setAlertInterval(it) }
                     )
                 }
-                SettingRow(label = "Out of range for") {
+                SettingRow(label = stringResource(R.string.out_of_range_for)) {
                     DropdownMenuSelector(
                         outOfRangeFor,
                         options = SettingsOptions.OUT_OF_RANGE_FOR,
@@ -204,7 +217,7 @@ fun SettingsScreenContent(
                         setValue = { it -> setOutOfRangeFor(it) }
                     )
                 }
-                SettingRow(label = "Initial delay") {
+                SettingRow(label = stringResource(R.string.initial_delay)) {
                     DropdownMenuSelector(
                         initialDelay,
                         options = SettingsOptions.INITIAL_DELAY,
@@ -218,17 +231,19 @@ fun SettingsScreenContent(
 
         Spacer(modifier = Modifier.height(40.dp))
 
-        SettingSection(title = "Connection") {
-            SettingRow(label = "Device") {
+        SettingSection(title = stringResource(R.string.connection)) {
+            SettingRow(label = stringResource(R.string.device)) {
                 AppTextButton(onClick = {
                     showPicker = true
                 }) {
                     Text(text = deviceName)
-                    Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = "Chevron")
+                    Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = stringResource(R.string.chevron))
                 }
             }
             if (batteryStatusFeature.isSupported) {
-                SettingRow(label = "Battery") { Text("${batteryStatusFeature.batteryLevel}%") }
+                SettingRow(label = stringResource(R.string.battery)) {
+                    Text(stringResource(R.string.battery_value, batteryStatusFeature.batteryLevel))
+                }
             }
         }
 
@@ -237,7 +252,11 @@ fun SettingsScreenContent(
 
         // The count is only advertised while there are free sessions to advertise: an entitled
         // user, or one who has used them all, just gets "Start".
-        val startLabel = if (freeSessionsLeft > 0) "Start for free ($freeSessionsLeft)" else "Start"
+        val startLabel = if (freeSessionsLeft > 0) {
+            stringResource(R.string.start_for_free, freeSessionsLeft)
+        } else {
+            stringResource(R.string.start)
+        }
         AppButton(startLabel) { if (hasAccess) onNext() else showPaywall = true }
 
         if (showPicker) {
@@ -260,12 +279,18 @@ fun SettingsScreenContent(
     }
 }
 
+@Composable
 private fun formatDuration(seconds: Int): String =
-    if (seconds < 60) "$seconds sec" else "${seconds / 60} min"
+    if (seconds < 60) {
+        stringResource(R.string.seconds_value, seconds)
+    } else {
+        stringResource(R.string.minutes_value, seconds / 60)
+    }
 
+@Composable
 private fun formatInitialDelay(seconds: Int): String = when (seconds) {
-    0 -> "off"
-    SettingsOptions.UNTIL_IN_RANGE -> "until in range"
+    0 -> stringResource(R.string.initial_delay_off)
+    SettingsOptions.UNTIL_IN_RANGE -> stringResource(R.string.initial_delay_until_in_range)
     else -> formatDuration(seconds)
 }
 

@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">BPM</string>
+    <string name="bpm_value">%1$d BPM</string>
+    <string name="seconds_value">%1$d초</string>
+    <string name="minutes_value">%1$d분</string>
+    <string name="chevron">화살표</string>
+    <string name="heart">하트</string>
+    <string name="connecting">연결 중…</string>
+    <string name="reconnecting">다시 연결 중…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">데모 모드</string>
+    <string name="connect">연결</string>
+
+    <!-- Settings -->
+    <string name="settings">설정</string>
+    <string name="language">언어</string>
+    <string name="heart_rate">심박수</string>
+    <string name="min">최소</string>
+    <string name="max">최대</string>
+    <string name="alert">알림</string>
+    <string name="volume_down">볼륨 낮추기</string>
+    <string name="volume_up">볼륨 높이기</string>
+    <string name="advanced">고급</string>
+    <string name="vibration">진동</string>
+    <string name="interval">간격</string>
+    <string name="out_of_range_for">범위 이탈 지속 시간</string>
+    <string name="initial_delay">시작 지연</string>
+    <string name="initial_delay_off">끔</string>
+    <string name="initial_delay_until_in_range">범위에 들어올 때까지</string>
+    <string name="connection">연결</string>
+    <string name="device">기기</string>
+    <string name="battery">배터리</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">시작</string>
+    <string name="start_for_free">무료로 시작 (%1$d)</string>
+    <string name="expand">펼치기</string>
+    <string name="collapse">접기</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">기기 선택</string>
+    <string name="searching_for_devices">기기 검색 중…</string>
+    <string name="devices_not_found">기기를 찾을 수 없음</string>
+    <string name="devices_not_found_hint">센서를 착용했는지, 배터리가 충분한지 확인하세요.</string>
+    <string name="try_again">다시 시도</string>
+    <string name="bluetooth_off">Bluetooth가 꺼져 있음</string>
+    <string name="bluetooth_off_hint">계속하려면 기기에서 Bluetooth를 켜 주세요.</string>
+
+    <!-- Tracking -->
+    <string name="range">범위 %1$d-%2$d BPM</string>
+    <string name="stop">중지</string>
+    <string name="disconnected">연결 끊김</string>
+    <string name="state_good">양호</string>
+    <string name="state_too_low">너무 낮음!</string>
+    <string name="state_too_high">너무 높음!</string>
+    <string name="initial_delay_until_in_range_status">범위에 들어올 때까지 대기 중</string>
+    <string name="initial_delay_countdown">시작 지연 %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">완료</string>
+    <string name="paywall_success_description">이제 무제한으로 이용할 수 있습니다.</string>
+    <string name="continue_button">계속</string>
+    <string name="paywall_title">무제한 이용</string>
+    <string name="paywall_description">무료 세션을 모두 사용했습니다.\n무제한 이용으로 계속 모니터링하세요.</string>
+    <string name="one_time_purchase">1회 구매 %1$s</string>
+    <string name="restore_purchase">구매 복원</string>
+    <string name="billing_pending">구매를 처리 중입니다. 결제가 완료되면 이용할 수 있습니다.</string>
+    <string name="billing_nothing_to_restore">이전 구매 내역이 없습니다.</string>
+    <string name="billing_unavailable">지금은 Google Play를 사용할 수 없습니다.</string>
+    <string name="billing_failed">문제가 발생했습니다. 다시 시도해 주세요.</string>
+</resources>

@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Jakýkoli pás";
+"02_settings" = "Vaše zóna";
+"03_tracking_too_low" = "Příliš nízká?";
+"04_tracking_good" = "V zóně";
+"05_tracking_too_high" = "Příliš vysoká?";

@@ -5,9 +5,13 @@ import android.media.AudioAttributes
 import android.media.SoundPool
 import com.nikashitsa.polar_alert_android.R
 import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 import javax.inject.Singleton
 
+/** Spoken sounds have per-language versions in `res/raw-<tag>/`; the beeps are shared. */
 enum class SoundType(val resId: Int) {
     HIGH_BEEP(R.raw.high_beep),
     LOW_BEEP(R.raw.low_beep),
@@ -21,10 +25,15 @@ enum class SoundType(val resId: Int) {
 
 @Singleton
 class SoundManager @Inject constructor(
-    @param:ApplicationContext private val context: Context
+    @param:ApplicationContext private val context: Context,
+    settings: SettingsRepository,
+    @ApplicationScope scope: CoroutineScope,
 ) {
     private val soundPool: SoundPool
-    private val soundMap = mutableMapOf<SoundType, Int>()
+
+    // Swapped whole rather than mutated, since it is loaded off the main thread.
+    @Volatile
+    private var soundMap: Map<SoundType, Int> = emptyMap()
 
     init {
         val audioAttributes = AudioAttributes.Builder()
@@ -37,10 +46,19 @@ class SoundManager @Inject constructor(
             .setAudioAttributes(audioAttributes)
             .build()
 
-        for (type in SoundType.entries) {
-            val soundId = soundPool.load(context, type.resId, 1)
-            soundMap[type] = soundId
+        // The application context ignores the in-app language, so load through a context
+        // localized to it, and reload whenever the user picks another language.
+        scope.launch {
+            settings.languageFlow.distinctUntilChanged().collect { tag ->
+                load(context.withLanguage(tag))
+            }
         }
+    }
+
+    private fun load(localizedContext: Context) {
+        val old = soundMap
+        soundMap = SoundType.entries.associateWith { soundPool.load(localizedContext, it.resId, 1) }
+        old.values.forEach(soundPool::unload)
     }
 
     fun play(type: SoundType, volume: Int) {

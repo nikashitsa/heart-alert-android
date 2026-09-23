@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Любой датчик";
+"02_settings" = "Ваша зона";
+"03_tracking_too_low" = "Слишком низкий?";
+"04_tracking_good" = "В зоне";
+"05_tracking_too_high" = "Слишком высокий?";

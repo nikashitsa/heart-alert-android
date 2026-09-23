@@ -1,0 +1,6 @@
+/* Main line under each keyword. Keys match the screenshot file names. */
+"01_connect" = "Polar, Garmin, Wahoo m.fl.";
+"02_settings" = "Still inn pulsområdet ditt";
+"03_tracking_too_low" = "Du hører det med en gang";
+"04_tracking_good" = "Tren med riktig intensitet";
+"05_tracking_too_high" = "Få beskjed om å roe ned";

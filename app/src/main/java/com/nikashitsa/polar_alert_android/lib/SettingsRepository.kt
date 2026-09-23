@@ -8,6 +8,7 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.intPreferencesKey
+import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
@@ -65,6 +66,7 @@ object SettingsKeys {
     val trackedSessions = intPreferencesKey("trackedSessions")
     val unlimitedAccess = booleanPreferencesKey("unlimitedAccess")
     val entitlementResolved = booleanPreferencesKey("entitlementResolved")
+    val language = stringPreferencesKey("language")
 }
 
 /**
@@ -133,6 +135,13 @@ class SettingsRepository @Inject constructor(
 
     val initialDelayFlow: Flow<Int> = get(SettingsKeys.initialDelay, SettingsDefaults.INITIAL_DELAY)
     suspend fun setInitialDelay(value: Int) = set(SettingsKeys.initialDelay, value)
+
+    /**
+     * The language tag the user picked (see [AppLanguage]), or null to follow the device.
+     * Nothing is stored until the user picks one, so a device language change still applies.
+     */
+    val languageFlow: Flow<String?> = dataStore.data.map { prefs -> prefs[SettingsKeys.language] }
+    suspend fun setLanguage(value: AppLanguage) = set(SettingsKeys.language, value.tag)
 
     /**
      * Entitled, whether bought or granted for being an existing user. Only ever set to true:

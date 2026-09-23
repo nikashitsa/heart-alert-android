@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "どのベルトでも";
+"02_settings" = "あなたのゾーン";
+"03_tracking_too_low" = "低すぎ？";
+"04_tracking_good" = "ゾーン内";
+"05_tracking_too_high" = "高すぎ？";

@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Any strap";
+"02_settings" = "Your zone";
+"03_tracking_too_low" = "Too low?";
+"04_tracking_good" = "In the zone";
+"05_tracking_too_high" = "Too high?";

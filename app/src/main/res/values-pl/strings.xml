@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">ud./min</string>
+    <string name="bpm_value">%1$d ud./min</string>
+    <string name="seconds_value">%1$d s</string>
+    <string name="minutes_value">%1$d min</string>
+    <string name="chevron">Strzałka</string>
+    <string name="heart">Serce</string>
+    <string name="connecting">Łączenie…</string>
+    <string name="reconnecting">Ponowne łączenie…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Tryb demo</string>
+    <string name="connect">Połącz</string>
+
+    <!-- Settings -->
+    <string name="settings">Ustawienia</string>
+    <string name="language">Język</string>
+    <string name="heart_rate">Tętno</string>
+    <string name="min">Min.</string>
+    <string name="max">Maks.</string>
+    <string name="alert">Alarm</string>
+    <string name="volume_down">Ciszej</string>
+    <string name="volume_up">Głośniej</string>
+    <string name="advanced">Zaawansowane</string>
+    <string name="vibration">Wibracje</string>
+    <string name="interval">Interwał</string>
+    <string name="out_of_range_for">Poza zakresem przez</string>
+    <string name="initial_delay">Opóźnienie startowe</string>
+    <string name="initial_delay_off">wył.</string>
+    <string name="initial_delay_until_in_range">do wejścia w zakres</string>
+    <string name="connection">Połączenie</string>
+    <string name="device">Urządzenie</string>
+    <string name="battery">Bateria</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Rozpocznij</string>
+    <string name="start_for_free">Rozpocznij za darmo (%1$d)</string>
+    <string name="expand">Rozwiń</string>
+    <string name="collapse">Zwiń</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Wybierz urządzenie</string>
+    <string name="searching_for_devices">Wyszukiwanie urządzeń…</string>
+    <string name="devices_not_found">Nie znaleziono urządzeń</string>
+    <string name="devices_not_found_hint">Upewnij się, że czujnik jest założony, a jego bateria naładowana.</string>
+    <string name="try_again">Spróbuj ponownie</string>
+    <string name="bluetooth_off">Bluetooth jest wyłączony</string>
+    <string name="bluetooth_off_hint">Włącz Bluetooth na urządzeniu, aby kontynuować.</string>
+
+    <!-- Tracking -->
+    <string name="range">Zakres %1$d-%2$d ud./min</string>
+    <string name="stop">Stop</string>
+    <string name="disconnected">Rozłączono</string>
+    <string name="state_good">W normie</string>
+    <string name="state_too_low">Za niskie!</string>
+    <string name="state_too_high">Za wysokie!</string>
+    <string name="initial_delay_until_in_range_status">Opóźnienie do wejścia w zakres</string>
+    <string name="initial_delay_countdown">Opóźnienie startowe %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Gotowe</string>
+    <string name="paywall_success_description">Nieograniczony dostęp jest już aktywny.</string>
+    <string name="continue_button">Dalej</string>
+    <string name="paywall_title">Nieograniczony dostęp</string>
+    <string name="paywall_description">Darmowe sesje zostały wykorzystane.\nKontynuuj monitorowanie z nieograniczonym dostępem.</string>
+    <string name="one_time_purchase">Jednorazowy zakup %1$s</string>
+    <string name="restore_purchase">Przywróć zakup</string>
+    <string name="billing_pending">Zakup oczekuje na realizację. Dostęp zostanie odblokowany po zakończeniu płatności.</string>
+    <string name="billing_nothing_to_restore">Nie znaleziono wcześniejszych zakupów.</string>
+    <string name="billing_unavailable">Google Play jest teraz niedostępne.</string>
+    <string name="billing_failed">Coś poszło nie tak. Spróbuj ponownie.</string>
+</resources>

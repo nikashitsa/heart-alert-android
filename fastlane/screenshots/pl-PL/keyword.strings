@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Dowolny pas";
+"02_settings" = "Twoja strefa";
+"03_tracking_too_low" = "Za niskie?";
+"04_tracking_good" = "W strefie";
+"05_tracking_too_high" = "Za wysokie?";

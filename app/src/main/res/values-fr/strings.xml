@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">bpm</string>
+    <string name="bpm_value">%1$d bpm</string>
+    <string name="seconds_value">%1$d s</string>
+    <string name="minutes_value">%1$d min</string>
+    <string name="chevron">Chevron</string>
+    <string name="heart">Cœur</string>
+    <string name="connecting">Connexion…</string>
+    <string name="reconnecting">Reconnexion…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Mode démo</string>
+    <string name="connect">Connecter</string>
+
+    <!-- Settings -->
+    <string name="settings">Réglages</string>
+    <string name="language">Langue</string>
+    <string name="heart_rate">Fréquence cardiaque</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="alert">Alerte</string>
+    <string name="volume_down">Baisser le volume</string>
+    <string name="volume_up">Monter le volume</string>
+    <string name="advanced">Avancé</string>
+    <string name="vibration">Vibration</string>
+    <string name="interval">Intervalle</string>
+    <string name="out_of_range_for">Hors plage pendant</string>
+    <string name="initial_delay">Délai initial</string>
+    <string name="initial_delay_off">désactivé</string>
+    <string name="initial_delay_until_in_range">jusqu\'à entrer dans la plage</string>
+    <string name="connection">Connexion</string>
+    <string name="device">Appareil</string>
+    <string name="battery">Batterie</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Démarrer</string>
+    <string name="start_for_free">Démarrer gratuitement (%1$d)</string>
+    <string name="expand">Développer</string>
+    <string name="collapse">Réduire</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Choisir un appareil</string>
+    <string name="searching_for_devices">Recherche d\'appareils…</string>
+    <string name="devices_not_found">Aucun appareil trouvé</string>
+    <string name="devices_not_found_hint">Vérifiez que le capteur est bien porté et que sa batterie est suffisamment chargée.</string>
+    <string name="try_again">Réessayer</string>
+    <string name="bluetooth_off">Bluetooth désactivé</string>
+    <string name="bluetooth_off_hint">Veuillez activer le Bluetooth sur votre appareil pour continuer.</string>
+
+    <!-- Tracking -->
+    <string name="range">Plage %1$d-%2$d bpm</string>
+    <string name="stop">Arrêter</string>
+    <string name="disconnected">Déconnecté</string>
+    <string name="state_good">Bon</string>
+    <string name="state_too_low">Trop bas !</string>
+    <string name="state_too_high">Trop haut !</string>
+    <string name="initial_delay_until_in_range_status">Délai initial jusqu\'à entrer dans la plage</string>
+    <string name="initial_delay_countdown">Délai initial %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Terminé</string>
+    <string name="paywall_success_description">L\'accès illimité est maintenant disponible.</string>
+    <string name="continue_button">Continuer</string>
+    <string name="paywall_title">Accès illimité</string>
+    <string name="paywall_description">Vos séances gratuites sont épuisées.\nContinuez le suivi avec l\'accès illimité.</string>
+    <string name="one_time_purchase">Achat unique %1$s</string>
+    <string name="restore_purchase">Restaurer l\'achat</string>
+    <string name="billing_pending">Votre achat est en attente. L\'accès sera débloqué une fois le paiement effectué.</string>
+    <string name="billing_nothing_to_restore">Aucun achat précédent trouvé.</string>
+    <string name="billing_unavailable">Google Play n\'est pas disponible pour le moment.</string>
+    <string name="billing_failed">Une erreur s\'est produite. Veuillez réessayer.</string>
+</resources>

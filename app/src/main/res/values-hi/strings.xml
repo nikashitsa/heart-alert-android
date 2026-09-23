@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">BPM</string>
+    <string name="bpm_value">%1$d BPM</string>
+    <string name="seconds_value">%1$d सेकंड</string>
+    <string name="minutes_value">%1$d मिनट</string>
+    <string name="chevron">तीर</string>
+    <string name="heart">दिल</string>
+    <string name="connecting">कनेक्ट हो रहा है…</string>
+    <string name="reconnecting">फिर से कनेक्ट हो रहा है…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">डेमो मोड</string>
+    <string name="connect">कनेक्ट करें</string>
+
+    <!-- Settings -->
+    <string name="settings">सेटिंग्स</string>
+    <string name="language">भाषा</string>
+    <string name="heart_rate">हृदय गति</string>
+    <string name="min">न्यूनतम</string>
+    <string name="max">अधिकतम</string>
+    <string name="alert">अलर्ट</string>
+    <string name="volume_down">आवाज़ कम करें</string>
+    <string name="volume_up">आवाज़ बढ़ाएँ</string>
+    <string name="advanced">उन्नत</string>
+    <string name="vibration">वाइब्रेशन</string>
+    <string name="interval">अंतराल</string>
+    <string name="out_of_range_for">सीमा से बाहर अवधि</string>
+    <string name="initial_delay">शुरुआती देरी</string>
+    <string name="initial_delay_off">बंद</string>
+    <string name="initial_delay_until_in_range">सीमा में आने तक</string>
+    <string name="connection">कनेक्शन</string>
+    <string name="device">डिवाइस</string>
+    <string name="battery">बैटरी</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">शुरू करें</string>
+    <string name="start_for_free">मुफ़्त शुरू करें (%1$d)</string>
+    <string name="expand">खोलें</string>
+    <string name="collapse">बंद करें</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">डिवाइस चुनें</string>
+    <string name="searching_for_devices">डिवाइस खोजे जा रहे हैं…</string>
+    <string name="devices_not_found">कोई डिवाइस नहीं मिला</string>
+    <string name="devices_not_found_hint">पक्का करें कि आपने सेंसर पहना है और उसकी बैटरी पर्याप्त है।</string>
+    <string name="try_again">फिर से कोशिश करें</string>
+    <string name="bluetooth_off">Bluetooth बंद है</string>
+    <string name="bluetooth_off_hint">जारी रखने के लिए कृपया अपने डिवाइस पर Bluetooth चालू करें।</string>
+
+    <!-- Tracking -->
+    <string name="range">सीमा %1$d-%2$d BPM</string>
+    <string name="stop">रोकें</string>
+    <string name="disconnected">डिस्कनेक्ट हो गया</string>
+    <string name="state_good">सामान्य</string>
+    <string name="state_too_low">बहुत कम!</string>
+    <string name="state_too_high">बहुत ज़्यादा!</string>
+    <string name="initial_delay_until_in_range_status">सीमा में आने तक देरी</string>
+    <string name="initial_delay_countdown">शुरुआती देरी %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">सफल</string>
+    <string name="paywall_success_description">अब असीमित एक्सेस उपलब्ध है।</string>
+    <string name="continue_button">जारी रखें</string>
+    <string name="paywall_title">असीमित एक्सेस</string>
+    <string name="paywall_description">आपके मुफ़्त सेशन पूरे हो गए हैं।\nअसीमित एक्सेस के साथ मॉनिटरिंग जारी रखें।</string>
+    <string name="one_time_purchase">एक बार की खरीदारी %1$s</string>
+    <string name="restore_purchase">खरीदारी रीस्टोर करें</string>
+    <string name="billing_pending">आपकी खरीदारी प्रोसेस हो रही है। भुगतान पूरा होते ही एक्सेस मिल जाएगा।</string>
+    <string name="billing_nothing_to_restore">कोई पिछली खरीदारी नहीं मिली।</string>
+    <string name="billing_unavailable">Google Play अभी उपलब्ध नहीं है।</string>
+    <string name="billing_failed">कुछ गलत हो गया। कृपया फिर से कोशिश करें।</string>
+</resources>

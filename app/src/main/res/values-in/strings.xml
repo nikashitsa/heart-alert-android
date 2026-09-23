@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">BPM</string>
+    <string name="bpm_value">%1$d BPM</string>
+    <string name="seconds_value">%1$d dtk</string>
+    <string name="minutes_value">%1$d mnt</string>
+    <string name="chevron">Panah</string>
+    <string name="heart">Jantung</string>
+    <string name="connecting">Menghubungkan…</string>
+    <string name="reconnecting">Menghubungkan ulang…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Mode demo</string>
+    <string name="connect">Hubungkan</string>
+
+    <!-- Settings -->
+    <string name="settings">Pengaturan</string>
+    <string name="language">Bahasa</string>
+    <string name="heart_rate">Detak jantung</string>
+    <string name="min">Min</string>
+    <string name="max">Maks</string>
+    <string name="alert">Peringatan</string>
+    <string name="volume_down">Kecilkan volume</string>
+    <string name="volume_up">Besarkan volume</string>
+    <string name="advanced">Lanjutan</string>
+    <string name="vibration">Getar</string>
+    <string name="interval">Interval</string>
+    <string name="out_of_range_for">Di luar rentang selama</string>
+    <string name="initial_delay">Jeda awal</string>
+    <string name="initial_delay_off">mati</string>
+    <string name="initial_delay_until_in_range">hingga masuk rentang</string>
+    <string name="connection">Koneksi</string>
+    <string name="device">Perangkat</string>
+    <string name="battery">Baterai</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Mulai</string>
+    <string name="start_for_free">Mulai gratis (%1$d)</string>
+    <string name="expand">Luaskan</string>
+    <string name="collapse">Ciutkan</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Pilih perangkat</string>
+    <string name="searching_for_devices">Mencari perangkat…</string>
+    <string name="devices_not_found">Perangkat tidak ditemukan</string>
+    <string name="devices_not_found_hint">Pastikan sensor sudah dipakai dan baterainya cukup.</string>
+    <string name="try_again">Coba lagi</string>
+    <string name="bluetooth_off">Bluetooth mati</string>
+    <string name="bluetooth_off_hint">Aktifkan Bluetooth di perangkat Anda untuk melanjutkan.</string>
+
+    <!-- Tracking -->
+    <string name="range">Rentang %1$d-%2$d BPM</string>
+    <string name="stop">Berhenti</string>
+    <string name="disconnected">Terputus</string>
+    <string name="state_good">Normal</string>
+    <string name="state_too_low">Terlalu rendah!</string>
+    <string name="state_too_high">Terlalu tinggi!</string>
+    <string name="initial_delay_until_in_range_status">Jeda awal hingga masuk rentang</string>
+    <string name="initial_delay_countdown">Jeda awal %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Berhasil</string>
+    <string name="paywall_success_description">Akses tanpa batas kini tersedia.</string>
+    <string name="continue_button">Lanjutkan</string>
+    <string name="paywall_title">Akses tanpa batas</string>
+    <string name="paywall_description">Sesi gratis Anda telah habis.\nLanjutkan pemantauan dengan akses tanpa batas.</string>
+    <string name="one_time_purchase">Sekali beli %1$s</string>
+    <string name="restore_purchase">Pulihkan pembelian</string>
+    <string name="billing_pending">Pembelian Anda sedang diproses. Akses terbuka setelah pembayaran selesai.</string>
+    <string name="billing_nothing_to_restore">Tidak ada pembelian sebelumnya.</string>
+    <string name="billing_unavailable">Google Play sedang tidak tersedia.</string>
+    <string name="billing_failed">Terjadi kesalahan. Silakan coba lagi.</string>
+</resources>

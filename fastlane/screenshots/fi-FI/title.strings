@@ -1,0 +1,6 @@
+/* Main line under each keyword. Keys match the screenshot file names. */
+"01_connect" = "Polar, Garmin, Wahoo ja muut";
+"02_settings" = "Aseta sykkeen ala- ja yläraja";
+"03_tracking_too_low" = "Kuulet sen heti";
+"04_tracking_good" = "Treenaa oikealla teholla";
+"05_tracking_too_high" = "Hälytys käskee hidastamaan";

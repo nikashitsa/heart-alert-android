@@ -1,0 +1,6 @@
+/* Main line under each keyword. Keys match the screenshot file names. */
+"01_connect" = "Polar, Garmin, Wahoo és mások";
+"02_settings" = "Állítsd be a pulzustartományt";
+"03_tracking_too_low" = "Azonnal hallod";
+"04_tracking_good" = "Edzz a megfelelő intenzitással";
+"05_tracking_too_high" = "Jelez, ha lassítanod kell";

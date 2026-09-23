@@ -1,0 +1,6 @@
+/* Main line under each keyword. Keys match the screenshot file names. */
+"01_connect" = "Polar, Garmin, Wahoo a další";
+"02_settings" = "Nastavte si rozsah tepu";
+"03_tracking_too_low" = "Uslyšíte to hned";
+"04_tracking_good" = "Trénujte správnou intenzitou";
+"05_tracking_too_high" = "Upozorní vás, ať zpomalíte";

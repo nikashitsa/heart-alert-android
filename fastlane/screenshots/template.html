@@ -1,0 +1,56 @@
+<!doctype html>
+<!--
+  Layout of every store screenshot. The `frame` lane fills in the double-brace placeholders
+  for each screenshot and renders this page with headless Chrome at SCREENSHOT_SIZE (9:16).
+  Captions come from <locale>/keyword.strings and <locale>/title.strings.
+-->
+<html lang="{{lang}}">
+<meta charset="utf-8">
+<style>
+  :root {
+    --background: #FFFFFF;
+    --keyword: #FF0000;
+    --title: #121212;
+  }
+  html, body {
+    margin: 0;
+    width: {{width}}px;
+    height: {{height}}px;
+    overflow: hidden;
+    background: var(--background);
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 120px 90px 90px;
+    text-align: center;
+    font-family: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+  .keyword {
+    color: var(--keyword);
+    font-weight: 700;
+    font-size: 104px;
+    line-height: 1.15;
+  }
+  .title {
+    margin-top: 16px;
+    color: var(--title);
+    font-weight: 500;
+    font-size: 76px;
+    line-height: 1.25;
+  }
+  /* The framed phone takes whatever height the caption leaves, so a two-line title shrinks it. */
+  .device {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    margin-top: 90px;
+    background: url("{{screenshot}}") center top / contain no-repeat;
+  }
+</style>
+<div class="keyword">{{keyword}}</div>
+<div class="title">{{title}}</div>
+<div class="device"></div>
+</html>

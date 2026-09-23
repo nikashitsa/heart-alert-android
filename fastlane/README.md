@@ -31,6 +31,38 @@ Runs all the tests
 
 Validate Google Play metadata
 
+### android screenshots
+
+```sh
+[bundle exec] fastlane android screenshots
+```
+
+Capture store screenshots in every app language and frame them into metadata/android
+
+Needs a running emulator or connected device, and Google Chrome for the captions
+
+### android frame
+
+```sh
+[bundle exec] fastlane android frame
+```
+
+Frame the captures in fastlane/screenshots and add their captions, into metadata/android
+
+frameit draws the Google Pixel 4 frame (ScreenshotTest captures at its resolution); the
+
+captions and layout are screenshots/template.html, rendered by headless Chrome
+
+### android feature_graphic
+
+```sh
+[bundle exec] fastlane android feature_graphic
+```
+
+Render the feature graphic of each locale into metadata/android, from its raw tracking capture
+
+The layout is screenshots/feature_graphic.html, the subtitle <locale>/feature_graphic.strings
+
 ### android upload
 
 ```sh

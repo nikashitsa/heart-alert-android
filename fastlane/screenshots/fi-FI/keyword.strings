@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Mikä vyö vain";
+"02_settings" = "Oma sykealue";
+"03_tracking_too_low" = "Liian matala?";
+"04_tracking_good" = "Sykealueella";
+"05_tracking_too_high" = "Liian korkea?";

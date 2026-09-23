@@ -1,2 +1,6 @@
 google_key.json
 report.xml
+metadata/android/screenshots.html
+# Captured by the screenshots lane; template.html and the .strings files next to them are tracked.
+screenshots/*/images/
+screenshots/screenshots.html

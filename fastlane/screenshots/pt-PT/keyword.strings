@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Qualquer cinta";
+"02_settings" = "A sua zona";
+"03_tracking_too_low" = "Demasiado baixa?";
+"04_tracking_good" = "Na zona";
+"05_tracking_too_high" = "Demasiado alta?";

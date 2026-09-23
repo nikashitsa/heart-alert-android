@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">spm</string>
+    <string name="bpm_value">%1$d spm</string>
+    <string name="seconds_value">%1$d sec</string>
+    <string name="minutes_value">%1$d min</string>
+    <string name="chevron">Pijl</string>
+    <string name="heart">Hart</string>
+    <string name="connecting">Verbinden…</string>
+    <string name="reconnecting">Opnieuw verbinden…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Demomodus</string>
+    <string name="connect">Verbinden</string>
+
+    <!-- Settings -->
+    <string name="settings">Instellingen</string>
+    <string name="language">Taal</string>
+    <string name="heart_rate">Hartslag</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="alert">Alarm</string>
+    <string name="volume_down">Zachter</string>
+    <string name="volume_up">Harder</string>
+    <string name="advanced">Geavanceerd</string>
+    <string name="vibration">Trillen</string>
+    <string name="interval">Interval</string>
+    <string name="out_of_range_for">Buiten bereik gedurende</string>
+    <string name="initial_delay">Startvertraging</string>
+    <string name="initial_delay_off">uit</string>
+    <string name="initial_delay_until_in_range">tot binnen bereik</string>
+    <string name="connection">Verbinding</string>
+    <string name="device">Apparaat</string>
+    <string name="battery">Batterij</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Starten</string>
+    <string name="start_for_free">Gratis starten (%1$d)</string>
+    <string name="expand">Uitvouwen</string>
+    <string name="collapse">Samenvouwen</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Kies apparaat</string>
+    <string name="searching_for_devices">Zoeken naar apparaten…</string>
+    <string name="devices_not_found">Geen apparaten gevonden</string>
+    <string name="devices_not_found_hint">Zorg ervoor dat je de sensor draagt en dat de batterij voldoende is opgeladen.</string>
+    <string name="try_again">Opnieuw proberen</string>
+    <string name="bluetooth_off">Bluetooth staat uit</string>
+    <string name="bluetooth_off_hint">Schakel Bluetooth in op je apparaat om door te gaan.</string>
+
+    <!-- Tracking -->
+    <string name="range">Bereik %1$d-%2$d spm</string>
+    <string name="stop">Stoppen</string>
+    <string name="disconnected">Verbinding verbroken</string>
+    <string name="state_good">Goed</string>
+    <string name="state_too_low">Te laag!</string>
+    <string name="state_too_high">Te hoog!</string>
+    <string name="initial_delay_until_in_range_status">Startvertraging tot binnen bereik</string>
+    <string name="initial_delay_countdown">Startvertraging %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Gelukt</string>
+    <string name="paywall_success_description">Onbeperkte toegang is nu beschikbaar.</string>
+    <string name="continue_button">Doorgaan</string>
+    <string name="paywall_title">Onbeperkte toegang</string>
+    <string name="paywall_description">Je gratis sessies zijn op.\nBlijf monitoren met onbeperkte toegang.</string>
+    <string name="one_time_purchase">Eenmalige aankoop %1$s</string>
+    <string name="restore_purchase">Aankoop herstellen</string>
+    <string name="billing_pending">Je aankoop is in behandeling. Toegang wordt vrijgegeven zodra de betaling is voltooid.</string>
+    <string name="billing_nothing_to_restore">Geen eerdere aankoop gevonden.</string>
+    <string name="billing_unavailable">Google Play is momenteel niet beschikbaar.</string>
+    <string name="billing_failed">Er is iets misgegaan. Probeer het opnieuw.</string>
+</resources>

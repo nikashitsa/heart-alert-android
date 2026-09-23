@@ -15,6 +15,9 @@
 
 default_platform(:android)
 
+require "cgi"
+require "frameit"
+
 platform :android do
   desc "Runs all the tests"
   lane :test do
@@ -63,6 +66,201 @@ platform :android do
       UI.user_error!("Fix #{errors.length} metadata error(s) before uploading.")
     end
     UI.success("All metadata is within the character limits.")
+  end
+
+  # Raw captures live outside metadata/ so `upload` never syncs unframed copies to Play.
+  RAW_SCREENSHOTS_DIR = File.expand_path("screenshots", __dir__)
+  METADATA_DIR = File.expand_path("metadata/android", __dir__)
+  SCREENSHOT_TEMPLATE = File.join(RAW_SCREENSHOTS_DIR, "template.html")
+  # 9:16, the ratio Play wants for its promotional placements (and within its 2:1 limit).
+  SCREENSHOT_SIZE = [1440, 2560]
+
+  # One per app language (AppLanguage in the app), as Play store listing locales. ScreenshotTest
+  # maps each back to the app language, e.g. "no-NO" to Norwegian Bokmål.
+  SCREENSHOT_LOCALES = %w[
+    cs-CZ de-DE en-US es-ES fi-FI fr-FR hi-IN hu-HU id it-IT ja-JP ko-KR
+    nl-NL no-NO pl-PL pt-BR pt-PT ru-RU sl sv-SE th tr-TR uk zh-CN
+  ].freeze
+
+  # Regional store listings of those languages, which get a copy of the framed screenshots
+  # instead of Play's default-listing ones. zh-TW/zh-HK are left out on purpose: they're
+  # Traditional Chinese, and the app only has Simplified.
+  SCREENSHOT_COPIES = {
+    "en-US" => %w[en-AU en-CA en-GB en-IN en-SG en-ZA],
+    "es-ES" => %w[es-419 es-US],
+    "fr-FR" => %w[fr-CA]
+  }.freeze
+
+  desc "Capture store screenshots in every app language and frame them into metadata/android"
+  desc "Needs a running emulator or connected device, and Google Chrome for the captions"
+  lane :screenshots do |options|
+    locales = options[:locales]&.split(",") || SCREENSHOT_LOCALES
+    gradle(task: "assembleDebug assembleDebugAndroidTest")
+    # Only the captures: template.html and the .strings files live alongside them.
+    locales.each { |locale| FileUtils.rm_rf(File.join(RAW_SCREENSHOTS_DIR, locale, "images")) }
+    capture_android_screenshots(
+      app_apk_path: "app/build/outputs/apk/debug/app-debug.apk",
+      tests_apk_path: "app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk",
+      use_tests_in_classes: ["com.nikashitsa.polar_alert_android.ScreenshotTest"],
+      locales: locales,
+      output_directory: RAW_SCREENSHOTS_DIR,
+      clear_previous_screenshots: false,
+      use_timestamp_suffix: false,
+      reinstall_app: true,
+      exit_on_test_failure: true
+    )
+    frame(locales: locales.join(","))
+  end
+
+  desc "Frame the captures in fastlane/screenshots and add their captions, into metadata/android"
+  desc "frameit draws the Google Pixel 4 frame (ScreenshotTest captures at its resolution); the"
+  desc "captions and layout are screenshots/template.html, rendered by headless Chrome"
+  lane :frame do |options|
+    locales = options[:locales]&.split(",") || SCREENSHOT_LOCALES
+    chrome = find_chrome
+    template = File.read(SCREENSHOT_TEMPLATE)
+    fallback = captions_for("en-US")
+
+    # Frame only; frameit's own titles can't shape Devanagari or Thai, and can't use a CSS
+    # font stack, so the captions are left to Chrome.
+    frame_screenshots(path: RAW_SCREENSHOTS_DIR, use_platform: "ANDROID")
+
+    locales.each do |locale|
+      raw = Dir[File.join(RAW_SCREENSHOTS_DIR, locale, "images/phoneScreenshots/*.png")]
+              .reject { |path| path.end_with?("_framed.png") }
+              .sort
+      UI.user_error!("No screenshots for #{locale}, run `fastlane screenshots` first") if raw.empty?
+
+      captions = captions_for(locale)
+      store_dir = File.join(METADATA_DIR, locale, "images/phoneScreenshots")
+      FileUtils.mkdir_p(store_dir)
+      FileUtils.rm_f(Dir[File.join(store_dir, "*.png")])
+
+      raw.each do |path|
+        name = File.basename(path, ".png")
+        framed = File.join(File.dirname(path), "#{name}_framed.png")
+        UI.user_error!("frameit did not frame #{locale}/#{name}") unless File.exist?(framed)
+
+        text = { keyword: caption(captions, fallback, :keyword, name, locale),
+                 title: caption(captions, fallback, :title, name, locale) }
+        page = File.join(File.dirname(path), "#{name}.html")
+        File.write(page, fill_template(template, locale, text, File.basename(framed)))
+
+        output = File.join(store_dir, "#{name}.png")
+        sh(chrome, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--no-first-run",
+           "--force-device-scale-factor=1",
+           "--window-size=#{SCREENSHOT_SIZE.join(',')}", "--screenshot=#{output}",
+           "file://#{page}", log: false, error_callback: ->(_) { UI.user_error!("Chrome failed on #{locale}/#{name}") })
+        # Play rejects screenshots with transparency.
+        sh("magick", output, "-alpha", "off", output, log: false)
+        FileUtils.rm_f([framed, page])
+      end
+      copies = SCREENSHOT_COPIES.fetch(locale, [])
+      copies.each do |copy|
+        copy_dir = File.join(METADATA_DIR, copy, "images/phoneScreenshots")
+        FileUtils.mkdir_p(copy_dir)
+        FileUtils.rm_f(Dir[File.join(copy_dir, "*.png")])
+        FileUtils.cp(Dir[File.join(store_dir, "*.png")], copy_dir)
+      end
+      UI.success("#{locale}: #{raw.length} screenshots#{copies.empty? ? '' : ", copied to #{copies.join(', ')}"}")
+    end
+  end
+
+  FEATURE_GRAPHIC_TEMPLATE = File.join(RAW_SCREENSHOTS_DIR, "feature_graphic.html")
+  FEATURE_GRAPHIC_SIZE = [1024, 500]
+  # The capture shown on the feature graphic's phone.
+  FEATURE_GRAPHIC_SCREEN = "04_tracking_good.png"
+
+  desc "Render the feature graphic of each locale into metadata/android, from its raw tracking capture"
+  desc "The layout is screenshots/feature_graphic.html, the subtitle <locale>/feature_graphic.strings"
+  lane :feature_graphic do |options|
+    locales = options[:locales]&.split(",") || SCREENSHOT_LOCALES
+    chrome = find_chrome
+    template = File.read(FEATURE_GRAPHIC_TEMPLATE)
+    fallback = feature_graphic_strings("en-US")
+
+    locales.each do |locale|
+      screen = File.join(RAW_SCREENSHOTS_DIR, locale, "images/phoneScreenshots", FEATURE_GRAPHIC_SCREEN)
+      UI.user_error!("No #{FEATURE_GRAPHIC_SCREEN} for #{locale}, run `fastlane screenshots` first") unless File.exist?(screen)
+
+      subtitle = feature_graphic_strings(locale)["subtitle"] || begin
+        UI.important("#{locale}/feature_graphic.strings has no subtitle, using English")
+        fallback.fetch("subtitle")
+      end
+      values = {
+        "lang" => locale,
+        "width" => FEATURE_GRAPHIC_SIZE[0].to_s,
+        "height" => FEATURE_GRAPHIC_SIZE[1].to_s,
+        "subtitle" => CGI.escapeHTML(subtitle),
+        "screenshot" => "file://#{screen}",
+        "strap" => "file://#{File.join(RAW_SCREENSHOTS_DIR, 'strap.png')}"
+      }
+      page = File.join(RAW_SCREENSHOTS_DIR, locale, "images/feature_graphic.html")
+      File.write(page, template.gsub(/\{\{(\w+)\}\}/) { values.fetch(Regexp.last_match(1)) })
+
+      output = File.join(METADATA_DIR, locale, "images/featureGraphic.png")
+      FileUtils.mkdir_p(File.dirname(output))
+      sh(chrome, "--headless=new", "--disable-gpu", "--hide-scrollbars", "--no-first-run",
+         "--force-device-scale-factor=1",
+         "--window-size=#{FEATURE_GRAPHIC_SIZE.join(',')}", "--screenshot=#{output}",
+         "file://#{page}", log: false, error_callback: ->(_) { UI.user_error!("Chrome failed on #{locale} feature graphic") })
+      # Play rejects feature graphics with transparency.
+      sh("magick", output, "-alpha", "off", output, log: false)
+      FileUtils.rm_f(page)
+
+      copies = SCREENSHOT_COPIES.fetch(locale, [])
+      copies.each do |copy|
+        copy_dir = File.join(METADATA_DIR, copy, "images")
+        FileUtils.mkdir_p(copy_dir)
+        FileUtils.cp(output, copy_dir)
+      end
+      UI.success("#{locale}: feature graphic#{copies.empty? ? '' : ", copied to #{copies.join(', ')}"}")
+    end
+  end
+
+  def feature_graphic_strings(locale)
+    path = File.join(RAW_SCREENSHOTS_DIR, locale, "feature_graphic.strings")
+    File.exist?(path) ? Frameit::StringsParser.parse(path) : {}
+  end
+
+  # { keyword: { "01_connect" => "...", ... }, title: { ... } }, as frameit parses .strings files.
+  def captions_for(locale)
+    %i[keyword title].to_h do |type|
+      path = File.join(RAW_SCREENSHOTS_DIR, locale, "#{type}.strings")
+      [type, File.exist?(path) ? Frameit::StringsParser.parse(path) : {}]
+    end
+  end
+
+  # Keys are matched against the file name the way frameit does, so "01_connect" covers
+  # "01_connect.png". A missing caption falls back to English rather than leaving a gap.
+  def caption(captions, fallback, type, name, locale)
+    find = ->(strings) { strings.find { |key, _| name.include?(key) }&.last }
+    find.call(captions[type]) || begin
+      UI.important("#{locale}/#{type}.strings has nothing for #{name}, using English")
+      find.call(fallback[type]) || ""
+    end
+  end
+
+  def fill_template(template, locale, text, screenshot)
+    values = {
+      "lang" => locale,
+      "width" => SCREENSHOT_SIZE[0].to_s,
+      "height" => SCREENSHOT_SIZE[1].to_s,
+      "keyword" => CGI.escapeHTML(text[:keyword]),
+      "title" => CGI.escapeHTML(text[:title]),
+      "screenshot" => screenshot
+    }
+    template.gsub(/\{\{(\w+)\}\}/) { values.fetch(Regexp.last_match(1)) }
+  end
+
+  def find_chrome
+    candidates = [
+      ENV["CHROME"],
+      "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      *%w[google-chrome google-chrome-stable chromium chromium-browser].map { |bin| `command -v #{bin}`.strip }
+    ]
+    candidates.compact.find { |path| !path.empty? && File.executable?(path) } ||
+      UI.user_error!("Google Chrome not found; set CHROME to its executable")
   end
 
   desc "Upload to Google Play and submit changes"

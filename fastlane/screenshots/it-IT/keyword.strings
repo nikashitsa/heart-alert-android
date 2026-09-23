@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Ogni fascia";
+"02_settings" = "La tua zona";
+"03_tracking_too_low" = "Troppo bassa?";
+"04_tracking_good" = "Nella zona";
+"05_tracking_too_high" = "Troppo alta?";

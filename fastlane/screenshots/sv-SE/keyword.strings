@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Alla pulsband";
+"02_settings" = "Din zon";
+"03_tracking_too_low" = "För låg?";
+"04_tracking_good" = "I zonen";
+"05_tracking_too_high" = "För hög?";

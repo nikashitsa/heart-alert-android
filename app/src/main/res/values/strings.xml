@@ -1,3 +1,74 @@
-<resources>
-    <string name="app_name">Heart Alert</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Heart Alert</string>
+
+    <!-- Common -->
+    <string name="bpm">BPM</string>
+    <string name="bpm_value">%1$d BPM</string>
+    <string name="seconds_value" tools:ignore="PluralsCandidate">%1$d sec</string>
+    <string name="minutes_value" tools:ignore="PluralsCandidate">%1$d min</string>
+    <string name="chevron">Chevron</string>
+    <string name="heart">Heart</string>
+    <string name="connecting">Connecting…</string>
+    <string name="reconnecting">Reconnecting…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Demo mode</string>
+    <string name="connect">Connect</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="heart_rate">Heart rate</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="alert">Alert</string>
+    <string name="volume_down">Volume down</string>
+    <string name="volume_up">Volume up</string>
+    <string name="advanced">Advanced</string>
+    <string name="vibration">Vibration</string>
+    <string name="interval">Interval</string>
+    <string name="out_of_range_for">Out of range for</string>
+    <string name="initial_delay">Initial delay</string>
+    <string name="initial_delay_off">off</string>
+    <string name="initial_delay_until_in_range">until in range</string>
+    <string name="connection">Connection</string>
+    <string name="device">Device</string>
+    <string name="battery">Battery</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Start</string>
+    <string name="start_for_free">Start for free (%1$d)</string>
+    <string name="expand">Expand</string>
+    <string name="collapse">Collapse</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Choose device</string>
+    <string name="searching_for_devices">Searching for devices…</string>
+    <string name="devices_not_found">Devices not found</string>
+    <string name="devices_not_found_hint">Make sure that you put it on and the battery level is good.</string>
+    <string name="try_again">Try again</string>
+    <string name="bluetooth_off">Bluetooth is off</string>
+    <string name="bluetooth_off_hint">Please enable Bluetooth on your device to continue.</string>
+
+    <!-- Tracking -->
+    <string name="range">Range %1$d-%2$d BPM</string>
+    <string name="stop">Stop</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="state_good">Good</string>
+    <string name="state_too_low">Too low!</string>
+    <string name="state_too_high">Too high!</string>
+    <string name="initial_delay_until_in_range_status">Initial delay until in range</string>
+    <string name="initial_delay_countdown">Initial delay %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Success</string>
+    <string name="paywall_success_description">Unlimited access is now available.</string>
+    <string name="continue_button">Continue</string>
+    <string name="paywall_title">Unlimited access</string>
+    <string name="paywall_description">Your free sessions are complete.\nKeep monitoring with unlimited access.</string>
+    <string name="one_time_purchase">One-time purchase %1$s</string>
+    <string name="restore_purchase">Restore purchase</string>
+    <string name="billing_pending">Your purchase is pending. Access unlocks once payment completes.</string>
+    <string name="billing_nothing_to_restore">No previous purchase found.</string>
+    <string name="billing_unavailable">Google Play is not available right now.</string>
+    <string name="billing_failed">Something went wrong. Please try again.</string>
 </resources>

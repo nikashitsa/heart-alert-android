@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">BPM</string>
+    <string name="bpm_value">%1$d BPM</string>
+    <string name="seconds_value">%1$d sn</string>
+    <string name="minutes_value">%1$d dk</string>
+    <string name="chevron">Ok</string>
+    <string name="heart">Kalp</string>
+    <string name="connecting">Bağlanıyor…</string>
+    <string name="reconnecting">Yeniden bağlanıyor…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Demo modu</string>
+    <string name="connect">Bağlan</string>
+
+    <!-- Settings -->
+    <string name="settings">Ayarlar</string>
+    <string name="language">Dil</string>
+    <string name="heart_rate">Nabız</string>
+    <string name="min">Min</string>
+    <string name="max">Maks</string>
+    <string name="alert">Uyarı</string>
+    <string name="volume_down">Sesi azalt</string>
+    <string name="volume_up">Sesi artır</string>
+    <string name="advanced">Gelişmiş</string>
+    <string name="vibration">Titreşim</string>
+    <string name="interval">Tekrar aralığı</string>
+    <string name="out_of_range_for">Aralık dışı süresi</string>
+    <string name="initial_delay">Başlangıç gecikmesi</string>
+    <string name="initial_delay_off">kapalı</string>
+    <string name="initial_delay_until_in_range">aralığa girene kadar</string>
+    <string name="connection">Bağlantı</string>
+    <string name="device">Cihaz</string>
+    <string name="battery">Pil</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Başlat</string>
+    <string name="start_for_free">Ücretsiz başlat (%1$d)</string>
+    <string name="expand">Genişlet</string>
+    <string name="collapse">Daralt</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Cihaz seçin</string>
+    <string name="searching_for_devices">Cihazlar aranıyor…</string>
+    <string name="devices_not_found">Cihaz bulunamadı</string>
+    <string name="devices_not_found_hint">Sensörü taktığınızdan ve pilinin yeterli olduğundan emin olun.</string>
+    <string name="try_again">Tekrar dene</string>
+    <string name="bluetooth_off">Bluetooth kapalı</string>
+    <string name="bluetooth_off_hint">Devam etmek için lütfen cihazınızda Bluetooth\'u açın.</string>
+
+    <!-- Tracking -->
+    <string name="range">Aralık %1$d-%2$d BPM</string>
+    <string name="stop">Durdur</string>
+    <string name="disconnected">Bağlantı kesildi</string>
+    <string name="state_good">Normal</string>
+    <string name="state_too_low">Çok düşük!</string>
+    <string name="state_too_high">Çok yüksek!</string>
+    <string name="initial_delay_until_in_range_status">Aralığa girene kadar gecikme</string>
+    <string name="initial_delay_countdown">Başlangıç gecikmesi %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Başarılı</string>
+    <string name="paywall_success_description">Sınırsız erişim artık kullanılabilir.</string>
+    <string name="continue_button">Devam</string>
+    <string name="paywall_title">Sınırsız erişim</string>
+    <string name="paywall_description">Ücretsiz oturumlarınız tamamlandı.\nSınırsız erişimle takibe devam edin.</string>
+    <string name="one_time_purchase">Tek seferlik satın alma %1$s</string>
+    <string name="restore_purchase">Satın alımı geri yükle</string>
+    <string name="billing_pending">Satın alımınız beklemede. Ödeme tamamlandığında erişim açılacak.</string>
+    <string name="billing_nothing_to_restore">Önceki bir satın alım bulunamadı.</string>
+    <string name="billing_unavailable">Google Play şu anda kullanılamıyor.</string>
+    <string name="billing_failed">Bir şeyler ters gitti. Lütfen tekrar deneyin.</string>
+</resources>

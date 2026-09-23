@@ -1,8 +1,10 @@
 package com.nikashitsa.polar_alert_android.lib
 
 import android.app.Activity
+import androidx.annotation.StringRes
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.nikashitsa.polar_alert_android.R
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -27,8 +29,8 @@ class BillingViewModel @Inject constructor(
     val busy: StateFlow<Boolean> = _busy
 
     /** A short line to show under the description, or null when there is nothing to say. */
-    private val _notice = MutableStateFlow<String?>(null)
-    val notice: StateFlow<String?> = _notice
+    private val _notice = MutableStateFlow<Int?>(null)
+    val notice: StateFlow<Int?> = _notice
 
     init {
         observe(settings.unlimitedAccessFlow) { entitled ->
@@ -72,13 +74,13 @@ class BillingViewModel @Inject constructor(
 }
 
 /** What the paywall says about an outcome, or null when it should stay quiet. */
-private val BillingEvent.message: String?
+@get:StringRes
+private val BillingEvent.message: Int?
     get() = when (this) {
         // Cancelling is a deliberate choice, not something to comment on.
         BillingEvent.UserCancelled -> null
-        BillingEvent.PurchasePending ->
-            "Your purchase is pending. Access unlocks once payment completes."
-        BillingEvent.NothingToRestore -> "No previous purchase found."
-        BillingEvent.Unavailable -> "Google Play is not available right now."
-        BillingEvent.Failed -> "Something went wrong. Please try again."
+        BillingEvent.PurchasePending -> R.string.billing_pending
+        BillingEvent.NothingToRestore -> R.string.billing_nothing_to_restore
+        BillingEvent.Unavailable -> R.string.billing_unavailable
+        BillingEvent.Failed -> R.string.billing_failed
     }

@@ -1,0 +1,6 @@
+/* Main line under each keyword. Keys match the screenshot file names. */
+"01_connect" = "Polar、Garmin、Wahooなど";
+"02_settings" = "心拍数の範囲を設定";
+"03_tracking_too_low" = "すぐに音でお知らせ";
+"04_tracking_good" = "最適な強度でトレーニング";
+"05_tracking_too_high" = "ペースダウンを音で通知";

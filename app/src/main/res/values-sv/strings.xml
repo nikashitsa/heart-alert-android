@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">bpm</string>
+    <string name="bpm_value">%1$d bpm</string>
+    <string name="seconds_value">%1$d s</string>
+    <string name="minutes_value">%1$d min</string>
+    <string name="chevron">Pil</string>
+    <string name="heart">Hjärta</string>
+    <string name="connecting">Ansluter…</string>
+    <string name="reconnecting">Återansluter…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Demoläge</string>
+    <string name="connect">Anslut</string>
+
+    <!-- Settings -->
+    <string name="settings">Inställningar</string>
+    <string name="language">Språk</string>
+    <string name="heart_rate">Puls</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="alert">Larm</string>
+    <string name="volume_down">Sänk volymen</string>
+    <string name="volume_up">Höj volymen</string>
+    <string name="advanced">Avancerat</string>
+    <string name="vibration">Vibration</string>
+    <string name="interval">Intervall</string>
+    <string name="out_of_range_for">Utanför området</string>
+    <string name="initial_delay">Startfördröjning</string>
+    <string name="initial_delay_off">av</string>
+    <string name="initial_delay_until_in_range">tills inom området</string>
+    <string name="connection">Anslutning</string>
+    <string name="device">Enhet</string>
+    <string name="battery">Batteri</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Starta</string>
+    <string name="start_for_free">Starta gratis (%1$d)</string>
+    <string name="expand">Expandera</string>
+    <string name="collapse">Fäll ihop</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Välj enhet</string>
+    <string name="searching_for_devices">Söker efter enheter…</string>
+    <string name="devices_not_found">Inga enheter hittades</string>
+    <string name="devices_not_found_hint">Se till att du har på dig pulsbandet och att batteriet är laddat.</string>
+    <string name="try_again">Försök igen</string>
+    <string name="bluetooth_off">Bluetooth är av</string>
+    <string name="bluetooth_off_hint">Aktivera Bluetooth på enheten för att fortsätta.</string>
+
+    <!-- Tracking -->
+    <string name="range">Område %1$d-%2$d bpm</string>
+    <string name="stop">Stopp</string>
+    <string name="disconnected">Frånkopplad</string>
+    <string name="state_good">Bra</string>
+    <string name="state_too_low">För låg!</string>
+    <string name="state_too_high">För hög!</string>
+    <string name="initial_delay_until_in_range_status">Startfördröjning tills inom området</string>
+    <string name="initial_delay_countdown">Startfördröjning %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Klart</string>
+    <string name="paywall_success_description">Obegränsad åtkomst är nu upplåst.</string>
+    <string name="continue_button">Fortsätt</string>
+    <string name="paywall_title">Obegränsad åtkomst</string>
+    <string name="paywall_description">Dina gratispass är slut.\nFortsätt övervaka med obegränsad åtkomst.</string>
+    <string name="one_time_purchase">Engångsköp %1$s</string>
+    <string name="restore_purchase">Återställ köp</string>
+    <string name="billing_pending">Ditt köp behandlas. Åtkomsten låses upp när betalningen är klar.</string>
+    <string name="billing_nothing_to_restore">Inget tidigare köp hittades.</string>
+    <string name="billing_unavailable">Google Play är inte tillgängligt just nu.</string>
+    <string name="billing_failed">Något gick fel. Försök igen.</string>
+</resources>

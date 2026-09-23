@@ -24,6 +24,8 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import com.nikashitsa.polar_alert_android.R
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.nikashitsa.polar_alert_android.ui.theme.Colors
@@ -52,7 +54,7 @@ fun Accordion(
             Spacer(modifier = Modifier.weight(1f))
             Icon(
                 imageVector = if (expanded) Icons.Filled.KeyboardArrowUp else Icons.AutoMirrored.Filled.KeyboardArrowRight,
-                contentDescription = if (expanded) "Collapse" else "Expand",
+                contentDescription = stringResource(if (expanded) R.string.collapse else R.string.expand),
             )
         }
         AnimatedVisibility(visible = expanded) {

@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Bármely öv";
+"02_settings" = "A te zónád";
+"03_tracking_too_low" = "Túl alacsony?";
+"04_tracking_good" = "A zónában";
+"05_tracking_too_high" = "Túl magas?";

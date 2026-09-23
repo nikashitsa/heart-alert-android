@@ -1,0 +1,6 @@
+/* Main line under each keyword. Keys match the screenshot file names. */
+"01_connect" = "Polar, Garmin, Wahoo та інші";
+"02_settings" = "Задайте діапазон пульсу";
+"03_tracking_too_low" = "Почуєте одразу";
+"04_tracking_good" = "Тренуйтеся в потрібному темпі";
+"05_tracking_too_high" = "Сигнал, щоб збавити темп";

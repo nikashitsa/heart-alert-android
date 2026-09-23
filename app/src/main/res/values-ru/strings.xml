@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">уд/мин</string>
+    <string name="bpm_value">%1$d уд/мин</string>
+    <string name="seconds_value">%1$d сек</string>
+    <string name="minutes_value">%1$d мин</string>
+    <string name="chevron">Стрелка</string>
+    <string name="heart">Сердце</string>
+    <string name="connecting">Подключение…</string>
+    <string name="reconnecting">Переподключение…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Демо-режим</string>
+    <string name="connect">Подключить</string>
+
+    <!-- Settings -->
+    <string name="settings">Настройки</string>
+    <string name="language">Язык</string>
+    <string name="heart_rate">Пульс</string>
+    <string name="min">Мин.</string>
+    <string name="max">Макс.</string>
+    <string name="alert">Оповещение</string>
+    <string name="volume_down">Тише</string>
+    <string name="volume_up">Громче</string>
+    <string name="advanced">Дополнительно</string>
+    <string name="vibration">Вибрация</string>
+    <string name="interval">Интервал</string>
+    <string name="out_of_range_for">Вне диапазона</string>
+    <string name="initial_delay">Начальная задержка</string>
+    <string name="initial_delay_off">выкл.</string>
+    <string name="initial_delay_until_in_range">до входа в диапазон</string>
+    <string name="connection">Подключение</string>
+    <string name="device">Устройство</string>
+    <string name="battery">Батарея</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Начать</string>
+    <string name="start_for_free">Начать бесплатно (%1$d)</string>
+    <string name="expand">Развернуть</string>
+    <string name="collapse">Свернуть</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Выберите устройство</string>
+    <string name="searching_for_devices">Поиск устройств…</string>
+    <string name="devices_not_found">Устройства не найдены</string>
+    <string name="devices_not_found_hint">Убедитесь, что датчик надет и его батарея заряжена.</string>
+    <string name="try_again">Повторить</string>
+    <string name="bluetooth_off">Bluetooth выключен</string>
+    <string name="bluetooth_off_hint">Включите Bluetooth на устройстве, чтобы продолжить.</string>
+
+    <!-- Tracking -->
+    <string name="range">Диапазон %1$d-%2$d уд/мин</string>
+    <string name="stop">Стоп</string>
+    <string name="disconnected">Отключено</string>
+    <string name="state_good">Норма</string>
+    <string name="state_too_low">Слишком низкий!</string>
+    <string name="state_too_high">Слишком высокий!</string>
+    <string name="initial_delay_until_in_range_status">Задержка до входа в диапазон</string>
+    <string name="initial_delay_countdown">Начальная задержка %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Готово</string>
+    <string name="paywall_success_description">Безлимитный доступ открыт.</string>
+    <string name="continue_button">Продолжить</string>
+    <string name="paywall_title">Безлимитный доступ</string>
+    <string name="paywall_description">Бесплатные сессии закончились.\nПродолжайте отслеживание с безлимитным доступом.</string>
+    <string name="one_time_purchase">Разовая покупка %1$s</string>
+    <string name="restore_purchase">Восстановить покупку</string>
+    <string name="billing_pending">Покупка обрабатывается. Доступ откроется после завершения оплаты.</string>
+    <string name="billing_nothing_to_restore">Предыдущие покупки не найдены.</string>
+    <string name="billing_unavailable">Google Play сейчас недоступен.</string>
+    <string name="billing_failed">Что-то пошло не так. Попробуйте ещё раз.</string>
+</resources>

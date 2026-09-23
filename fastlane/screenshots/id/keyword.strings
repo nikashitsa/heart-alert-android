@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Strap apa saja";
+"02_settings" = "Zona Anda";
+"03_tracking_too_low" = "Terlalu rendah?";
+"04_tracking_good" = "Di zona tepat";
+"05_tracking_too_high" = "Terlalu tinggi?";

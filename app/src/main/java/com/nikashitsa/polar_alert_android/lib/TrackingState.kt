@@ -1,5 +1,8 @@
 package com.nikashitsa.polar_alert_android.lib
 
+import androidx.annotation.StringRes
+import com.nikashitsa.polar_alert_android.R
+
 enum class TrackingState {
     GOOD,
     LOW,
@@ -20,11 +23,12 @@ enum class TrackingState {
             HIGH -> 30.0 / 200
         }
 
-    val heartBeatDescription: String
+    @get:StringRes
+    val heartBeatDescription: Int
         get() = when (this) {
-            GOOD -> "Good"
-            LOW -> "Too low!"
-            HIGH -> "Too high!"
+            GOOD -> R.string.state_good
+            LOW -> R.string.state_too_low
+            HIGH -> R.string.state_too_high
         }
 
     val sound: SoundType?

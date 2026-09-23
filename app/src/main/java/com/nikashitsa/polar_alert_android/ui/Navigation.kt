@@ -29,12 +29,7 @@ fun Navigation() {
     val context = LocalContext.current
     val activity = context as? Activity
 
-    Box(
-        modifier = Modifier
-            .background(Colors.Black)
-            .fillMaxSize()
-            .padding(WindowInsets.safeDrawing.asPaddingValues())
-    ) {
+    AppFrame {
         Crossfade(
             targetState = flow,
             label = "NavigationTransition",
@@ -55,5 +50,18 @@ fun Navigation() {
                 )
             }
         }
+    }
+}
+
+/** The black, inset-padded frame every screen is drawn in. */
+@Composable
+fun AppFrame(content: @Composable () -> Unit) {
+    Box(
+        modifier = Modifier
+            .background(Colors.Black)
+            .fillMaxSize()
+            .padding(WindowInsets.safeDrawing.asPaddingValues())
+    ) {
+        content()
     }
 }

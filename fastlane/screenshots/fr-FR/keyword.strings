@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Toute ceinture";
+"02_settings" = "Votre zone";
+"03_tracking_too_low" = "Trop bas ?";
+"04_tracking_good" = "Dans la zone";
+"05_tracking_too_high" = "Trop haut ?";

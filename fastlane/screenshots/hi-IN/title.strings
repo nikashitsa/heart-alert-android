@@ -1,0 +1,6 @@
+/* Main line under each keyword. Keys match the screenshot file names. */
+"01_connect" = "Polar, Garmin, Wahoo और भी";
+"02_settings" = "अपनी हृदय गति सीमा तय करें";
+"03_tracking_too_low" = "तुरंत सुनाई देगा";
+"04_tracking_good" = "सही तीव्रता पर ट्रेनिंग करें";
+"05_tracking_too_high" = "धीमा होने का अलर्ट पाएं";

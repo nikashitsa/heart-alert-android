@@ -1,0 +1,6 @@
+/* Coloured line above each title. Keys match the screenshot file names. */
+"01_connect" = "Elke borstband";
+"02_settings" = "Jouw zone";
+"03_tracking_too_low" = "Te laag?";
+"04_tracking_good" = "In de zone";
+"05_tracking_too_high" = "Te hoog?";

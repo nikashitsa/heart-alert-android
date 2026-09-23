@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">BPM</string>
+    <string name="bpm_value">%1$d BPM</string>
+    <string name="seconds_value">%1$d วิ</string>
+    <string name="minutes_value">%1$d นาที</string>
+    <string name="chevron">ลูกศร</string>
+    <string name="heart">หัวใจ</string>
+    <string name="connecting">กำลังเชื่อมต่อ…</string>
+    <string name="reconnecting">กำลังเชื่อมต่อใหม่…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">โหมดสาธิต</string>
+    <string name="connect">เชื่อมต่อ</string>
+
+    <!-- Settings -->
+    <string name="settings">การตั้งค่า</string>
+    <string name="language">ภาษา</string>
+    <string name="heart_rate">อัตราการเต้นหัวใจ</string>
+    <string name="min">ต่ำสุด</string>
+    <string name="max">สูงสุด</string>
+    <string name="alert">การแจ้งเตือน</string>
+    <string name="volume_down">ลดเสียง</string>
+    <string name="volume_up">เพิ่มเสียง</string>
+    <string name="advanced">ขั้นสูง</string>
+    <string name="vibration">การสั่น</string>
+    <string name="interval">แจ้งเตือนทุก</string>
+    <string name="out_of_range_for">อยู่นอกช่วงนาน</string>
+    <string name="initial_delay">หน่วงเวลาเริ่มต้น</string>
+    <string name="initial_delay_off">ปิด</string>
+    <string name="initial_delay_until_in_range">จนกว่าจะอยู่ในช่วง</string>
+    <string name="connection">การเชื่อมต่อ</string>
+    <string name="device">อุปกรณ์</string>
+    <string name="battery">แบตเตอรี่</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">เริ่ม</string>
+    <string name="start_for_free">เริ่มฟรี (%1$d)</string>
+    <string name="expand">ขยาย</string>
+    <string name="collapse">ยุบ</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">เลือกอุปกรณ์</string>
+    <string name="searching_for_devices">กำลังค้นหาอุปกรณ์…</string>
+    <string name="devices_not_found">ไม่พบอุปกรณ์</string>
+    <string name="devices_not_found_hint">ตรวจสอบว่าคุณสวมเซ็นเซอร์แล้วและแบตเตอรี่ยังเพียงพอ</string>
+    <string name="try_again">ลองอีกครั้ง</string>
+    <string name="bluetooth_off">Bluetooth ปิดอยู่</string>
+    <string name="bluetooth_off_hint">โปรดเปิด Bluetooth บนอุปกรณ์ของคุณเพื่อดำเนินการต่อ</string>
+
+    <!-- Tracking -->
+    <string name="range">ช่วง %1$d-%2$d BPM</string>
+    <string name="stop">หยุด</string>
+    <string name="disconnected">ตัดการเชื่อมต่อแล้ว</string>
+    <string name="state_good">ปกติ</string>
+    <string name="state_too_low">ต่ำเกินไป!</string>
+    <string name="state_too_high">สูงเกินไป!</string>
+    <string name="initial_delay_until_in_range_status">หน่วงเวลาจนกว่าจะอยู่ในช่วง</string>
+    <string name="initial_delay_countdown">หน่วงเวลาเริ่มต้น %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">สำเร็จ</string>
+    <string name="paywall_success_description">ปลดล็อกการเข้าถึงแบบไม่จำกัดแล้ว</string>
+    <string name="continue_button">ดำเนินการต่อ</string>
+    <string name="paywall_title">การเข้าถึงแบบไม่จำกัด</string>
+    <string name="paywall_description">เซสชันฟรีของคุณหมดแล้ว\nติดตามต่อด้วยการเข้าถึงแบบไม่จำกัด</string>
+    <string name="one_time_purchase">ซื้อครั้งเดียว %1$s</string>
+    <string name="restore_purchase">กู้คืนการซื้อ</string>
+    <string name="billing_pending">การซื้อของคุณอยู่ระหว่างดำเนินการ จะเข้าถึงได้เมื่อชำระเงินเสร็จสมบูรณ์</string>
+    <string name="billing_nothing_to_restore">ไม่พบการซื้อก่อนหน้า</string>
+    <string name="billing_unavailable">Google Play ไม่พร้อมใช้งานในขณะนี้</string>
+    <string name="billing_failed">เกิดข้อผิดพลาด โปรดลองอีกครั้ง</string>
+</resources>

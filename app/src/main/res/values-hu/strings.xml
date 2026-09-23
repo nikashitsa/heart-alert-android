@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">bpm</string>
+    <string name="bpm_value">%1$d bpm</string>
+    <string name="seconds_value">%1$d mp</string>
+    <string name="minutes_value">%1$d perc</string>
+    <string name="chevron">Nyíl</string>
+    <string name="heart">Szív</string>
+    <string name="connecting">Csatlakozás…</string>
+    <string name="reconnecting">Újracsatlakozás…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Demó mód</string>
+    <string name="connect">Csatlakozás</string>
+
+    <!-- Settings -->
+    <string name="settings">Beállítások</string>
+    <string name="language">Nyelv</string>
+    <string name="heart_rate">Pulzus</string>
+    <string name="min">Min.</string>
+    <string name="max">Max.</string>
+    <string name="alert">Riasztás</string>
+    <string name="volume_down">Halkítás</string>
+    <string name="volume_up">Hangosítás</string>
+    <string name="advanced">Speciális</string>
+    <string name="vibration">Rezgés</string>
+    <string name="interval">Időköz</string>
+    <string name="out_of_range_for">Tartományon kívül</string>
+    <string name="initial_delay">Kezdeti késleltetés</string>
+    <string name="initial_delay_off">ki</string>
+    <string name="initial_delay_until_in_range">tartományba érésig</string>
+    <string name="connection">Kapcsolat</string>
+    <string name="device">Eszköz</string>
+    <string name="battery">Akkumulátor</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Indítás</string>
+    <string name="start_for_free">Ingyenes indítás (%1$d)</string>
+    <string name="expand">Kibontás</string>
+    <string name="collapse">Összecsukás</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Válassz eszközt</string>
+    <string name="searching_for_devices">Eszközök keresése…</string>
+    <string name="devices_not_found">Nem található eszköz</string>
+    <string name="devices_not_found_hint">Győződj meg róla, hogy viseled a pulzusmérőt, és az akkumulátora fel van töltve.</string>
+    <string name="try_again">Újra</string>
+    <string name="bluetooth_off">A Bluetooth ki van kapcsolva</string>
+    <string name="bluetooth_off_hint">A folytatáshoz kapcsold be a Bluetootht az eszközön.</string>
+
+    <!-- Tracking -->
+    <string name="range">Tartomány: %1$d-%2$d bpm</string>
+    <string name="stop">Leállítás</string>
+    <string name="disconnected">Kapcsolat megszakadt</string>
+    <string name="state_good">Jó</string>
+    <string name="state_too_low">Túl alacsony!</string>
+    <string name="state_too_high">Túl magas!</string>
+    <string name="initial_delay_until_in_range_status">Kezdeti késleltetés a tartományba érésig</string>
+    <string name="initial_delay_countdown">Kezdeti késleltetés %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Sikeres vásárlás</string>
+    <string name="paywall_success_description">A korlátlan hozzáférés mostantól elérhető.</string>
+    <string name="continue_button">Tovább</string>
+    <string name="paywall_title">Korlátlan hozzáférés</string>
+    <string name="paywall_description">Az ingyenes alkalmaid elfogytak.\nFolytasd a monitorozást korlátlan hozzáféréssel.</string>
+    <string name="one_time_purchase">Egyszeri vásárlás: %1$s</string>
+    <string name="restore_purchase">Vásárlás visszaállítása</string>
+    <string name="billing_pending">A vásárlás függőben van. A hozzáférés a fizetés teljesülése után nyílik meg.</string>
+    <string name="billing_nothing_to_restore">Nem található korábbi vásárlás.</string>
+    <string name="billing_unavailable">A Google Play jelenleg nem érhető el.</string>
+    <string name="billing_failed">Hiba történt. Próbáld újra.</string>
+</resources>

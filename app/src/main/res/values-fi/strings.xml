@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">bpm</string>
+    <string name="bpm_value">%1$d bpm</string>
+    <string name="seconds_value">%1$d s</string>
+    <string name="minutes_value">%1$d min</string>
+    <string name="chevron">Nuoli</string>
+    <string name="heart">Sydän</string>
+    <string name="connecting">Yhdistetään…</string>
+    <string name="reconnecting">Yhdistetään uudelleen…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Demotila</string>
+    <string name="connect">Yhdistä</string>
+
+    <!-- Settings -->
+    <string name="settings">Asetukset</string>
+    <string name="language">Kieli</string>
+    <string name="heart_rate">Syke</string>
+    <string name="min">Min</string>
+    <string name="max">Maks</string>
+    <string name="alert">Hälytys</string>
+    <string name="volume_down">Hiljemmalle</string>
+    <string name="volume_up">Kovemmalle</string>
+    <string name="advanced">Lisäasetukset</string>
+    <string name="vibration">Värinä</string>
+    <string name="interval">Toistoväli</string>
+    <string name="out_of_range_for">Alueen ulkopuolella</string>
+    <string name="initial_delay">Alkuviive</string>
+    <string name="initial_delay_off">pois</string>
+    <string name="initial_delay_until_in_range">kunnes alueella</string>
+    <string name="connection">Yhteys</string>
+    <string name="device">Laite</string>
+    <string name="battery">Akku</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Aloita</string>
+    <string name="start_for_free">Aloita ilmaiseksi (%1$d)</string>
+    <string name="expand">Laajenna</string>
+    <string name="collapse">Supista</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Valitse laite</string>
+    <string name="searching_for_devices">Etsitään laitteita…</string>
+    <string name="devices_not_found">Laitteita ei löytynyt</string>
+    <string name="devices_not_found_hint">Varmista, että sykevyö on päälläsi ja sen akussa on virtaa.</string>
+    <string name="try_again">Yritä uudelleen</string>
+    <string name="bluetooth_off">Bluetooth on pois päältä</string>
+    <string name="bluetooth_off_hint">Jatka ottamalla Bluetooth käyttöön laitteessa.</string>
+
+    <!-- Tracking -->
+    <string name="range">Alue %1$d-%2$d bpm</string>
+    <string name="stop">Lopeta</string>
+    <string name="disconnected">Yhteys katkesi</string>
+    <string name="state_good">Hyvä</string>
+    <string name="state_too_low">Liian matala!</string>
+    <string name="state_too_high">Liian korkea!</string>
+    <string name="initial_delay_until_in_range_status">Alkuviive, kunnes alueella</string>
+    <string name="initial_delay_countdown">Alkuviive %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Valmis</string>
+    <string name="paywall_success_description">Rajaton käyttö on nyt avattu.</string>
+    <string name="continue_button">Jatka</string>
+    <string name="paywall_title">Rajaton käyttö</string>
+    <string name="paywall_description">Ilmaiset kertasi on käytetty.\nJatka seurantaa rajattomalla käytöllä.</string>
+    <string name="one_time_purchase">Kertaosto %1$s</string>
+    <string name="restore_purchase">Palauta ostos</string>
+    <string name="billing_pending">Ostoksesi odottaa käsittelyä. Käyttö avautuu, kun maksu on valmis.</string>
+    <string name="billing_nothing_to_restore">Aiempaa ostosta ei löytynyt.</string>
+    <string name="billing_unavailable">Google Play ei ole juuri nyt käytettävissä.</string>
+    <string name="billing_failed">Jokin meni vikaan. Yritä uudelleen.</string>
+</resources>

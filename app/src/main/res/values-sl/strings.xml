@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">utr./min</string>
+    <string name="bpm_value">%1$d utr./min</string>
+    <string name="seconds_value">%1$d s</string>
+    <string name="minutes_value">%1$d min</string>
+    <string name="chevron">Puščica</string>
+    <string name="heart">Srce</string>
+    <string name="connecting">Povezovanje…</string>
+    <string name="reconnecting">Ponovno povezovanje…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">Demo način</string>
+    <string name="connect">Poveži</string>
+
+    <!-- Settings -->
+    <string name="settings">Nastavitve</string>
+    <string name="language">Jezik</string>
+    <string name="heart_rate">Srčni utrip</string>
+    <string name="min">Min.</string>
+    <string name="max">Maks.</string>
+    <string name="alert">Opozorilo</string>
+    <string name="volume_down">Tišje</string>
+    <string name="volume_up">Glasneje</string>
+    <string name="advanced">Napredno</string>
+    <string name="vibration">Vibriranje</string>
+    <string name="interval">Interval</string>
+    <string name="out_of_range_for">Zunaj območja</string>
+    <string name="initial_delay">Začetni zamik</string>
+    <string name="initial_delay_off">izkl.</string>
+    <string name="initial_delay_until_in_range">do vstopa v območje</string>
+    <string name="connection">Povezava</string>
+    <string name="device">Naprava</string>
+    <string name="battery">Baterija</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">Začni</string>
+    <string name="start_for_free">Začni brezplačno (%1$d)</string>
+    <string name="expand">Razširi</string>
+    <string name="collapse">Strni</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">Izberite napravo</string>
+    <string name="searching_for_devices">Iskanje naprav…</string>
+    <string name="devices_not_found">Ni najdenih naprav</string>
+    <string name="devices_not_found_hint">Prepričajte se, da ste senzor nadeli in da je baterija dovolj napolnjena.</string>
+    <string name="try_again">Poskusi znova</string>
+    <string name="bluetooth_off">Bluetooth je izklopljen</string>
+    <string name="bluetooth_off_hint">Za nadaljevanje v napravi vklopite Bluetooth.</string>
+
+    <!-- Tracking -->
+    <string name="range">Območje %1$d-%2$d utr./min</string>
+    <string name="stop">Ustavi</string>
+    <string name="disconnected">Povezava prekinjena</string>
+    <string name="state_good">V redu</string>
+    <string name="state_too_low">Prenizek!</string>
+    <string name="state_too_high">Previsok!</string>
+    <string name="initial_delay_until_in_range_status">Zamik do vstopa v območje</string>
+    <string name="initial_delay_countdown">Začetni zamik %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">Končano</string>
+    <string name="paywall_success_description">Neomejen dostop je zdaj na voljo.</string>
+    <string name="continue_button">Nadaljuj</string>
+    <string name="paywall_title">Neomejen dostop</string>
+    <string name="paywall_description">Vaše brezplačne seje so porabljene.\nNadaljujte spremljanje z neomejenim dostopom.</string>
+    <string name="one_time_purchase">Enkratni nakup %1$s</string>
+    <string name="restore_purchase">Obnovi nakup</string>
+    <string name="billing_pending">Vaš nakup je v obdelavi. Dostop bo odklenjen, ko bo plačilo zaključeno.</string>
+    <string name="billing_nothing_to_restore">Prejšnjega nakupa ni bilo mogoče najti.</string>
+    <string name="billing_unavailable">Google Play trenutno ni na voljo.</string>
+    <string name="billing_failed">Prišlo je do napake. Poskusite znova.</string>
+</resources>

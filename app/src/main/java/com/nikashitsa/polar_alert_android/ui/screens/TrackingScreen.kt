@@ -41,6 +41,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
@@ -101,7 +102,8 @@ fun TrackingScreen(
         outOfRangeFor = outOfRangeFor,
         initialDelay = initialDelay,
         vibrate = vibration::vibrate,
-        countTrackedSession = settings::countTrackedSession,
+        // A demo session is not real use, so it must not eat into the free sessions.
+        countTrackedSession = if (bluetooth.isDemo) ({}) else settings::countTrackedSession,
         onBack = onBack,
     )
 }
@@ -137,7 +139,7 @@ fun TrackingScreenContent(
     ) {
 
         Column(modifier = Modifier.fillMaxWidth()) {
-            Text("Range $hrMin-$hrMax BPM")
+            Text(stringResource(R.string.range, hrMin, hrMax))
         }
         Spacer(modifier = Modifier.weight(1f))
 
@@ -157,7 +159,7 @@ fun TrackingScreenContent(
 
         Spacer(modifier = Modifier.weight(1f))
 
-        AppButton("Stop") {
+        AppButton(stringResource(R.string.stop)) {
             hrStreamStop()
             // Only worth asking for a review after a session that actually ran.
             if (sessionCompleted) requestAppReview(context, activity)
@@ -292,13 +294,13 @@ fun BpmView(
 
     when (val connectionState = deviceConnectionState) {
         is DeviceConnectionState.Disconnected -> {
-            Text("Disconnected", style = Fonts.textLg)
+            Text(stringResource(R.string.disconnected), style = Fonts.textLg)
             PlaySoundRepeatedly(playSound, SoundType.DISCONNECTED) {
                 prevConnectionState = DeviceConnectionState.Disconnected()
             }
         }
         is DeviceConnectionState.Connecting -> {
-            Text("Reconnecting...", style = Fonts.textLg)
+            Text(stringResource(R.string.reconnecting), style = Fonts.textLg)
             PlaySoundRepeatedly(playSound, SoundType.RECONNECTING) {
                 prevConnectionState = DeviceConnectionState.Disconnected()
             }
@@ -333,7 +335,7 @@ fun BpmView(
                     )
                 }
             } else {
-                Text("Reconnecting...", style = Fonts.textLg)
+                Text(stringResource(R.string.reconnecting), style = Fonts.textLg)
             }
         }
     }
@@ -359,7 +361,7 @@ fun BpmReadout(bpm: Int, state: TrackingState, color: Color) {
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             HeartIcon(state)
-            Text(text = "BPM", style = Fonts.textLg, color = color)
+            Text(text = stringResource(R.string.bpm), style = Fonts.textLg, color = color)
         }
     }
 }
@@ -387,7 +389,7 @@ fun AlertStatus(
     ) {
         when {
             alerting -> Text(
-                text = state.heartBeatDescription,
+                text = stringResource(state.heartBeatDescription),
                 style = Fonts.textLg,
             )
             initialDelayActive -> if (initialDelay > 0) {
@@ -397,7 +399,7 @@ fun AlertStatus(
                 )
             } else {
                 Text(
-                    text = "Initial delay until in range",
+                    text = stringResource(R.string.initial_delay_until_in_range_status),
                     style = Fonts.textLg,
                 )
             }
@@ -406,7 +408,7 @@ fun AlertStatus(
                 duration = outOfRangeForInterval,
             )
             hasReading -> Text(
-                text = state.heartBeatDescription,
+                text = stringResource(state.heartBeatDescription),
                 style = Fonts.textLg,
             )
         }
@@ -441,7 +443,7 @@ fun InitialDelayCountdown(since: Long, duration: Int) {
     }
 
     Text(
-        text = "Initial delay %02d:%02d".format(remaining / 60_000, remaining / 1000 % 60),
+        text = stringResource(R.string.initial_delay_countdown, remaining / 60_000, remaining / 1000 % 60),
         style = Fonts.textLg,
     )
 }
@@ -487,7 +489,7 @@ fun HeartIcon(state: TrackingState) {
         )
         Image(
             painter = painterResource(id = R.drawable.heart),
-            contentDescription = "Heart",
+            contentDescription = stringResource(R.string.heart),
             modifier = Modifier
                 .height(32.dp)
                 .graphicsLayer(scaleX = scale, scaleY = scale)

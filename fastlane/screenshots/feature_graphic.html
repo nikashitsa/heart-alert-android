@@ -1,0 +1,86 @@
+<!doctype html>
+<!--
+  Layout of the store feature graphic. The `feature_graphic` lane fills in the double-brace
+  placeholders per locale and renders this page with headless Chrome at FEATURE_GRAPHIC_SIZE.
+  The subtitle comes from <locale>/feature_graphic.strings, the phone screen is that locale's
+  raw 04_tracking_good capture, and strap.png is the chest strap cut from the original artwork.
+-->
+<html lang="{{lang}}">
+<meta charset="utf-8">
+<style>
+  :root {
+    --background: #FFFFFF;
+    --title: #1B1B1B;
+    --subtitle: #777777;
+    --bezel: #49454F;
+    --camera: #E6E0E9;
+  }
+  html, body {
+    margin: 0;
+    width: {{width}}px;
+    height: {{height}}px;
+    overflow: hidden;
+    background: var(--background);
+  }
+  body {
+    position: relative;
+    font-family: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+  .title {
+    position: absolute;
+    left: 150px;
+    top: 55px;
+    color: var(--title);
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    white-space: nowrap;
+  }
+  /* Width-bound so a long translation wraps before it reaches the phone. */
+  .subtitle {
+    position: absolute;
+    left: 154px;
+    top: 172px;
+    width: 440px;
+    color: var(--subtitle);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 0.6px;
+  }
+  .strap {
+    position: absolute;
+    left: 140px;
+    top: 295px;
+  }
+  /* Runs off the bottom edge, so only the top of the screen shows. */
+  .phone {
+    position: absolute;
+    left: 619px;
+    top: 79px;
+    width: 249px;
+    height: 520px;
+    box-sizing: border-box;
+    border: 4.5px solid var(--bezel);
+    border-radius: 22px;
+    overflow: hidden;
+    background: url("{{screenshot}}") center top / 100% auto no-repeat;
+  }
+  .phone::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 11px;
+    width: 14px;
+    height: 14px;
+    margin-left: -7px;
+    border-radius: 50%;
+    background: var(--camera);
+  }
+</style>
+<div class="title">Heart Alert</div>
+<div class="subtitle">{{subtitle}}</div>
+<img class="strap" src="{{strap}}" alt="">
+<div class="phone"></div>
+</html>

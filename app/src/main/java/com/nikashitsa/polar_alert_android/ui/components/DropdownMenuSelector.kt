@@ -12,21 +12,23 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.res.stringResource
+import com.nikashitsa.polar_alert_android.R
 import com.nikashitsa.polar_alert_android.ui.theme.Colors
 
 @Composable
 fun DropdownMenuSelector(
     value: Int,
     options: Iterable<Int>,
-    label: (Int) -> String = { "$it" },
-    itemLabel: (Int) -> String = { "$it" },
+    label: @Composable (Int) -> String = { "$it" },
+    itemLabel: @Composable (Int) -> String = { "$it" },
     setValue: (Int) -> Unit = {}
 ) {
     var expanded by remember { mutableStateOf(false) }
     Box {
         AppTextButton(onClick = { expanded = true }) {
             Text(text = label(value))
-            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = "Chevron")
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = stringResource(R.string.chevron))
         }
         DropdownMenu(expanded = expanded, containerColor = Colors.Gray, onDismissRequest = { expanded = false }) {
             options.forEach { i ->

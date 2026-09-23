@@ -1,0 +1,72 @@
+<resources>
+    <!-- Common -->
+    <string name="bpm">次/分</string>
+    <string name="bpm_value">%1$d 次/分</string>
+    <string name="seconds_value">%1$d 秒</string>
+    <string name="minutes_value">%1$d 分钟</string>
+    <string name="chevron">箭头</string>
+    <string name="heart">心形</string>
+    <string name="connecting">正在连接…</string>
+    <string name="reconnecting">正在重新连接…</string>
+
+    <!-- Connect -->
+    <string name="demo_mode">演示模式</string>
+    <string name="connect">连接</string>
+
+    <!-- Settings -->
+    <string name="settings">设置</string>
+    <string name="language">语言</string>
+    <string name="heart_rate">心率</string>
+    <string name="min">最低</string>
+    <string name="max">最高</string>
+    <string name="alert">提醒</string>
+    <string name="volume_down">降低音量</string>
+    <string name="volume_up">提高音量</string>
+    <string name="advanced">高级</string>
+    <string name="vibration">振动</string>
+    <string name="interval">间隔</string>
+    <string name="out_of_range_for">超出范围持续</string>
+    <string name="initial_delay">初始延迟</string>
+    <string name="initial_delay_off">关闭</string>
+    <string name="initial_delay_until_in_range">直至进入范围</string>
+    <string name="connection">连接</string>
+    <string name="device">设备</string>
+    <string name="battery">电量</string>
+    <string name="battery_value">%1$d%%</string>
+    <string name="start">开始</string>
+    <string name="start_for_free">免费开始（%1$d）</string>
+    <string name="expand">展开</string>
+    <string name="collapse">收起</string>
+
+    <!-- Device picker -->
+    <string name="choose_device">选择设备</string>
+    <string name="searching_for_devices">正在搜索设备…</string>
+    <string name="devices_not_found">未找到设备</string>
+    <string name="devices_not_found_hint">请确认已佩戴设备且电量充足。</string>
+    <string name="try_again">重试</string>
+    <string name="bluetooth_off">Bluetooth 已关闭</string>
+    <string name="bluetooth_off_hint">请开启设备的 Bluetooth 以继续。</string>
+
+    <!-- Tracking -->
+    <string name="range">范围 %1$d-%2$d 次/分</string>
+    <string name="stop">停止</string>
+    <string name="disconnected">已断开连接</string>
+    <string name="state_good">正常</string>
+    <string name="state_too_low">过低！</string>
+    <string name="state_too_high">过高！</string>
+    <string name="initial_delay_until_in_range_status">等待进入范围</string>
+    <string name="initial_delay_countdown">初始延迟 %1$02d:%2$02d</string>
+
+    <!-- Paywall -->
+    <string name="paywall_success_title">购买成功</string>
+    <string name="paywall_success_description">已解锁无限次使用。</string>
+    <string name="continue_button">继续</string>
+    <string name="paywall_title">无限次使用</string>
+    <string name="paywall_description">免费次数已用完。\n解锁无限次使用，继续监测心率。</string>
+    <string name="one_time_purchase">一次性购买 %1$s</string>
+    <string name="restore_purchase">恢复购买</string>
+    <string name="billing_pending">购买正在处理中，付款完成后即可解锁。</string>
+    <string name="billing_nothing_to_restore">未找到以前的购买记录。</string>
+    <string name="billing_unavailable">Google Play 目前不可用。</string>
+    <string name="billing_failed">出了点问题，请重试。</string>
+</resources>
