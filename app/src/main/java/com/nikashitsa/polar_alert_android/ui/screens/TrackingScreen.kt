@@ -84,6 +84,7 @@ fun TrackingScreen(
     val alertInterval by settings.alertInterval.collectAsState()
     val outOfRangeFor by settings.outOfRangeFor.collectAsState()
     val initialDelay by settings.initialDelay.collectAsState()
+    val unlimitedAccess by settings.unlimitedAccess.collectAsState()
 
     BackHandler {
         bluetooth.hrStreamStop()
@@ -104,6 +105,9 @@ fun TrackingScreen(
         vibrate = vibration::vibrate,
         // A demo session is not real use, so it must not eat into the free sessions.
         countTrackedSession = if (bluetooth.isDemo) ({}) else settings::countTrackedSession,
+        // Only entitled users (bought, or grandfathered) are asked, so free-tier users
+        // hitting the paywall don't get prompted to rate the app.
+        canRequestReview = unlimitedAccess,
         onBack = onBack,
     )
 }
@@ -123,6 +127,7 @@ fun TrackingScreenContent(
     initialDelay: Int = SettingsDefaults.INITIAL_DELAY,
     vibrate: (VibrationType) -> Unit = {},
     countTrackedSession: () -> Unit = {},
+    canRequestReview: Boolean = false,
     initialBpm: Int = -1,
     onBack: () -> Unit = {}
 ) {
@@ -162,7 +167,7 @@ fun TrackingScreenContent(
         AppButton(stringResource(R.string.stop)) {
             hrStreamStop()
             // Only worth asking for a review after a session that actually ran.
-            if (sessionCompleted) requestAppReview(context, activity)
+            if (sessionCompleted && canRequestReview) requestAppReview(context, activity)
             onBack()
         }
     }
