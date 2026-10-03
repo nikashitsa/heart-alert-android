@@ -1,9 +1,9 @@
-Heart Alert는 블루투스 심박계와 연결되어, 심박수가 설정한 범위를 넘어서거나 그 아래로 떨어지는 바로 그 순간 소리를 냅니다. 최소와 최대를 정하고 휴대폰은 넣어둔 채, 귀로만 훈련하세요.
+Heart Alert는 블루투스 심박 가슴 스트랩, 암밴드 또는 워치와 연결되어, 심박수가 설정한 범위를 넘어서거나 그 아래로 떨어지는 바로 그 순간 소리를 냅니다. 최소와 최대를 정하고 휴대폰은 넣어둔 채, 귀로만 훈련하세요.
 
 화면을 볼 필요 없습니다. 존 계산도 없습니다. 계정도 필요 없습니다.
 
 <h2>사용 방법</h2>
-1. 블루투스 심박 센서나 가슴 스트랩을 착용합니다.
+1. 가슴 스트랩이나 암밴드를 착용하거나, 워치에서 심박수 전송을 켭니다.
 2. 최소·최대 BPM을 설정합니다.
 3. 시작을 누릅니다 — 너무 올라가거나 너무 내려가면 알림이 오고, 범위로 돌아오면 한 번 더 울립니다.
 
@@ -19,14 +19,26 @@ Heart Alert는 블루투스 심박계와 연결되어, 심박수가 설정한 �
 – 다른 앱을 쓰는 동안에도 백그라운드에서 계속 동작
 – 빠른 설정, 가입할 것 없음
 
-<h2>쓰던 센서와 함께</h2>
-호환되는 대부분의 Bluetooth Low Energy(BLE) 심박계, 가슴 스트랩, 암밴드를 지원합니다:
-– Polar H10, H9, H7, OH1, Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon 등
+<h2>쓰던 가슴 스트랩과 함께</h2>
+Heart Alert는 Bluetooth Low Energy(BLE) 심박 가슴 스트랩을 위해 만들어졌습니다. 예를 들면:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma 및 기타 일반 BLE 가슴 스트랩
 
-표준 Bluetooth LE 심박 신호를 보내는 센서라면 작동해야 하지만, 블루투스라는 사실만으로 호환이 보장되지는 않습니다. 인식되지 않으면 개발자에게 메시지를 보내주세요.
+<h2>암밴드와 워치도</h2>
+– 암밴드: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– 블루투스로 심박수를 전송하는 워치: Garmin(심박수 전송), Polar(다른 기기와 심박수 공유), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-외부 심박 센서가 필요합니다. 카메라 측정이나 손목만으로 하는 측정은 지원하지 않습니다.
+스캔하기 전에 워치에서 심박수 전송을 켜세요. Apple Watch, 대부분의 Wear OS 워치, Fitbit은 심박수를 전송하지 않아 연결할 수 없습니다.
+
+표준 Bluetooth LE 심박 신호를 보내는 기기라면 작동해야 하지만, 블루투스라는 사실만으로 호환이 보장되지는 않으며 ANT+ 전용 센서는 연결되지 않습니다. 인식되지 않으면 개발자에게 메시지를 보내주세요.
+
+외부 심박 센서가 필요합니다. 카메라 측정은 지원하지 않습니다.
 
 <h2>이런 때에</h2>
 – 존 2와 유산소 기초 다지기

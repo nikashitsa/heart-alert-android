@@ -1,9 +1,9 @@
-I-Heart Alert ixhuma kumonitha yakho yokushaya kwenhliziyo ye-Bluetooth futhi ikhale ngaso leso sikhathi lapho ukushaya kwenhliziyo kwenyuka ngaphezulu noma kwehla ngaphansi kwebanga olibekile. Beka umkhawulo ophansi nophezulu, ubeke ifoni eceleni, uzivocavoce ngendlebe.
+I-Heart Alert ixhuma ebhandeni lakho lesifuba lokushaya kwenhliziyo le-Bluetooth, ebhandeni lengalo noma ewashini futhi ikhale ngaso leso sikhathi lapho ukushaya kwenhliziyo kwenyuka ngaphezulu noma kwehla ngaphansi kwebanga olibekile. Beka umkhawulo ophansi nophezulu, ubeke ifoni eceleni, uzivocavoce ngendlebe.
 
 Akudingeki ubuke isikrini. Azikho izibalo zezindawo. Alikho i-akhawunti.
 
 <h2>Isebenza kanjani</h2>
-1. Gqoka inzwa yakho yokushaya kwenhliziyo ye-Bluetooth noma ibhande lesifuba.
+1. Gqoka ibhande lakho lesifuba noma lengalo, noma uvule ukusakaza kokushaya kwenhliziyo ewashini lakho.
 2. Beka i-BPM ephansi nephezulu.
 3. Cindezela qala — uthola isexwayiso lapho wenyuka kakhulu noma wehla kakhulu, futhi esinye lapho usubuyele ebangeni.
 
@@ -19,14 +19,26 @@ Akudingeki ubuke isikrini. Azikho izibalo zezindawo. Alikho i-akhawunti.
 – Iqhubeka ngemuva ngenkathi usebenzisa enye i-app
 – Ukusetha okusheshayo, akukho okumele ubhalisele
 
-<h2>Isebenza nenzwa yakho</h2>
-Isekela iningi lamamonitha okushaya kwenhliziyo e-Bluetooth Low Energy (BLE) ahambisanayo, amabhande esifuba nawengalo, okubandakanya:
-– Polar H10, H9, H7, OH1 ne-Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon nokunye
+<h2>Isebenza nebhande lakho lesifuba</h2>
+I-Heart Alert yakhelwe amabhande esifuba okushaya kwenhliziyo e-Bluetooth Low Energy (BLE), okubandakanya:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma namanye amabhande esifuba e-BLE avamile
 
-Noma iyiphi inzwa esakaza isignali evamile yokushaya kwenhliziyo ye-Bluetooth LE kufanele isebenze, nakuba i-Bluetooth yodwa ingaqinisekisi ukuhambisana. Uma eyakho ingatholakali, thumela umyalezo kumthuthukisi.
+<h2>Namabhande engalo namawashi futhi</h2>
+– Amabhande engalo: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Amawashi asakaza ukushaya kwenhliziyo nge-Bluetooth: Garmin (Sakaza ukushaya kwenhliziyo), Polar (yabelana namanye amadivayisi), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Kudingeka inzwa yangaphandle yokushaya kwenhliziyo. Ukukala ngekhamera noma ngesihlakala kuphela akusekelwe.
+Ngaphambi kokusesha, vula ukusakaza ewashini lakho. I-Apple Watch, amawashi amaningi e-Wear OS ne-Fitbit awakusakazi, ngakho awakwazi ukuxhuma.
+
+Noma iyiphi idivayisi ethumela isignali evamile yokushaya kwenhliziyo ye-Bluetooth LE kufanele isebenze, nakuba i-Bluetooth yodwa ingaqinisekisi ukuhambisana, futhi izinzwa ezine-ANT+ kuphela ngeke zixhume. Uma eyakho ingatholakali, thumela umyalezo kumthuthukisi.
+
+Kudingeka inzwa yangaphandle yokushaya kwenhliziyo. Ukukala ngekhamera akusekelwe.
 
 <h2>Yenzelwe</h2>
 – Indawo 2 nokwakha isisekelo se-aerobic

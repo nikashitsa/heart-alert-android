@@ -1,9 +1,9 @@
-Heart Alert 与你的蓝牙心率带相连，只要心率高过或低于你设定的区间，就在那一刻发出声音。设好上下限，把手机收起来，用耳朵训练。
+Heart Alert 与你的蓝牙心率胸带、臂带或手表相连，只要心率高过或低于你设定的区间，就在那一刻发出声音。设好上下限，把手机收起来，用耳朵训练。
 
 不用盯屏幕。不用算心率区间。不用注册账号。
 
 <h2>怎么用</h2>
-1. 戴上蓝牙心率传感器或胸带。
+1. 戴上胸带或臂带，或在手表上开启心率广播。
 2. 设置最低和最高心率。
 3. 按开始 —— 心率过高或过低时会提醒你，回到区间内时再提醒一次。
 
@@ -19,14 +19,26 @@ Heart Alert 与你的蓝牙心率带相连，只要心率高过或低于你设�
 – 使用其他应用时仍在后台运行
 – 设置很快，没有任何需要注册的东西
 
-<h2>兼容你手上的传感器</h2>
-支持大多数兼容的低功耗蓝牙（BLE）心率设备、胸带和臂带，包括：
-– Polar H10、H9、H7、OH1、Verity Sense
-– Garmin、Wahoo TICKR、CooSpo、Scosche、Decathlon 等
+<h2>兼容你的心率胸带</h2>
+Heart Alert 专为低功耗蓝牙（BLE）心率胸带打造，包括：
+– Polar H10、Polar H9、Polar H7
+– Garmin HRM 600、HRM 200、HRM-Pro Plus、HRM-Pro、HRM-Fit、HRM-Dual
+– Wahoo TRACKR Heart Rate、TICKR、TICKR X
+– CooSpo H6、H808S、H9Z
+– Magene H64、H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40、Moofit、XOSS、Bryton、Sigma 及其他通用 BLE 胸带
 
-只要传感器发送标准的 Bluetooth LE 心率信号，就应当可用，但仅凭蓝牙并不能保证兼容。如果搜不到你的设备，请给开发者发个消息。
+<h2>臂带和手表也可以</h2>
+– 臂带：Polar Verity Sense、Polar OH1、Scosche Rhythm、Wahoo TICKR FIT、CooSpo HW807
+– 可通过蓝牙广播心率的手表：Garmin（广播心率）、Polar（与其他设备共享心率）、Coros、Suunto、Amazfit、Huawei、Xiaomi Smart Band、Whoop
 
-需要外置心率传感器。不支持摄像头测量，也不支持仅凭手腕测量。
+搜索设备前，请先在手表上开启心率广播。Apple Watch、大多数 Wear OS 手表和 Fitbit 不广播心率，因此无法连接。
+
+只要设备发送标准的 Bluetooth LE 心率信号，就应当可用，但仅凭蓝牙并不能保证兼容，仅支持 ANT+ 的传感器也无法连接。如果搜不到你的设备，请给开发者发个消息。
+
+需要外置心率传感器。不支持摄像头测量。
 
 <h2>适合</h2>
 – 二区训练和有氧基础的积累

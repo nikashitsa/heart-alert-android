@@ -1,9 +1,9 @@
-Heart Alert kết nối với thiết bị đo nhịp tim Bluetooth của bạn và phát tiếng ngay khoảnh khắc nhịp tim vượt lên trên hoặc tụt xuống dưới khoảng bạn đặt. Chọn một mức thấp nhất và một mức cao nhất, cất điện thoại đi và tập theo tai.
+Heart Alert kết nối với dây đeo ngực, băng đeo tay hoặc đồng hồ đo nhịp tim Bluetooth của bạn và phát tiếng ngay khoảnh khắc nhịp tim vượt lên trên hoặc tụt xuống dưới khoảng bạn đặt. Chọn một mức thấp nhất và một mức cao nhất, cất điện thoại đi và tập theo tai.
 
 Không phải nhìn màn hình. Không phải tính vùng. Không cần tài khoản.
 
 <h2>Cách hoạt động</h2>
-1. Đeo cảm biến nhịp tim Bluetooth hoặc dây đeo ngực.
+1. Đeo dây đeo ngực hoặc băng đeo tay, hoặc bật phát nhịp tim trên đồng hồ.
 2. Đặt BPM thấp nhất và cao nhất.
 3. Nhấn bắt đầu — bạn sẽ nghe cảnh báo khi lên quá cao hoặc xuống quá thấp, và một lần nữa khi trở lại trong khoảng.
 
@@ -19,14 +19,26 @@ Không phải nhìn màn hình. Không phải tính vùng. Không cần tài kho
 – Vẫn chạy nền trong khi bạn dùng ứng dụng khác
 – Cài đặt nhanh, không có gì phải đăng ký
 
-<h2>Dùng được với cảm biến của bạn</h2>
-Hỗ trợ hầu hết các thiết bị đo nhịp tim Bluetooth Low Energy (BLE) tương thích, dây đeo ngực và băng đeo tay, trong đó có:
-– Polar H10, H9, H7, OH1 và Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon và nhiều hãng khác
+<h2>Dùng được với dây đeo ngực của bạn</h2>
+Heart Alert được làm cho các dây đeo ngực đo nhịp tim Bluetooth Low Energy (BLE), trong đó có:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma và các dây đeo ngực BLE phổ thông khác
 
-Mọi cảm biến phát tín hiệu nhịp tim Bluetooth LE tiêu chuẩn đều nên hoạt động, dù chỉ riêng Bluetooth không bảo đảm tương thích. Nếu thiết bị của bạn không được nhận, hãy nhắn cho nhà phát triển.
+<h2>Cả băng đeo tay và đồng hồ</h2>
+– Băng đeo tay: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Đồng hồ phát nhịp tim qua Bluetooth: Garmin (Phát nhịp tim), Polar (Chia sẻ nhịp tim với thiết bị khác), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Cần có cảm biến nhịp tim rời. Không hỗ trợ đo bằng camera hay chỉ từ cổ tay.
+Hãy bật phát nhịp tim trên đồng hồ trước khi quét. Apple Watch, phần lớn đồng hồ Wear OS và Fitbit không phát nhịp tim nên không thể kết nối.
+
+Mọi thiết bị gửi tín hiệu nhịp tim Bluetooth LE tiêu chuẩn đều nên hoạt động, dù chỉ riêng Bluetooth không bảo đảm tương thích, và cảm biến chỉ hỗ trợ ANT+ sẽ không kết nối được. Nếu thiết bị của bạn không được nhận, hãy nhắn cho nhà phát triển.
+
+Cần có cảm biến nhịp tim rời. Không hỗ trợ đo bằng camera.
 
 <h2>Dành cho</h2>
 – Vùng 2 và xây nền tảng ưa khí

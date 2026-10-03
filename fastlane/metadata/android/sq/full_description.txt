@@ -1,9 +1,9 @@
-Heart Alert lidhet me matësin tënd të pulsit me Bluetooth dhe nxjerr një tingull në çastin kur pulsi ngjitet mbi ose bie nën intervalin që cakton ti. Vendos një minimum dhe një maksimum, lëre telefonin mënjanë dhe stërvitu me vesh.
+Heart Alert lidhet përmes Bluetooth-it me rripin e gjoksit, fashon e krahut ose orën tënde dhe nxjerr një tingull në çastin kur pulsi ngjitet mbi ose bie nën intervalin që cakton ti. Vendos një minimum dhe një maksimum, lëre telefonin mënjanë dhe stërvitu me vesh.
 
 Pa e vështruar ekranin. Pa llogaritje zonash. Pa llogari.
 
 <h2>Si funksionon</h2>
-1. Vish sensorin e pulsit me Bluetooth ose rripin e gjoksit.
+1. Vish rripin e gjoksit ose fashon e krahut, ose aktivizo transmetimin e pulsit në orë.
 2. Cakto BPM-në minimale dhe maksimale.
 3. Shtyp nisjen — merr një sinjal kur ngjitesh shumë lart ose bie shumë poshtë, dhe një tjetër kur kthehesh brenda intervalit.
 
@@ -19,14 +19,26 @@ Pa e vështruar ekranin. Pa llogaritje zonash. Pa llogari.
 – Vazhdon në sfond ndërsa ti përdor një aplikacion tjetër
 – Konfigurim i shpejtë, asgjë për t'u regjistruar
 
-<h2>Punon me sensorin tënd</h2>
-Mbështet shumicën e matësve të pulsit me Bluetooth Low Energy (BLE) të përputhshëm, rripave të gjoksit dhe fashove të krahut, ndër to:
-– Polar H10, H9, H7, OH1 dhe Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon e të tjerë
+<h2>Punon me rripin tënd të gjoksit</h2>
+Heart Alert është krijuar për rripat e gjoksit për matjen e pulsit me Bluetooth Low Energy (BLE), ndër to:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma dhe rripa të tjerë gjoksi të zakonshëm BLE
 
-Çdo sensor që transmeton një sinjal standard pulsi Bluetooth LE duhet të funksionojë, megjithëse vetëm Bluetooth-i nuk e garanton përputhshmërinë. Nëse i yti nuk gjendet, shkruaji zhvilluesit.
+<h2>Edhe fasho krahu dhe ora</h2>
+– Fasho krahu: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Ora që transmetojnë pulsin përmes Bluetooth-it: Garmin (Transmetimi i pulsit), Polar (ndarja e pulsit me pajisje të tjera), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Nevojitet një sensor i jashtëm pulsi. Matja me kamerë ose vetëm nga kyçi i dorës nuk mbështetet.
+Aktivizo transmetimin e pulsit në orë para se të kërkosh. Apple Watch, shumica e orëve Wear OS dhe Fitbit nuk e transmetojnë pulsin, ndaj nuk mund të lidhen.
+
+Çdo pajisje që dërgon një sinjal standard pulsi Bluetooth LE duhet të funksionojë, megjithëse vetëm Bluetooth-i nuk e garanton përputhshmërinë, dhe sensorët vetëm me ANT+ nuk do të lidhen. Nëse e jotja nuk gjendet, shkruaji zhvilluesit.
+
+Nevojitet një sensor i jashtëm pulsi. Matja me kamerë nuk mbështetet.
 
 <h2>Bërë për</h2>
 – Zonën 2 dhe ndërtimin e bazës aerobike

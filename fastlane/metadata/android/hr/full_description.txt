@@ -1,9 +1,9 @@
-Heart Alert povezuje se s tvojim Bluetooth mjeračem otkucaja srca i oglasi se u trenutku kad puls prijeđe iznad ili padne ispod raspona koji si postavio. Odaberi minimum i maksimum, spremi telefon i treniraj po sluhu.
+Heart Alert povezuje se s tvojim Bluetooth prsnim pojasom za mjerenje otkucaja srca, trakom za ruku ili satom i oglasi se u trenutku kad puls prijeđe iznad ili padne ispod raspona koji si postavio. Odaberi minimum i maksimum, spremi telefon i treniraj po sluhu.
 
 Bez gledanja u zaslon. Bez računanja zona. Bez računa.
 
 <h2>Kako radi</h2>
-1. Stavi Bluetooth mjerač otkucaja srca ili prsni pojas.
+1. Stavi prsni pojas ili traku za ruku, ili na satu uključi emitiranje otkucaja srca.
 2. Postavi najmanji i najveći BPM.
 3. Pritisni start — dobit ćeš upozorenje kad odeš previsoko ili padneš prenisko, i još jedno kad se vratiš u raspon.
 
@@ -19,14 +19,26 @@ Bez gledanja u zaslon. Bez računanja zona. Bez računa.
 – Radi u pozadini dok koristiš drugu aplikaciju
 – Brzo postavljanje, bez registracije
 
-<h2>Radi s tvojim mjeračem</h2>
-Podržava većinu kompatibilnih Bluetooth Low Energy (BLE) mjerača otkucaja srca, prsnih pojaseva i traka za ruku, među njima:
-– Polar H10, H9, H7, OH1 i Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon i druge
+<h2>Radi s tvojim prsnim pojasom</h2>
+Heart Alert napravljen je za Bluetooth Low Energy (BLE) prsne pojaseve za mjerenje otkucaja srca, među njima:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma i drugi generički BLE prsni pojasevi
 
-Trebao bi raditi svaki senzor koji emitira standardni Bluetooth LE signal otkucaja srca, premda sam Bluetooth ne jamči kompatibilnost. Ako tvoj nije prepoznat, javi se razvijatelju.
+<h2>I trake za ruku i satovi</h2>
+– Trake za ruku: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Satovi koji emitiraju otkucaje srca preko Bluetootha: Garmin (Emitiranje otkucaja srca), Polar (dijeljenje otkucaja srca s drugim uređajima), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Potreban je vanjski senzor otkucaja srca. Mjerenje kamerom ili samo sa zapešća nije podržano.
+Prije pretraživanja uključi emitiranje otkucaja srca na satu. Apple Watch, većina Wear OS satova i Fitbit ne emitiraju otkucaje srca, pa se ne mogu povezati.
+
+Trebao bi raditi svaki uređaj koji šalje standardni Bluetooth LE signal otkucaja srca, premda sam Bluetooth ne jamči kompatibilnost, a senzori koji podržavaju samo ANT+ neće se povezati. Ako tvoj nije prepoznat, javi se razvijatelju.
+
+Potreban je vanjski senzor otkucaja srca. Mjerenje kamerom nije podržano.
 
 <h2>Napravljeno za</h2>
 – Zonu 2 i izgradnju aerobne baze

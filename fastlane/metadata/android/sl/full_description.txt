@@ -1,9 +1,9 @@
-Heart Alert se poveže s tvojim merilnikom srčnega utripa Bluetooth in se oglasi v trenutku, ko utrip zraste nad ali pade pod obseg, ki si ga nastaviš. Izberi najnižjo in najvišjo vrednost, telefon pospravi in treniraj po posluhu.
+Heart Alert se prek Bluetootha poveže s tvojim prsnim pasom, trakom za roko ali uro in se oglasi v trenutku, ko utrip zraste nad ali pade pod obseg, ki si ga nastaviš. Izberi najnižjo in najvišjo vrednost, telefon pospravi in treniraj po posluhu.
 
 Brez strmenja v zaslon. Brez računanja con. Brez računa.
 
 <h2>Kako deluje</h2>
-1. Nadeni si merilnik srčnega utripa Bluetooth ali prsni pas.
+1. Nadeni si prsni pas ali trak za roko oziroma na uri vklopi oddajanje srčnega utripa.
 2. Nastavi najnižji in najvišji BPM.
 3. Pritisni start — opozorilo dobiš, ko greš previsoko ali prenizko, in še eno, ko si spet v obsegu.
 
@@ -19,14 +19,26 @@ Brez strmenja v zaslon. Brez računanja con. Brez računa.
 – Deluje v ozadju, medtem ko uporabljaš drugo aplikacijo
 – Hitra nastavitev, nič se ni treba registrirati
 
-<h2>Deluje s tvojim merilnikom</h2>
-Podpira večino združljivih merilnikov srčnega utripa Bluetooth Low Energy (BLE), prsnih pasov in zapestnih trakov, med njimi:
-– Polar H10, H9, H7, OH1 in Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon in druge
+<h2>Deluje s tvojim prsnim pasom</h2>
+Heart Alert je narejen za prsne pasove za merjenje srčnega utripa Bluetooth Low Energy (BLE), med njimi:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma in drugi splošni prsni pasovi BLE
 
-Delovati bi moral vsak senzor, ki oddaja standardni signal srčnega utripa Bluetooth LE, čeprav sam Bluetooth ne zagotavlja združljivosti. Če tvojega ne zazna, piši razvijalcu.
+<h2>Tudi trakovi za roko in ure</h2>
+– Trakovi za roko: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Ure, ki oddajajo srčni utrip prek Bluetootha: Garmin (Oddajanje srčnega utripa), Polar (deljenje srčnega utripa z drugimi napravami), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Potreben je zunanji senzor srčnega utripa. Merjenje s kamero ali zgolj z zapestja ni podprto.
+Pred iskanjem na uri vklopi oddajanje srčnega utripa. Apple Watch, večina ur z Wear OS in Fitbit srčnega utripa ne oddajajo, zato se ne morejo povezati.
+
+Delovati bi morala vsaka naprava, ki pošilja standardni signal srčnega utripa Bluetooth LE, čeprav sam Bluetooth ne zagotavlja združljivosti, senzorji samo z ANT+ pa se ne bodo povezali. Če tvoje ne zazna, piši razvijalcu.
+
+Potreben je zunanji senzor srčnega utripa. Merjenje s kamero ni podprto.
 
 <h2>Narejeno za</h2>
 – Cono 2 in gradnjo aerobne osnove

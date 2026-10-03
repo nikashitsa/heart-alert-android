@@ -1,9 +1,9 @@
-Heart Alert sa colliescha cun tes mesirader dal puls Bluetooth e dat in tun il mument che tes puls va sur u sut la zona che ti has fixà. Tscherna in minimum ed in maximum, metta davent il telefon ed exercitescha suenter l'ureglia.
+Heart Alert sa colliescha via Bluetooth cun tia stgapina dal pèz, tes bindel dal bratsch u tia ura e dat in tun il mument che tes puls va sur u sut la zona che ti has fixà. Tscherna in minimum ed in maximum, metta davent il telefon ed exercitescha suenter l'ureglia.
 
 Nagin display da guardar. Nagins quints da zonas. Nagin conto.
 
 <h2>Uschia funcziunescha</h2>
-1. Metta si tes mesirader dal puls Bluetooth u la stgapina dal pèz.
+1. Metta si tia stgapina dal pèz u tes bindel dal bratsch, u activescha la transmissiun dal puls sin tia ura.
 2. Fixescha il puls minimal e maximal.
 3. Smatga sin startar — ti retschaivas in avis cur che ti vas memia aut u memia bass, ed in auter cur che ti es puspè en la zona.
 
@@ -19,14 +19,26 @@ Nagin display da guardar. Nagins quints da zonas. Nagin conto.
 – Va vinavant en il fund entant che ti dovras in'autra app
 – Configuraziun svelta, nagut da s'annunziar
 
-<h2>Funcziunescha cun tes mesirader</h2>
-Sustegna la gronda part dals mesiraders dal puls cumpatibels Bluetooth Low Energy (BLE), stgapinas dal pèz e bindels dal bratsch, tranter auter:
-– Polar H10, H9, H7, OH1 e Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon ed auters
+<h2>Funcziunescha cun tia stgapina dal pèz</h2>
+Heart Alert è fatg per stgapinas dal pèz Bluetooth Low Energy (BLE) che mesiran il puls, tranter auter:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma ed autras stgapinas dal pèz BLE usitadas
 
-Mintga sensor che emetta in signal dal puls Bluetooth LE standard duess funcziunar, malgrà che Bluetooth sulet na garantescha betg la cumpatibilitad. Sche il tes na vegn betg chattà, scriva al sviluppader.
+<h2>Er bindels dal bratsch ed uras</h2>
+– Bindels dal bratsch: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Uras che emettan il puls via Bluetooth: Garmin (emetter il puls), Polar (parter il puls cun auters apparats), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-I dovra in sensor dal puls extern. La mesiraziun cun la camera u mo dal pols na vegn betg sustegnida.
+Activescha la transmissiun dal puls sin tia ura avant che tschertgar. Apple Watch, la gronda part da las uras Wear OS e Fitbit n'emettan betg il puls e na pon perquai betg sa colliar.
+
+Mintga apparat che emetta in signal dal puls Bluetooth LE standard duess funcziunar, malgrà che Bluetooth sulet na garantescha betg la cumpatibilitad, e sensors mo cun ANT+ na sa collieschan betg. Sche il tes na vegn betg chattà, scriva al sviluppader.
+
+I dovra in sensor dal puls extern. La mesiraziun cun la camera na vegn betg sustegnida.
 
 <h2>Fatg per</h2>
 – La zona 2 e la construcziun da la basa aeroba

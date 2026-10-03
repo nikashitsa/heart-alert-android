@@ -1,9 +1,9 @@
-Heart Alert, Bluetooth nabız sensörüne bağlanır ve nabzın belirlediğin aralığın üstüne çıktığı ya da altına düştüğü anda ses verir. Bir alt ve bir üst sınır seç, telefonu cebine koy ve kulağınla antrenman yap.
+Heart Alert, Bluetooth nabız göğüs bandına, kol bandına ya da saatine bağlanır ve nabzın belirlediğin aralığın üstüne çıktığı ya da altına düştüğü anda ses verir. Bir alt ve bir üst sınır seç, telefonu cebine koy ve kulağınla antrenman yap.
 
 Ekrana bakmak yok. Bölge hesabı yok. Hesap açmak yok.
 
 <h2>Nasıl çalışır</h2>
-1. Bluetooth nabız sensörünü ya da göğüs bandını tak.
+1. Göğüs bandını ya da kol bandını tak veya saatinde nabız yayınını aç.
 2. En düşük ve en yüksek BPM değerini ayarla.
 3. Başlat'a bas — çok yükselince ya da çok düşünce bir uyarı, aralığa geri döndüğünde bir uyarı daha alırsın.
 
@@ -19,14 +19,26 @@ Ekrana bakmak yok. Bölge hesabı yok. Hesap açmak yok.
 – Başka bir uygulama kullanırken arka planda çalışmayı sürdürür
 – Hızlı kurulum, kaydolacak bir şey yok
 
-<h2>Kendi nabız sensörünle çalışır</h2>
-Çoğu uyumlu Bluetooth Low Energy (BLE) nabız sensörünü, göğüs bandını ve kol bandını destekler:
-– Polar H10, H9, H7, OH1 ve Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon ve diğerleri
+<h2>Göğüs bandınla çalışır</h2>
+Heart Alert, Bluetooth Low Energy (BLE) nabız göğüs bantları için tasarlandı; bunlar arasında:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma ve diğer standart BLE göğüs bantları
 
-Standart Bluetooth LE nabız sinyali yayan her sensörün çalışması beklenir, ancak tek başına Bluetooth uyumluluğu garanti etmez. Seninki bulunamazsa geliştiriciye yaz.
+<h2>Kol bantları ve saatler de</h2>
+– Kol bantları: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Nabzı Bluetooth üzerinden yayınlayan saatler: Garmin (Nabız Yayını), Polar (Nabzı diğer cihazlarla paylaş), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Harici bir nabız sensörü gerekir. Kamerayla ya da yalnızca bilekten ölçüm desteklenmez.
+Taramadan önce saatinde nabız yayınını aç. Apple Watch, çoğu Wear OS saat ve Fitbit nabız yayınlamadığı için bağlanamaz.
+
+Standart Bluetooth LE nabız sinyali gönderen her cihazın çalışması beklenir, ancak tek başına Bluetooth uyumluluğu garanti etmez ve yalnızca ANT+ destekleyen sensörler bağlanmaz. Seninki bulunamazsa geliştiriciye yaz.
+
+Harici bir nabız sensörü gerekir. Kamerayla ölçüm desteklenmez.
 
 <h2>Şunlar için</h2>
 – 2. bölge ve aerobik temel çalışması

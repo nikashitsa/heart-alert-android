@@ -1,9 +1,9 @@
-Heart Alert se connecte à votre ceinture cardio Bluetooth et émet un son dès que votre fréquence cardiaque dépasse ou passe sous la plage que vous avez choisie. Réglez un minimum et un maximum, rangez votre téléphone et entraînez-vous à l'oreille.
+Heart Alert se connecte à votre ceinture cardio, votre brassard ou votre montre Bluetooth et émet un son dès que votre fréquence cardiaque dépasse ou passe sous la plage que vous avez choisie. Réglez un minimum et un maximum, rangez votre téléphone et entraînez-vous à l'oreille.
 
 Pas d'écran à surveiller. Pas de calcul de zones. Pas de compte.
 
 <h2>Comment ça marche</h2>
-1. Enfilez votre capteur cardio Bluetooth ou votre ceinture pectorale.
+1. Enfilez votre ceinture cardio ou votre brassard, ou activez la diffusion de la fréquence cardiaque sur votre montre.
 2. Réglez vos BPM minimum et maximum.
 3. Appuyez sur démarrer — une alerte se déclenche quand vous montez trop haut ou descendez trop bas, et une autre quand vous revenez dans la plage.
 
@@ -19,14 +19,26 @@ Pas d'écran à surveiller. Pas de calcul de zones. Pas de compte.
 – Continue en arrière-plan pendant que vous utilisez une autre application
 – Réglage rapide, aucune inscription
 
-<h2>Compatible avec votre capteur cardio</h2>
-Prend en charge la plupart des capteurs de fréquence cardiaque Bluetooth Low Energy (BLE) compatibles, ceintures pectorales et brassards, dont :
-– Polar H10, H9, H7, OH1 et Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon et d'autres
+<h2>Compatible avec votre ceinture cardio</h2>
+Conçu pour les ceintures cardio Bluetooth Low Energy (BLE), dont :
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma et autres ceintures BLE génériques
 
-Tout capteur qui diffuse un signal cardiaque Bluetooth LE standard devrait fonctionner, même si le Bluetooth seul ne garantit pas la compatibilité. Si le vôtre n'est pas détecté, écrivez au développeur.
+<h2>Brassards et montres aussi</h2>
+– Brassards : Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Montres diffusant la FC en Bluetooth : Garmin (Diffuser la fréquence cardiaque), Polar (partager la FC avec d'autres appareils), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Un capteur cardiaque externe est nécessaire. La mesure par l'appareil photo ou au poignet seul n'est pas prise en charge.
+Activez d'abord la diffusion de la FC sur votre montre. L'Apple Watch, la plupart des montres Wear OS et les Fitbit ne la diffusent pas et ne peuvent donc pas se connecter.
+
+Tout appareil envoyant un signal cardiaque Bluetooth LE standard devrait fonctionner, même si le Bluetooth seul ne garantit rien ; les capteurs uniquement ANT+ ne se connectent pas. Appareil non détecté ? Écrivez au développeur.
+
+Un capteur cardiaque externe est nécessaire ; la mesure par l'appareil photo n'est pas gérée.
 
 <h2>Pensé pour</h2>
 – La zone 2 et le travail foncier

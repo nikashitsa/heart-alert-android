@@ -1,9 +1,9 @@
-Heart Alert ከBluetooth የልብ ምት መለኪያዎ ጋር ይገናኛል፤ የልብ ምትዎ ካስቀመጡት ወሰን በላይ ሲወጣ ወይም በታች ሲወርድ በዚያው ቅጽበት ድምፅ ያሰማል። ዝቅተኛና ከፍተኛ ወሰን ያስቀምጡ፣ ስልኩን ያስቀምጡና በጆሮ ይለማመዱ።
+Heart Alert ከBluetooth የልብ ምት የደረት ቀበቶዎ፣ የክንድ ማሰሪያዎ ወይም ሰዓትዎ ጋር ይገናኛል፤ የልብ ምትዎ ካስቀመጡት ወሰን በላይ ሲወጣ ወይም በታች ሲወርድ በዚያው ቅጽበት ድምፅ ያሰማል። ዝቅተኛና ከፍተኛ ወሰን ያስቀምጡ፣ ስልኩን ያስቀምጡና በጆሮ ይለማመዱ።
 
 ስክሪን ማየት አያስፈልግም። የዞን ስሌት የለም። መለያ አያስፈልግም።
 
 <h2>እንዴት እንደሚሠራ</h2>
-1. የBluetooth የልብ ምት ሴንሰርዎን ወይም የደረት ቀበቶዎን ያድርጉ።
+1. የደረት ቀበቶዎን ወይም የክንድ ማሰሪያዎን ያድርጉ፣ ወይም በሰዓትዎ ላይ የልብ ምት ማስተላለፍን ያብሩ።
 2. ዝቅተኛና ከፍተኛ BPM ያስቀምጡ።
 3. ጀምር ይጫኑ — በጣም ሲወጡ ወይም በጣም ሲወርዱ ማስጠንቀቂያ ይደርስዎታል፣ ወደ ወሰኑ ሲመለሱም ሌላ።
 
@@ -19,14 +19,26 @@ Heart Alert ከBluetooth የልብ ምት መለኪያዎ ጋር ይገናኛል
 – ሌላ መተግበሪያ ሲጠቀሙም በጀርባ መስራቱን ይቀጥላል
 – ፈጣን ዝግጅት፣ የሚመዘገብ ነገር የለም
 
-<h2>ከሴንሰርዎ ጋር ይሠራል</h2>
-አብዛኞቹን ተስማሚ የBluetooth Low Energy (BLE) የልብ ምት መለኪያዎች፣ የደረት ቀበቶዎችና የክንድ ማሰሪያዎች ይደግፋል፤ ከእነሱም፦
-– Polar H10፣ H9፣ H7፣ OH1 እና Verity Sense
-– Garmin፣ Wahoo TICKR፣ CooSpo፣ Scosche፣ Decathlon እና ሌሎችም
+<h2>ከደረት ቀበቶዎ ጋር ይሠራል</h2>
+Heart Alert የተሠራው ለBluetooth Low Energy (BLE) የልብ ምት የደረት ቀበቶዎች ነው፤ ከእነሱም፦
+– Polar H10፣ Polar H9፣ Polar H7
+– Garmin HRM 600፣ HRM 200፣ HRM-Pro Plus፣ HRM-Pro፣ HRM-Fit፣ HRM-Dual
+– Wahoo TRACKR Heart Rate፣ TICKR፣ TICKR X
+– CooSpo H6፣ H808S፣ H9Z
+– Magene H64፣ H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40፣ Moofit፣ XOSS፣ Bryton፣ Sigma እና ሌሎች አጠቃላይ የBLE የደረት ቀበቶዎች
 
-መደበኛ የBluetooth LE የልብ ምት ምልክት የሚያስተላልፍ ማንኛውም ሴንሰር መስራት አለበት፤ ሆኖም Bluetooth መሆኑ ብቻ ተስማሚነትን አያረጋግጥም። የእርስዎ ካልተገኘ ለገንቢው መልእክት ይላኩ።
+<h2>የክንድ ማሰሪያዎችና ሰዓቶችም</h2>
+– የክንድ ማሰሪያዎች: Polar Verity Sense፣ Polar OH1፣ Scosche Rhythm፣ Wahoo TICKR FIT፣ CooSpo HW807
+– የልብ ምትን በBluetooth የሚያስተላልፉ ሰዓቶች: Garmin (የልብ ምት ማስተላለፍ)፣ Polar (የልብ ምትን ለሌሎች መሣሪያዎች ማጋራት)፣ Coros፣ Suunto፣ Amazfit፣ Huawei፣ Xiaomi Smart Band፣ Whoop
 
-የውጭ የልብ ምት ሴንሰር ያስፈልጋል። በካሜራ ወይም በእጅ አንጓ ብቻ መለካት አይደገፍም።
+ከመፈለግዎ በፊት በሰዓትዎ ላይ የልብ ምት ማስተላለፍን ያብሩ። Apple Watch፣ አብዛኞቹ የWear OS ሰዓቶችና Fitbit የልብ ምት ስለማያስተላልፉ መገናኘት አይችሉም።
+
+መደበኛ የBluetooth LE የልብ ምት ምልክት የሚልክ ማንኛውም መሣሪያ መስራት አለበት፤ ሆኖም Bluetooth መሆኑ ብቻ ተስማሚነትን አያረጋግጥም፣ ANT+ ብቻ የሚጠቀሙ ሴንሰሮችም አይገናኙም። የእርስዎ ካልተገኘ ለገንቢው መልእክት ይላኩ።
+
+የውጭ የልብ ምት ሴንሰር ያስፈልጋል። በካሜራ መለካት አይደገፍም።
 
 <h2>ለምን ተሠራ</h2>
 – ዞን 2 እና የኤሮቢክ መሠረት ግንባታ

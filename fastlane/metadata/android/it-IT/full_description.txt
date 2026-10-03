@@ -1,9 +1,9 @@
-Heart Alert si collega alla tua fascia cardio Bluetooth e suona nel momento in cui i battiti salgono sopra o scendono sotto l'intervallo che hai impostato. Scegli un minimo e un massimo, metti via il telefono e allenati a orecchio.
+Heart Alert si collega via Bluetooth alla tua fascia cardio, al tuo bracciale o al tuo orologio e suona nel momento in cui i battiti salgono sopra o scendono sotto l'intervallo che hai impostato. Scegli un minimo e un massimo, metti via il telefono e allenati a orecchio.
 
 Niente schermo da controllare. Niente calcoli sulle zone. Nessun account.
 
 <h2>Come funziona</h2>
-1. Indossa il tuo sensore cardio Bluetooth o la fascia toracica.
+1. Indossa la fascia toracica o il bracciale, oppure attiva la trasmissione della frequenza cardiaca sull'orologio.
 2. Imposta i BPM minimi e massimi.
 3. Premi avvia — ricevi un avviso quando sali troppo o scendi troppo, e un altro quando rientri nell'intervallo.
 
@@ -19,14 +19,26 @@ Niente schermo da controllare. Niente calcoli sulle zone. Nessun account.
 – Continua in background mentre usi un'altra app
 – Configurazione rapida, nessuna registrazione
 
-<h2>Funziona con il tuo sensore cardio</h2>
-Supporta la maggior parte dei cardiofrequenzimetri Bluetooth Low Energy (BLE) compatibili, fasce toraciche e bracciali, tra cui:
-– Polar H10, H9, H7, OH1 e Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon e altri
+<h2>Funziona con la tua fascia cardio</h2>
+Heart Alert è pensato per le fasce cardio Bluetooth Low Energy (BLE), tra cui:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma e altre fasce toraciche BLE generiche
 
-Qualsiasi sensore che trasmetta un segnale cardiaco Bluetooth LE standard dovrebbe funzionare, anche se il Bluetooth da solo non garantisce la compatibilità. Se il tuo non viene rilevato, scrivi allo sviluppatore.
+<h2>Anche bracciali e orologi</h2>
+– Bracciali: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Orologi che trasmettono la frequenza cardiaca via Bluetooth: Garmin (Trasmissione FC), Polar (Condividi FC con altri dispositivi), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Serve un sensore cardio esterno. La misurazione con la fotocamera o solo dal polso non è supportata.
+Attiva la trasmissione della frequenza cardiaca sull'orologio prima di avviare la ricerca. Apple Watch, la maggior parte degli orologi Wear OS e Fitbit non trasmettono la frequenza cardiaca, quindi non possono collegarsi.
+
+Qualsiasi dispositivo che trasmetta un segnale cardiaco Bluetooth LE standard dovrebbe funzionare, anche se il Bluetooth da solo non garantisce la compatibilità, e i sensori solo ANT+ non si collegano. Se il tuo non viene rilevato, scrivi allo sviluppatore.
+
+Serve un sensore cardio esterno. La misurazione con la fotocamera non è supportata.
 
 <h2>Pensato per</h2>
 – Zona 2 e costruzione della base aerobica

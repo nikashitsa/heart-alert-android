@@ -1,9 +1,9 @@
-Heart Alert huunganishwa na kifaa chako cha kupima mapigo ya moyo cha Bluetooth na kutoa sauti mara tu mapigo yako yanapopanda juu ya au kushuka chini ya kiwango ulichoweka. Weka kiwango cha chini na cha juu, weka simu pembeni, na ufanye mazoezi kwa kusikiliza.
+Heart Alert huunganishwa kupitia Bluetooth na mkanda wako wa kifuani wa mapigo ya moyo, mkanda wa mkononi au saa, na kutoa sauti mara tu mapigo yako yanapopanda juu ya au kushuka chini ya kiwango ulichoweka. Weka kiwango cha chini na cha juu, weka simu pembeni, na ufanye mazoezi kwa kusikiliza.
 
 Hakuna kutazama skrini. Hakuna hesabu za kanda. Hakuna akaunti.
 
 <h2>Jinsi inavyofanya kazi</h2>
-1. Vaa kitambuzi chako cha mapigo ya moyo cha Bluetooth au mkanda wa kifuani.
+1. Vaa mkanda wako wa kifuani au wa mkononi, au washa utangazaji wa mapigo ya moyo kwenye saa yako.
 2. Weka BPM ya chini na ya juu.
 3. Bonyeza anza — utapata tahadhari unapopanda juu mno au kushuka chini mno, na nyingine unaporudi kwenye kiwango.
 
@@ -19,14 +19,26 @@ Hakuna kutazama skrini. Hakuna hesabu za kanda. Hakuna akaunti.
 – Huendelea kufanya kazi chinichini unapotumia programu nyingine
 – Usanidi wa haraka, hakuna cha kujisajili
 
-<h2>Hufanya kazi na kitambuzi chako</h2>
-Inasaidia vifaa vingi vinavyooana vya Bluetooth Low Energy (BLE) vya kupima mapigo ya moyo, mikanda ya kifuani na ya mkononi, pamoja na:
-– Polar H10, H9, H7, OH1 na Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon na vingine
+<h2>Hufanya kazi na mkanda wako wa kifuani</h2>
+Heart Alert imeundwa kwa ajili ya mikanda ya kifuani ya mapigo ya moyo ya Bluetooth Low Energy (BLE), ikiwemo:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma na mikanda mingine ya kawaida ya kifuani ya BLE
 
-Kitambuzi chochote kinachotuma ishara ya kawaida ya mapigo ya moyo ya Bluetooth LE kinapaswa kufanya kazi, ingawa Bluetooth pekee haihakikishi uoanifu. Kama chako hakitambuliki, mtumie ujumbe msanidi.
+<h2>Pia mikanda ya mkononi na saa</h2>
+– Mikanda ya mkononi: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Saa zinazotangaza mapigo ya moyo kupitia Bluetooth: Garmin (Broadcast Heart Rate), Polar (share HR with other devices), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Kitambuzi cha nje cha mapigo ya moyo kinahitajika. Kupima kwa kamera au kwa kifundo cha mkono pekee hakuungwi mkono.
+Washa utangazaji wa mapigo ya moyo kwenye saa yako kabla ya kutafuta. Apple Watch, saa nyingi za Wear OS na Fitbit hazitangazi mapigo ya moyo, kwa hivyo haziwezi kuunganishwa.
+
+Kifaa chochote kinachotuma ishara ya kawaida ya mapigo ya moyo ya Bluetooth LE kinapaswa kufanya kazi, ingawa Bluetooth pekee haihakikishi uoanifu, na vitambuzi vya ANT+ pekee havitaunganishwa. Kama chako hakitambuliki, mtumie ujumbe msanidi.
+
+Kitambuzi cha nje cha mapigo ya moyo kinahitajika. Kupima kwa kamera hakuungwi mkono.
 
 <h2>Kimetengenezwa kwa ajili ya</h2>
 – Kanda ya 2 na kujenga msingi wa aerobiki

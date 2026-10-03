@@ -1,9 +1,9 @@
-Heart Alert ansluter till din Bluetooth-pulsmätare och ger ljud i samma stund som pulsen går över eller under det intervall du själv ställer in. Välj ett minimum och ett maximum, lägg undan telefonen och träna på gehör.
+Heart Alert ansluter via Bluetooth till ditt bröstband, armband eller din klocka och ger ljud i samma stund som pulsen går över eller under det intervall du själv ställer in. Välj ett minimum och ett maximum, lägg undan telefonen och träna på gehör.
 
 Ingen skärm att hålla koll på. Inga zonuträkningar. Inget konto.
 
 <h2>Så funkar det</h2>
-1. Sätt på dig Bluetooth-pulsmätaren eller bröstbandet.
+1. Sätt på dig bröstbandet eller armbandet, eller slå på pulssändning i klockan.
 2. Ställ in lägsta och högsta puls.
 3. Tryck på start — du får en signal när du går för högt eller för lågt, och en till när du är tillbaka i intervallet.
 
@@ -19,14 +19,26 @@ Ingen skärm att hålla koll på. Inga zonuträkningar. Inget konto.
 – Fortsätter i bakgrunden medan du använder en annan app
 – Snabb installation, inget att registrera sig för
 
-<h2>Funkar med din pulsmätare</h2>
-Stöder de flesta kompatibla pulsmätare med Bluetooth Low Energy (BLE), bröstband och armband, bland annat:
-– Polar H10, H9, H7, OH1 och Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon med flera
+<h2>Funkar med ditt bröstband</h2>
+Heart Alert är byggd för pulsbröstband med Bluetooth Low Energy (BLE), bland annat:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma och andra vanliga BLE-bröstband
 
-Alla sensorer som sänder en vanlig Bluetooth LE-pulssignal bör fungera, även om Bluetooth i sig inte garanterar kompatibilitet. Hittas inte din, skriv till utvecklaren.
+<h2>Även armband och klockor</h2>
+– Armband: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Klockor som sänder puls via Bluetooth: Garmin (Sänd puls), Polar (dela puls med andra enheter), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Det krävs en extern pulssensor. Mätning med kameran eller enbart från handleden stöds inte.
+Slå på pulssändning i klockan innan du söker. Apple Watch, de flesta Wear OS-klockor och Fitbit sänder inte puls, så de går inte att ansluta.
+
+Alla enheter som skickar en vanlig Bluetooth LE-pulssignal bör fungera, även om Bluetooth i sig inte garanterar kompatibilitet, och sensorer med enbart ANT+ går inte att ansluta. Hittas inte din, skriv till utvecklaren.
+
+Det krävs en extern pulssensor. Mätning med kameran stöds inte.
 
 <h2>Gjord för</h2>
 – Zon 2 och uppbyggnad av aerob grund

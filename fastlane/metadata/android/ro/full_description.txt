@@ -1,9 +1,9 @@
-Heart Alert se conectează la centura ta cardio Bluetooth și sună în clipa în care pulsul urcă peste sau coboară sub intervalul pe care l-ai ales. Pune o limită minimă și una maximă, lasă telefonul deoparte și antrenează-te după ureche.
+Heart Alert se conectează prin Bluetooth la centura ta toracică, la senzorul de braț sau la ceas și sună în clipa în care pulsul urcă peste sau coboară sub intervalul pe care l-ai ales. Pune o limită minimă și una maximă, lasă telefonul deoparte și antrenează-te după ureche.
 
 Fără ochii pe ecran. Fără calcule de zone. Fără cont.
 
 <h2>Cum funcționează</h2>
-1. Pune-ți senzorul cardio Bluetooth sau centura toracică.
+1. Pune-ți centura toracică sau senzorul de braț, ori pornește transmiterea pulsului pe ceas.
 2. Setează BPM minim și maxim.
 3. Apasă start — primești un semnal când urci prea sus sau cobori prea jos, și încă unul când revii în interval.
 
@@ -19,14 +19,26 @@ Fără ochii pe ecran. Fără calcule de zone. Fără cont.
 – Merge în fundal cât timp folosești altă aplicație
 – Configurare rapidă, fără înregistrare
 
-<h2>Merge cu senzorul tău cardio</h2>
-Acceptă majoritatea monitoarelor de puls Bluetooth Low Energy (BLE) compatibile, centuri toracice și brățări, printre care:
-– Polar H10, H9, H7, OH1 și Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon și altele
+<h2>Merge cu centura ta toracică</h2>
+Heart Alert este făcut pentru centuri cardio toracice Bluetooth Low Energy (BLE), printre care:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma și alte centuri toracice BLE generice
 
-Ar trebui să meargă orice senzor care emite un semnal cardiac Bluetooth LE standard, deși Bluetooth-ul singur nu garantează compatibilitatea. Dacă al tău nu este detectat, scrie-i dezvoltatorului.
+<h2>Merge și cu brățări și ceasuri</h2>
+– Senzori de braț: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Ceasuri care transmit pulsul prin Bluetooth: Garmin (Transmitere puls), Polar (partajarea pulsului cu alte dispozitive), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Este necesar un senzor cardiac extern. Măsurarea cu camera sau doar de la încheietură nu este acceptată.
+Pornește transmiterea pulsului pe ceas înainte de scanare. Apple Watch, majoritatea ceasurilor Wear OS și Fitbit nu transmit pulsul, așa că nu se pot conecta.
+
+Ar trebui să meargă orice dispozitiv care trimite un semnal cardiac Bluetooth LE standard, deși Bluetooth-ul singur nu garantează compatibilitatea, iar senzorii doar cu ANT+ nu se vor conecta. Dacă al tău nu este detectat, scrie-i dezvoltatorului.
+
+Este necesar un senzor cardiac extern. Măsurarea cu camera nu este acceptată.
 
 <h2>Făcut pentru</h2>
 – Zona 2 și construirea bazei aerobe

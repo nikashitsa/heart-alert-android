@@ -1,9 +1,9 @@
-Heart Alert łączy się z Twoim pulsometrem Bluetooth i odzywa się w chwili, gdy tętno przekroczy ustawiony zakres w górę lub w dół. Ustaw minimum i maksimum, schowaj telefon i trenuj ze słuchu.
+Heart Alert łączy się przez Bluetooth z Twoim pasem piersiowym, opaską na ramię lub zegarkiem i odzywa się w chwili, gdy tętno przekroczy ustawiony zakres w górę lub w dół. Ustaw minimum i maksimum, schowaj telefon i trenuj ze słuchu.
 
 Bez patrzenia w ekran. Bez liczenia stref. Bez konta.
 
 <h2>Jak to działa</h2>
-1. Załóż pulsometr Bluetooth lub pas piersiowy.
+1. Załóż pas piersiowy lub opaskę na ramię albo włącz w zegarku transmisję tętna.
 2. Ustaw minimalne i maksymalne BPM.
 3. Naciśnij start — usłyszysz sygnał, gdy wyjdziesz za wysoko lub za nisko, i kolejny, gdy wrócisz do zakresu.
 
@@ -19,14 +19,26 @@ Bez patrzenia w ekran. Bez liczenia stref. Bez konta.
 – Działa w tle, gdy korzystasz z innej aplikacji
 – Szybka konfiguracja, żadnej rejestracji
 
-<h2>Działa z Twoim pulsometrem</h2>
-Obsługuje większość zgodnych pulsometrów Bluetooth Low Energy (BLE), pasów piersiowych i opasek na ramię, w tym:
-– Polar H10, H9, H7, OH1 i Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon i inne
+<h2>Działa z Twoim pasem piersiowym</h2>
+Heart Alert powstał z myślą o pasach piersiowych do pomiaru tętna Bluetooth Low Energy (BLE), w tym:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma i inne typowe pasy piersiowe BLE
 
-Każdy czujnik nadający standardowy sygnał tętna Bluetooth LE powinien zadziałać, choć sam Bluetooth nie gwarantuje zgodności. Jeśli Twój nie zostanie wykryty, napisz do twórcy aplikacji.
+<h2>Także opaski na ramię i zegarki</h2>
+– Opaski na ramię: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Zegarki transmitujące tętno przez Bluetooth: Garmin (Transmisja tętna), Polar (udostępnianie tętna innym urządzeniom), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Potrzebny jest zewnętrzny czujnik tętna. Pomiar aparatem ani wyłącznie z nadgarstka nie jest obsługiwany.
+Przed wyszukiwaniem włącz w zegarku transmisję tętna. Apple Watch, większość zegarków z Wear OS i Fitbit nie transmitują tętna, więc nie da się ich połączyć.
+
+Każde urządzenie nadające standardowy sygnał tętna Bluetooth LE powinno zadziałać, choć sam Bluetooth nie gwarantuje zgodności, a czujniki obsługujące tylko ANT+ się nie połączą. Jeśli Twoje nie zostanie wykryte, napisz do twórcy aplikacji.
+
+Potrzebny jest zewnętrzny czujnik tętna. Pomiar aparatem nie jest obsługiwany.
 
 <h2>Dla kogo</h2>
 – Strefa 2 i budowanie bazy tlenowej

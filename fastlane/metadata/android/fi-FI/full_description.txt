@@ -1,9 +1,9 @@
-Heart Alert yhdistyy Bluetooth-sykemittariisi ja antaa äänen sillä hetkellä, kun syke nousee yli tai laskee alle asettamasi alueen. Valitse alaraja ja yläraja, laita puhelin pois ja treenaa korvakuulolta.
+Heart Alert yhdistyy Bluetoothilla sykevyöhösi, käsivarsinauhaasi tai kelloosi ja antaa äänen sillä hetkellä, kun syke nousee yli tai laskee alle asettamasi alueen. Valitse alaraja ja yläraja, laita puhelin pois ja treenaa korvakuulolta.
 
 Ei näytön tuijottamista. Ei vyöhykelaskelmia. Ei tiliä.
 
 <h2>Näin se toimii</h2>
-1. Pue Bluetooth-sykemittari tai sykevyö.
+1. Pue sykevyö tai käsivarsinauha, tai laita kellosta sykkeen lähetys päälle.
 2. Aseta pienin ja suurin syke.
 3. Paina käynnistä — saat hälytyksen, kun nouset liian ylös tai lasket liian alas, ja toisen, kun palaat alueelle.
 
@@ -19,14 +19,26 @@ Ei näytön tuijottamista. Ei vyöhykelaskelmia. Ei tiliä.
 – Jatkaa taustalla, kun käytät toista sovellusta
 – Nopea käyttöönotto, ei rekisteröitymistä
 
-<h2>Toimii sykemittarisi kanssa</h2>
-Tukee useimpia yhteensopivia Bluetooth Low Energy (BLE) -sykemittareita, sykevöitä ja käsivarsinauhoja, muun muassa:
-– Polar H10, H9, H7, OH1 ja Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon ja muut
+<h2>Toimii sykevyösi kanssa</h2>
+Heart Alert on tehty Bluetooth Low Energy (BLE) -sykevöille, muun muassa:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma ja muut tavalliset BLE-sykevyöt
 
-Minkä tahansa tavallista Bluetooth LE -sykesignaalia lähettävän anturin pitäisi toimia, vaikka pelkkä Bluetooth ei takaakaan yhteensopivuutta. Jos omaasi ei löydy, laita viestiä kehittäjälle.
+<h2>Myös käsivarsinauhat ja kellot</h2>
+– Käsivarsinauhat: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Kellot, jotka lähettävät sykettä Bluetoothilla: Garmin (sykkeen lähetys), Polar (jaa syke muille laitteille), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Tarvitset ulkoisen sykeanturin. Mittausta kameralla tai pelkästään ranteesta ei tueta.
+Laita kellosta sykkeen lähetys päälle ennen hakua. Apple Watch, useimmat Wear OS -kellot ja Fitbit eivät lähetä sykettä, joten niitä ei voi yhdistää.
+
+Minkä tahansa tavallista Bluetooth LE -sykesignaalia lähettävän laitteen pitäisi toimia, vaikka pelkkä Bluetooth ei takaakaan yhteensopivuutta, eivätkä pelkkää ANT+:aa käyttävät anturit yhdisty. Jos omaasi ei löydy, laita viestiä kehittäjälle.
+
+Tarvitset ulkoisen sykeanturin. Mittausta kameralla ei tueta.
 
 <h2>Tehty tähän</h2>
 – Vyöhyke 2 ja peruskestävyyden rakentaminen

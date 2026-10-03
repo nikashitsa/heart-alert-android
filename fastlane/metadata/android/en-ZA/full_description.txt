@@ -1,9 +1,9 @@
-Heart Alert connects to your Bluetooth heart rate monitor and plays a sound the moment your BPM goes above or below the range you set. Choose a minimum and a maximum, put your phone away, and train by ear.
+Heart Alert connects to your Bluetooth heart rate chest strap, armband or watch and plays a sound the moment your BPM goes above or below the range you set. Choose a minimum and a maximum, put your phone away, and train by ear.
 
 No screen-watching. No zone math. No account.
 
 <h2>How it works</h2>
-1. Put on your Bluetooth heart rate monitor or chest strap.
+1. Put on your chest strap or armband, or turn on heart rate broadcast on your watch.
 2. Set your min and max BPM.
 3. Press start — you get an alert when you drift too high or too low, and another one when you are back in range.
 
@@ -19,14 +19,26 @@ No screen-watching. No zone math. No account.
 – Runs in the background while you use another app
 – Fast setup, nothing to sign up for
 
-<h2>Works with your heart rate monitor</h2>
-Supports most compatible Bluetooth Low Energy (BLE) heart rate monitors, chest straps and armbands, including:
-– Polar H10, H9, H7, OH1 and Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon and more
+<h2>Works with your chest strap</h2>
+Heart Alert is built for Bluetooth Low Energy (BLE) heart rate chest straps, including:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma and other generic BLE chest straps
 
-Any sensor that broadcasts a standard Bluetooth LE heart rate signal should work, though Bluetooth on its own does not guarantee compatibility. If yours is not detected, send the developer a message.
+<h2>Armbands and watches too</h2>
+– Armbands: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Watches that broadcast heart rate over Bluetooth: Garmin (Broadcast Heart Rate), Polar (share HR with other devices), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-An external heart rate sensor is required. Camera-based and wrist-only phone measurement are not supported.
+Turn on heart rate broadcast on your watch before you scan. Apple Watch, most Wear OS watches and Fitbit do not broadcast heart rate, so they cannot connect.
+
+Any device that sends a standard Bluetooth LE heart rate signal should work, though Bluetooth on its own does not guarantee compatibility, and ANT+-only sensors will not connect. If yours is not detected, send the developer a message.
+
+An external heart rate sensor is required. Camera-based measurement is not supported.
 
 <h2>Made for</h2>
 – Zone 2 work and aerobic base building

@@ -1,9 +1,9 @@
-Heart Alert menyambung ke monitor kadar denyutan jantung Bluetooth anda dan berbunyi pada saat denyutan naik melebihi atau turun di bawah julat yang anda tetapkan. Tetapkan had bawah dan had atas, simpan telefon, dan berlatihlah dengan telinga.
+Heart Alert menyambung ke tali dada, tali lengan atau jam tangan kadar denyutan jantung Bluetooth anda dan berbunyi pada saat denyutan naik melebihi atau turun di bawah julat yang anda tetapkan. Tetapkan had bawah dan had atas, simpan telefon, dan berlatihlah dengan telinga.
 
 Tidak perlu memandang skrin. Tiada pengiraan zon. Tiada akaun.
 
 <h2>Bagaimana ia berfungsi</h2>
-1. Pakai sensor denyutan jantung Bluetooth atau tali dada anda.
+1. Pakai tali dada atau tali lengan anda, atau hidupkan siaran kadar denyutan jantung pada jam tangan anda.
 2. Tetapkan BPM minimum dan maksimum.
 3. Tekan mula — anda akan menerima amaran apabila naik terlalu tinggi atau turun terlalu rendah, dan satu lagi apabila kembali ke dalam julat.
 
@@ -19,14 +19,26 @@ Tidak perlu memandang skrin. Tiada pengiraan zon. Tiada akaun.
 – Terus berjalan di latar belakang sementara anda menggunakan aplikasi lain
 – Persediaan pantas, tiada apa-apa untuk didaftarkan
 
-<h2>Berfungsi dengan sensor anda</h2>
-Menyokong kebanyakan monitor denyutan jantung Bluetooth Low Energy (BLE) yang serasi, tali dada dan tali lengan, termasuk:
-– Polar H10, H9, H7, OH1 dan Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon dan lain-lain
+<h2>Berfungsi dengan tali dada anda</h2>
+Heart Alert dibina untuk tali dada denyutan jantung Bluetooth Low Energy (BLE), termasuk:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma dan tali dada BLE generik yang lain
 
-Mana-mana sensor yang memancarkan isyarat denyutan jantung Bluetooth LE piawai sepatutnya berfungsi, walaupun Bluetooth sahaja tidak menjamin keserasian. Jika sensor anda tidak dikesan, hantar mesej kepada pembangun.
+<h2>Tali lengan dan jam tangan juga</h2>
+– Tali lengan: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Jam tangan yang menyiarkan denyutan jantung melalui Bluetooth: Garmin (siarkan denyutan jantung), Polar (kongsi HR dengan peranti lain), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Sensor denyutan jantung luaran diperlukan. Pengukuran melalui kamera atau hanya dari pergelangan tangan tidak disokong.
+Hidupkan siaran denyutan jantung pada jam tangan sebelum mengimbas. Apple Watch, kebanyakan jam Wear OS dan Fitbit tidak menyiarkan denyutan jantung, jadi tidak boleh disambungkan.
+
+Mana-mana peranti yang menghantar isyarat denyutan jantung Bluetooth LE piawai sepatutnya berfungsi, walaupun Bluetooth sahaja tidak menjamin keserasian, dan sensor ANT+ sahaja tidak akan bersambung. Jika tidak dikesan, hantar mesej kepada pembangun.
+
+Sensor denyutan jantung luaran diperlukan. Pengukuran melalui kamera tidak disokong.
 
 <h2>Dibuat untuk</h2>
 – Zon 2 dan pembinaan asas aerobik

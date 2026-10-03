@@ -1,9 +1,9 @@
-Heart Alert es connecta al teu sensor de freqüència cardíaca Bluetooth i sona just quan les pulsacions pugen per sobre o baixen per sota del rang que tu fixes. Tria un mínim i un màxim, desa el mòbil i entrena d'oïda.
+Heart Alert es connecta a la teva banda pectoral, braçal o rellotge de freqüència cardíaca Bluetooth i sona just quan les pulsacions pugen per sobre o baixen per sota del rang que tu fixes. Tria un mínim i un màxim, desa el mòbil i entrena d'oïda.
 
 Sense mirar la pantalla. Sense càlculs de zones. Sense comptes.
 
 <h2>Com funciona</h2>
-1. Posa't el sensor de freqüència cardíaca Bluetooth o la banda pectoral.
+1. Posa't la banda pectoral o el braçal, o activa l'emissió de freqüència cardíaca al rellotge.
 2. Fixa les pulsacions mínimes i màximes.
 3. Prem inicia — reps un avís quan puges massa o baixes massa, i un altre quan tornes al rang.
 
@@ -19,14 +19,26 @@ Sense mirar la pantalla. Sense càlculs de zones. Sense comptes.
 – Continua en segon pla mentre fas servir una altra aplicació
 – Configuració ràpida, res per registrar
 
-<h2>Funciona amb el teu sensor</h2>
-Admet la majoria de sensors de freqüència cardíaca Bluetooth Low Energy (BLE) compatibles, bandes pectorals i braçals, entre els quals:
-– Polar H10, H9, H7, OH1 i Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon i més
+<h2>Funciona amb la teva banda pectoral</h2>
+Heart Alert està pensat per a bandes pectorals de freqüència cardíaca Bluetooth Low Energy (BLE), entre les quals:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma i altres bandes pectorals BLE genèriques
 
-Hauria de funcionar qualsevol sensor que emeti un senyal cardíac Bluetooth LE estàndard, tot i que el Bluetooth per si sol no garanteix la compatibilitat. Si el teu no es detecta, escriu al desenvolupador.
+<h2>També braçals i rellotges</h2>
+– Braçals: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Rellotges que emeten la freqüència cardíaca per Bluetooth: Garmin (emissió de freqüència cardíaca), Polar (compartir la FC amb altres dispositius), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Cal un sensor extern. No s'admet la mesura amb la càmera ni només des del canell.
+Activa l'emissió de freqüència cardíaca al rellotge abans de cercar. L'Apple Watch, la majoria de rellotges Wear OS i Fitbit no l'emeten, així que no es poden connectar.
+
+Hauria de funcionar qualsevol dispositiu que enviï un senyal cardíac Bluetooth LE estàndard, tot i que el Bluetooth per si sol no garanteix la compatibilitat, i els sensors només ANT+ no es connectaran. Si el teu no es detecta, escriu al desenvolupador.
+
+Cal un sensor extern. No s'admet la mesura amb la càmera.
 
 <h2>Pensat per a</h2>
 – La zona 2 i la construcció de base aeròbica

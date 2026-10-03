@@ -1,9 +1,9 @@
-Heart Alert はお使いの Bluetooth 心拍計とつながり、心拍数が設定した範囲を上回った瞬間、あるいは下回った瞬間に音でお知らせします。下限と上限を決めたら、スマホはしまって、耳だけで走れます。
+Heart Alert はお使いの Bluetooth 心拍チェストストラップ、アームバンド、ウォッチとつながり、心拍数が設定した範囲を上回った瞬間、あるいは下回った瞬間に音でお知らせします。下限と上限を決めたら、スマホはしまって、耳だけで走れます。
 
 画面を見る必要はありません。ゾーンの計算もありません。アカウントも不要です。
 
 <h2>使い方</h2>
-1. Bluetooth の心拍センサー、またはチェストストラップを装着します。
+1. チェストストラップやアームバンドを装着するか、ウォッチの心拍転送をオンにします。
 2. 心拍数の下限と上限を設定します。
 3. 開始を押します — 高くなりすぎたときも低くなりすぎたときも音が鳴り、範囲に戻ったときにもう一度鳴ります。
 
@@ -19,14 +19,26 @@ Heart Alert はお使いの Bluetooth 心拍計とつながり、心拍数が設
 – 他のアプリを使っている間もバックグラウンドで動作
 – セットアップは短時間、登録するものはありません
 
-<h2>お手持ちのセンサーで使えます</h2>
-対応する Bluetooth Low Energy（BLE）心拍計、チェストストラップ、アームバンドの多くに対応しています。たとえば:
-– Polar H10、H9、H7、OH1、Verity Sense
-– Garmin、Wahoo TICKR、CooSpo、Scosche、Decathlon ほか
+<h2>お手持ちのチェストストラップで使えます</h2>
+Heart Alert は Bluetooth Low Energy（BLE）対応の心拍チェストストラップ向けに作られています。たとえば:
+– Polar H10、Polar H9、Polar H7
+– Garmin HRM 600、HRM 200、HRM-Pro Plus、HRM-Pro、HRM-Fit、HRM-Dual
+– Wahoo TRACKR Heart Rate、TICKR、TICKR X
+– CooSpo H6、H808S、H9Z
+– Magene H64、H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40、Moofit、XOSS、Bryton、Sigma ほか、一般的な BLE チェストストラップ
 
-標準的な Bluetooth LE 心拍信号を送るセンサーであれば動作するはずですが、Bluetooth だというだけで対応が保証されるわけではありません。見つからない場合は開発者までご連絡ください。
+<h2>アームバンドやウォッチにも対応</h2>
+– アームバンド: Polar Verity Sense、Polar OH1、Scosche Rhythm、Wahoo TICKR FIT、CooSpo HW807
+– Bluetooth で心拍を送信できるウォッチ: Garmin（心拍転送）、Polar（他のデバイスと心拍数を共有）、Coros、Suunto、Amazfit、Huawei、Xiaomi Smart Band、Whoop
 
-外部の心拍センサーが必要です。カメラでの計測や手首だけでの計測には対応していません。
+スキャンの前に、ウォッチの心拍転送をオンにしてください。Apple Watch、ほとんどの Wear OS ウォッチ、Fitbit は心拍を送信しないため、接続できません。
+
+標準的な Bluetooth LE 心拍信号を送るデバイスであれば動作するはずですが、Bluetooth だというだけで対応が保証されるわけではなく、ANT+ のみのセンサーは接続できません。見つからない場合は開発者までご連絡ください。
+
+外部の心拍センサーが必要です。カメラでの計測には対応していません。
 
 <h2>こんな場面に</h2>
 – ゾーン2と有酸素の土台づくり

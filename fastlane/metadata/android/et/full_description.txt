@@ -1,9 +1,9 @@
-Heart Alert ühendub sinu Bluetooth-pulsivööga ja annab heli sel hetkel, kui pulss tõuseb üle või langeb alla sinu seatud vahemiku. Vali alumine ja ülemine piir, pane telefon ära ja treeni kõrva järgi.
+Heart Alert ühendub sinu Bluetooth-rinnavöö, käepaela või kellaga ja annab heli sel hetkel, kui pulss tõuseb üle või langeb alla sinu seatud vahemiku. Vali alumine ja ülemine piir, pane telefon ära ja treeni kõrva järgi.
 
 Ekraani pole vaja jälgida. Tsoone pole vaja arvutada. Kontot pole vaja luua.
 
 <h2>Kuidas see töötab</h2>
-1. Pane selga Bluetooth-pulsiandur või rinnavöö.
+1. Pane rinnavöö või käepael peale või lülita kellas sisse pulsi edastamine.
 2. Sea vähim ja suurim pulss.
 3. Vajuta alusta — saad märguande, kui lähed liiga kõrgele või langed liiga madalale, ja veel ühe, kui oled vahemikku tagasi jõudnud.
 
@@ -19,14 +19,26 @@ Ekraani pole vaja jälgida. Tsoone pole vaja arvutada. Kontot pole vaja luua.
 – Töötab taustal edasi, kui kasutad teist rakendust
 – Kiire seadistus, midagi pole vaja registreerida
 
-<h2>Sobib sinu pulsianduriga</h2>
-Toetab enamikku ühilduvaid Bluetooth Low Energy (BLE) pulsiandureid, rinnavöösid ja käepaelu, sealhulgas:
-– Polar H10, H9, H7, OH1 ja Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon ja teised
+<h2>Sobib sinu rinnavööga</h2>
+Heart Alert on loodud Bluetooth Low Energy (BLE) pulsi-rinnavöödele, sealhulgas:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma ja teised tavalised BLE-rinnavööd
 
-Töötama peaks iga andur, mis edastab tavalist Bluetooth LE pulsisignaali, kuigi Bluetooth üksi ühilduvust ei taga. Kui sinu oma ei tuvastata, kirjuta arendajale.
+<h2>Ka käepaelad ja kellad</h2>
+– Käepaelad: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Kellad, mis edastavad pulssi Bluetoothi kaudu: Garmin (pulsi edastamine), Polar (pulsi jagamine teiste seadmetega), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Vaja on välist pulsiandurit. Kaameraga ega ainult randmelt mõõtmine ei ole toetatud.
+Lülita kellas pulsi edastamine sisse enne otsingut. Apple Watch, enamik Wear OS-i kellasid ja Fitbit pulssi ei edasta, seega neid ühendada ei saa.
+
+Töötama peaks iga seade, mis saadab tavalist Bluetooth LE pulsisignaali, kuigi Bluetooth üksi ühilduvust ei taga ja ainult ANT+-iga andurid ei ühendu. Kui sinu oma ei tuvastata, kirjuta arendajale.
+
+Vaja on välist pulsiandurit. Kaameraga mõõtmine ei ole toetatud.
 
 <h2>Tehtud selleks</h2>
 – Tsoon 2 ja aeroobse vundamendi ehitamine

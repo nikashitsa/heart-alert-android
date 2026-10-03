@@ -1,9 +1,9 @@
-Heart Alert verbindet sich mit deinem Bluetooth-Herzfrequenzmesser und gibt einen Ton aus, sobald dein Puls über oder unter den von dir gewählten Bereich geht. Minimum und Maximum einstellen, Handy weglegen und nach Gehör trainieren.
+Heart Alert verbindet sich mit deinem Bluetooth-Brustgurt, Armband oder deiner Uhr und gibt einen Ton aus, sobald dein Puls über oder unter den von dir gewählten Bereich geht. Minimum und Maximum einstellen, Handy weglegen und nach Gehör trainieren.
 
 Kein Blick auf den Bildschirm. Keine Zonen-Rechnerei. Kein Konto.
 
 <h2>So funktioniert es</h2>
-1. Lege deinen Bluetooth-Herzfrequenzmesser oder Brustgurt an.
+1. Lege deinen Brustgurt oder dein Armband an oder schalte an deiner Uhr die Herzfrequenzübertragung ein.
 2. Stelle deinen minimalen und maximalen Puls ein.
 3. Auf Start drücken — du bekommst einen Alarm, wenn du zu hoch oder zu tief liegst, und noch einen, wenn du wieder im Bereich bist.
 
@@ -19,14 +19,26 @@ Kein Blick auf den Bildschirm. Keine Zonen-Rechnerei. Kein Konto.
 – Läuft im Hintergrund weiter, während du eine andere App nutzt
 – Schnell eingerichtet, keine Anmeldung nötig
 
-<h2>Passt zu deinem Herzfrequenzmesser</h2>
-Unterstützt die meisten kompatiblen Bluetooth-Low-Energy-Herzfrequenzmesser (BLE), Brustgurte und Armbänder, darunter:
-– Polar H10, H9, H7, OH1 und Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon und weitere
+<h2>Passt zu deinem Brustgurt</h2>
+Heart Alert ist für Bluetooth-Low-Energy-Brustgurte (BLE) zur Herzfrequenzmessung gemacht, darunter:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma und weitere Standard-BLE-Brustgurte
 
-Jeder Sensor, der ein normales Bluetooth-LE-Herzfrequenzsignal sendet, sollte funktionieren — Bluetooth allein ist aber keine Garantie für Kompatibilität. Wird deiner nicht erkannt, schreib dem Entwickler.
+<h2>Auch Armbänder und Uhren</h2>
+– Armbänder: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Uhren, die die Herzfrequenz per Bluetooth übertragen: Garmin (Herzfrequenz übertragen), Polar (HF mit anderen Geräten teilen), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Ein externer Herzfrequenzsensor ist erforderlich. Messung über die Kamera oder allein am Handgelenk wird nicht unterstützt.
+Schalte die Herzfrequenzübertragung an deiner Uhr ein, bevor du suchst. Apple Watch, die meisten Wear-OS-Uhren und Fitbit übertragen keine Herzfrequenz und lassen sich daher nicht verbinden.
+
+Jedes Gerät, das ein normales Bluetooth-LE-Herzfrequenzsignal sendet, sollte funktionieren — Bluetooth allein ist aber keine Garantie für Kompatibilität, und reine ANT+-Sensoren verbinden sich nicht. Wird deines nicht erkannt, schreib dem Entwickler.
+
+Ein externer Herzfrequenzsensor ist erforderlich. Messung über die Kamera wird nicht unterstützt.
 
 <h2>Gemacht für</h2>
 – Zone 2 und den Aufbau der Grundlagenausdauer

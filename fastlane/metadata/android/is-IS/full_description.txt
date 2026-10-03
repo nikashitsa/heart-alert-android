@@ -1,9 +1,9 @@
-Heart Alert tengist Bluetooth-púlsmælinum þínum og gefur hljóð um leið og púlsinn fer yfir eða undir bilið sem þú stillir. Veldu lágmark og hámark, leggðu símann frá þér og æfðu eftir eyranu.
+Heart Alert tengist brjóstólinni, armbandinu eða úrinu þínu með Bluetooth og gefur hljóð um leið og púlsinn fer yfir eða undir bilið sem þú stillir. Veldu lágmark og hámark, leggðu símann frá þér og æfðu eftir eyranu.
 
 Enginn skjár til að fylgjast með. Engir svæðaútreikningar. Enginn aðgangur.
 
 <h2>Svona virkar það</h2>
-1. Settu á þig Bluetooth-púlsmælinn eða brjóstólina.
+1. Settu á þig brjóstólina eða armbandið, eða kveiktu á púlsútsendingu í úrinu.
 2. Stilltu lægsta og hæsta púls.
 3. Ýttu á byrja — þú færð viðvörun þegar þú ferð of hátt eða of lágt, og aðra þegar þú ert kominn aftur inn á bilið.
 
@@ -19,14 +19,26 @@ Enginn skjár til að fylgjast með. Engir svæðaútreikningar. Enginn aðgangu
 – Heldur áfram í bakgrunni á meðan þú notar annað forrit
 – Fljótleg uppsetning, ekkert að skrá sig í
 
-<h2>Virkar með púlsmælinum þínum</h2>
-Styður flesta samhæfa Bluetooth Low Energy (BLE) púlsmæla, brjóstólar og armbönd, þar á meðal:
-– Polar H10, H9, H7, OH1 og Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon og fleiri
+<h2>Virkar með brjóstólinni þinni</h2>
+Heart Alert er gert fyrir Bluetooth Low Energy (BLE) púlsbrjóstólar, þar á meðal:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma og aðrar almennar BLE-brjóstólar
 
-Allir skynjarar sem senda venjulegt Bluetooth LE-púlsmerki ættu að virka, þótt Bluetooth eitt og sér tryggi ekki samhæfni. Finnist þinn ekki, sendu þróunaraðilanum skilaboð.
+<h2>Líka armbönd og úr</h2>
+– Armbönd: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Úr sem senda út púls um Bluetooth: Garmin (púlsútsending), Polar (deila púlsi með öðrum tækjum), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Ytri púlsskynjari er nauðsynlegur. Mæling með myndavél eða eingöngu af úlnlið er ekki studd.
+Kveiktu á púlsútsendingu í úrinu áður en þú leitar. Apple Watch, flest Wear OS-úr og Fitbit senda ekki út púls og geta því ekki tengst.
+
+Öll tæki sem senda venjulegt Bluetooth LE-púlsmerki ættu að virka, þótt Bluetooth eitt og sér tryggi ekki samhæfni, og skynjarar sem styðja aðeins ANT+ tengjast ekki. Finnist þitt ekki, sendu þróunaraðilanum skilaboð.
+
+Ytri púlsskynjari er nauðsynlegur. Mæling með myndavél er ekki studd.
 
 <h2>Gert fyrir</h2>
 – Svæði 2 og uppbyggingu þolgrunns

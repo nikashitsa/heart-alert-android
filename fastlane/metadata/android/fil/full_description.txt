@@ -1,9 +1,9 @@
-Kumukonekta ang Heart Alert sa iyong Bluetooth heart rate monitor at tutunog sa mismong sandaling lumampas o bumaba ang tibok ng puso mo sa range na itinakda mo. Magtakda ng minimum at maximum, itabi ang telepono, at mag-ensayo gamit ang tainga.
+Kumukonekta ang Heart Alert sa iyong Bluetooth heart rate chest strap, armband o relo at tutunog sa mismong sandaling lumampas o bumaba ang tibok ng puso mo sa range na itinakda mo. Magtakda ng minimum at maximum, itabi ang telepono, at mag-ensayo gamit ang tainga.
 
 Hindi na kailangang tingnan ang screen. Walang kalkulasyon ng zone. Walang account.
 
 <h2>Paano ito gumagana</h2>
-1. Isuot ang iyong Bluetooth heart rate sensor o chest strap.
+1. Isuot ang iyong chest strap o armband, o i-on ang heart rate broadcast sa iyong relo.
 2. Itakda ang minimum at maximum na BPM.
 3. Pindutin ang simula — may alerto kapag masyado kang tumaas o bumaba, at isa pa kapag bumalik ka sa range.
 
@@ -19,14 +19,26 @@ Hindi na kailangang tingnan ang screen. Walang kalkulasyon ng zone. Walang accou
 – Tuloy sa background habang gumagamit ka ng ibang app
 – Mabilis i-setup, walang kailangang i-sign up
 
-<h2>Gumagana sa sensor mo</h2>
-Sinusuportahan ang karamihan sa mga tugmang Bluetooth Low Energy (BLE) heart rate monitor, chest strap, at armband, kabilang ang:
-– Polar H10, H9, H7, OH1 at Verity Sense
-– Garmin, Wahoo TICKR, CooSpo, Scosche, Decathlon at iba pa
+<h2>Gumagana sa chest strap mo</h2>
+Ginawa ang Heart Alert para sa mga Bluetooth Low Energy (BLE) heart rate chest strap, kabilang ang:
+– Polar H10, Polar H9, Polar H7
+– Garmin HRM 600, HRM 200, HRM-Pro Plus, HRM-Pro, HRM-Fit, HRM-Dual
+– Wahoo TRACKR Heart Rate, TICKR, TICKR X
+– CooSpo H6, H808S, H9Z
+– Magene H64, H303
+– Suunto Smart Heart Rate Belt
+– Decathlon Kiprun / Kalenji Dual HRM belt
+– iGPSPORT HR40, Moofit, XOSS, Bryton, Sigma at iba pang karaniwang BLE chest strap
 
-Dapat gumana ang anumang sensor na nagpapadala ng karaniwang Bluetooth LE heart rate signal, bagaman hindi garantiya ng pagkatugma ang Bluetooth lamang. Kung hindi ito matukoy, magmensahe sa developer.
+<h2>Pati armband at relo</h2>
+– Armband: Polar Verity Sense, Polar OH1, Scosche Rhythm, Wahoo TICKR FIT, CooSpo HW807
+– Mga relong nagpapadala ng heart rate sa Bluetooth: Garmin (Broadcast Heart Rate), Polar (share HR with other devices), Coros, Suunto, Amazfit, Huawei, Xiaomi Smart Band, Whoop
 
-Kailangan ng panlabas na heart rate sensor. Hindi suportado ang pagsukat sa pamamagitan ng camera o sa pulso lamang.
+I-on ang heart rate broadcast sa relo mo bago mag-scan. Hindi nagpapadala ng heart rate ang Apple Watch, karamihan sa mga relong Wear OS, at Fitbit, kaya hindi sila makakakonekta.
+
+Dapat gumana ang anumang device na nagpapadala ng karaniwang Bluetooth LE heart rate signal, bagaman hindi garantiya ng pagkatugma ang Bluetooth lamang, at hindi makakakonekta ang mga sensor na ANT+ lang. Kung hindi ito matukoy, magmensahe sa developer.
+
+Kailangan ng panlabas na heart rate sensor. Hindi suportado ang pagsukat sa pamamagitan ng camera.
 
 <h2>Para saan</h2>
 – Zone 2 at pagbuo ng aerobic base
