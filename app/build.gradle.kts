@@ -20,7 +20,7 @@ android {
 
     defaultConfig {
         applicationId = "com.nikashitsa.polar_alert_android"
-        minSdk = 26
+        minSdk = 33
         targetSdk = 36
         versionCode = commitCount
         versionName = "3.1.1"
@@ -78,8 +78,6 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.androidx.datastore.preferences)
-    implementation(libs.rxjava)
-    implementation(libs.rxandroid)
     implementation(libs.polar.ble.sdk)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

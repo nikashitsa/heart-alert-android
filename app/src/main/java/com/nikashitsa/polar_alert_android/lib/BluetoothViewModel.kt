@@ -16,8 +16,7 @@ import com.polar.sdk.api.errors.PolarInvalidArgument
 import com.polar.sdk.api.model.PolarDeviceInfo
 import com.polar.sdk.api.model.PolarHealthThermometerData
 import com.polar.sdk.api.model.PolarHrData
-import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
-import io.reactivex.rxjava3.disposables.Disposable
+import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.filterIsInstance
 import kotlinx.coroutines.flow.first
@@ -30,7 +29,8 @@ import kotlin.random.Random
 
 @HiltViewModel
 class BluetoothViewModel @Inject constructor(
-    private val api: PolarBleApi
+    private val api: PolarBleApi,
+    private val hrStrapScanner: HrStrapScanner,
 ): ViewModel() {
 
     private val tag = "BluetoothViewModel"
@@ -52,8 +52,8 @@ class BluetoothViewModel @Inject constructor(
     private val _hrFeature = MutableStateFlow(HrFeature())
     val hrFeature = _hrFeature.asStateFlow()
 
-    private var scanDisposable: Disposable? = null
-    private var hrDisposable: Disposable? = null
+    private var scanJob: Job? = null
+    private var hrJob: Job? = null
     private var demoHrJob: Job? = null
 
     /** Unlocked from the Connect screen; adds the simulated strap to the device list. */
@@ -132,28 +132,25 @@ class BluetoothViewModel @Inject constructor(
                 PolarDeviceInfo("", state.address, 0,_deviceName.value, true,)
             )
         }
-        scanDisposable = api.searchForDevice()
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe(
-                { polarDeviceInfo: PolarDeviceInfo ->
+        scanJob?.cancel()
+        scanJob = viewModelScope.launch {
+            // Not api.searchForDevice(): since SDK 7 it hides non-Polar straps, see HrStrapScanner.
+            hrStrapScanner.scan()
+                .catch { error -> Log.e(tag, "Device scan failed. Reason $error") }
+                .collect { polarDeviceInfo ->
                     Log.d(tag, "found ${polarDeviceInfo.name} ${polarDeviceInfo.address}")
                     val currentList = _foundDevices.value
                     if (currentList.none { it.name == polarDeviceInfo.name }) {
                         _foundDevices.value = (currentList + polarDeviceInfo).sortedByDescending { it.rssi }
                     }
-                },
-                { error: Throwable ->
-                    Log.e(tag, "Device scan failed. Reason $error")
-                },
-                {
-                    Log.d(tag, "complete")
                 }
-            )
+            Log.d(tag, "complete")
+        }
     }
 
     fun stopDevicesSearch() {
         Log.d(tag, "stopDevicesSearch")
-        scanDisposable?.dispose()
+        scanJob?.cancel()
         _foundDevices.value = emptyList()
     }
 
@@ -204,24 +201,21 @@ class BluetoothViewModel @Inject constructor(
             demoHrStreamStart(onNext)
             return
         }
-        if (hrDisposable?.isDisposed == false) return
-        hrDisposable = api.startHrStreaming(address)
-            .observeOn(AndroidSchedulers.mainThread())
-            .subscribe(
-                { hrData: PolarHrData ->
+        if (hrJob?.isActive == true) return
+        hrJob = viewModelScope.launch {
+            api.startHrStreaming(address)
+                .catch { error -> Log.e(tag, "HR stream failed. Reason $error") }
+                .collect { hrData: PolarHrData ->
                     for (sample in hrData.samples) {
                         onNext(sample.hr)
                     }
-                },
-                { error: Throwable ->
-                    Log.e(tag, "HR stream failed. Reason $error")
-                },
-                { Log.d(tag, "HR stream complete") }
-            )
+                }
+            Log.d(tag, "HR stream complete")
+        }
     }
 
     fun hrStreamStop() {
-        hrDisposable?.dispose()
+        hrJob?.cancel()
         demoHrJob?.cancel()
     }
 
@@ -229,7 +223,7 @@ class BluetoothViewModel @Inject constructor(
     fun enableDemo() {
         Log.d(tag, "enableDemo")
         _demoEnabled.value = true
-        scanDisposable?.dispose()
+        scanJob?.cancel()
         if (_foundDevices.value.isNotEmpty()) _foundDevices.value = listOf(DEMO_DEVICE)
     }
 
